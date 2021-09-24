@@ -10,6 +10,7 @@
 			<soldier number="3" name="Ihor" pseudo="Sirko" homeCity="Odesa" hobby="football">\IhorSirko</soldier>
 			<soldier number="4" name="Yurii" pseudo="Rachuk" homeCity="Zaporizhzhia" hobby="guitar">YuriiRachuk</soldier> 
 			<soldier number="5" name="Ruslan" pseudo="Ruslan" homeCity="Zhytomyr" hobby="bicycle">RuslanKravchuk</soldier>
+			<soldier number="6" name="Олександр Гребінь" pseudo="Suddenly Snail" homeCity="Vatutine" hobby="Carp fishing/Guitar playng/Bike cycling">Олександр Гребінь</soldier>			
 			<div>
 		</soldiers>
 	</document>
