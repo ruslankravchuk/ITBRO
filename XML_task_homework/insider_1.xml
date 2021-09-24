@@ -53,5 +53,13 @@
 				<homeCity>Zhytomyr</homeCity>
 				<hobby>bicycle</hobby>
 			</soldier>
+			<soldier>
+				<number>7</number>
+				<nameOfSlack>Billy_Bones</nameOfSlack>
+				<name>Dmitriy</name>
+				<pseudo>Billy_Bones</pseudo>
+				<homeCity>Dnepr</homeCity>
+				<hobby>run</hobby>
+			</soldier>
 		</soldiers>
 	</document>
