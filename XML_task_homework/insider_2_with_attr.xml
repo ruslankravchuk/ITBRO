@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<document>
+		<head>
+			<groupname>Insider</groupname>
+			<docDate>23.09.2021</docDate>
+		</head>
+		<soldiers>
+			<soldier number="1" name="Vladyslav" pseudo="Hans" homeCity="Vinnytsya" hobby="historical medieval battle">VladyslavHans</soldier>
+			<soldier number="2" name="Sergii" pseudo="Petl'ov" homeCity="Zhytomyr" hobby="historic films">SergiiPetl'ov</soldier>
+			<soldier number="3" name="Ihor" pseudo="Sirko" homeCity="Odesa" hobby="football">\IhorSirko</soldier>
+			<soldier number="4" name="Yurii" pseudo="Rachuk" homeCity="Zaporizhzhia" hobby="guitar">YuriiRachuk</soldier> 
+			<soldier number="5" name="Ruslan" pseudo="Ruslan" homeCity="Zhytomyr" hobby="bicycle">RuslanKravchuk</soldier>
+			<div>
+		</soldiers>
+	</document>

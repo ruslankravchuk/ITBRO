@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<document>
+		<head>
+			<groupname>Insider</groupname>
+			<docDate>23.09.2021</docDate>
+		</head>
+		<soldiers>
+			<soldier>
+				<number>1</number>
+				<nameOfSlack>VladyslavHans</nameOfSlack>
+				<name>Vladyslav</name>
+				<pseudo>Hans</pseudo>
+				<homeCity>Vinnytsya</homeCity>
+				<hobby>historical medieval battle</hobby>
+			</soldier>
+			<soldier>
+				<number>2</number>
+				<nameOfSlack>Tetiana</nameOfSlack>
+				<name>Tetiana</name>
+				<pseudo>test</pseudo>
+				<homeCity>test</homeCity>
+				<hobby>test</hobby>
+			</soldier>
+			<soldier>
+				<number>3</number>
+				<nameOfSlack>SergiiPetl'ov</nameOfSlack>
+				<name>Sergii</name>
+				<pseudo>Petl'ov</pseudo>
+				<homeCity>Zhytomyr</homeCity>
+				<hobby>historic films</hobby>
+			</soldier>
+			<soldier>
+				<number>4</number>
+				<nameOfSlack>IhorSirko</nameOfSlack>
+				<name>Ihor</name>
+				<pseudo>Sirko</pseudo>
+				<homeCity>Odesa</homeCity>
+				<hobby>football</hobby>
+			</soldier>
+			<soldier>
+				<number>5</number>
+				<nameOfSlack>YuriiRachuk</nameOfSlack>
+				<name>Yurii</name>
+				<pseudo>Rachuk</pseudo>
+				<homeCity>Zaporizhzhia</homeCity>
+				<hobby>guitar</hobby>
+			</soldier> 
+			<soldier>
+				<number>6</number>
+				<nameOfSlack>Ruslan Kravchuk</nameOfSlack>
+				<name>Ruslan</name>
+				<pseudo>Ruslan</pseudo>
+				<homeCity>Zhytomyr</homeCity>
+				<hobby>bicycle</hobby>
+			</soldier>
+		</soldiers>
+	</document>
