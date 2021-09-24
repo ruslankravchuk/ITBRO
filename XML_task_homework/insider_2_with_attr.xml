@@ -6,11 +6,12 @@
 		</head>
 		<soldiers>
 			<soldier number="1" name="Vladyslav" pseudo="Hans" homeCity="Vinnytsya" hobby="historical medieval battle">VladyslavHans</soldier>
-			<soldier number="2" name="Sergii" pseudo="Petl'ov" homeCity="Zhytomyr" hobby="historic films">SergiiPetl'ov</soldier>
-			<soldier number="3" name="Ihor" pseudo="Sirko" homeCity="Odesa" hobby="football">\IhorSirko</soldier>
-			<soldier number="4" name="Yurii" pseudo="Rachuk" homeCity="Zaporizhzhia" hobby="guitar">YuriiRachuk</soldier> 
-			<soldier number="5" name="Ruslan" pseudo="Ruslan" homeCity="Zhytomyr" hobby="bicycle">RuslanKravchuk</soldier>
-			<soldier number="6" name="Олександр Гребінь" pseudo="Suddenly Snail" homeCity="Vatutine" hobby="Carp fishing/Guitar playng/Bike cycling">Олександр Гребінь</soldier>			
+			<soldier number="2" name="Tatiana" pseudo="best" homeCity="Sumy" hobby="travel">Tatiana</soldier>
+			<soldier number="3" name="Sergii" pseudo="Petl'ov" homeCity="Zhytomyr" hobby="historic films">SergiiPetl'ov</soldier>
+			<soldier number="4" name="Ihor" pseudo="Sirko" homeCity="Odesa" hobby="football">\IhorSirko</soldier>
+			<soldier number="5" name="Yurii" pseudo="Rachuk" homeCity="Zaporizhzhia" hobby="guitar">YuriiRachuk</soldier>
+			<soldier number="6" name="Ruslan" pseudo="Ruslan" homeCity="Zhytomyr" hobby="bicycle">RuslanKravchuk</soldier>
+			<soldier number="7" name="Олександр Гребінь" pseudo="Suddenly Snail" homeCity="Vatutine" hobby="Carp fishing/Guitar playng/Bike cycling">Олександр Гребінь</soldier>
 			<div>
 		</soldiers>
 	</document>
