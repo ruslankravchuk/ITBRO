@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<document>
+		<head>
+			<groupname>Insider</groupname>
+			<docDate>23.09.2021</docDate>
+		</head>
+		<soldiers>
+			<soldier>
+				<number>1</number>
+				<nameOfSlack>VladyslavHans</nameOfSlack>
+				<name>Vladyslav</name>
+				<pseudo>Hans</pseudo>
+				<homeCity>Vinnytsya</homeCity>
+				<hobby>historical medieval battle</hobby>
+			</soldier>
+			<soldier>
+				<number>2</number>
+				<nameOfSlack>[][]Tetiana</nameOfSlack>
+				<name>Tetiana</name>
+				<pseudo>ATO-it</pseudo>
+				<homeCity>Severodonetsk</homeCity>
+				<hobby>Psychology</hobby>
+				<knowledge>HTML,CSS,JS,WP</knowledge>
+			</soldier>
+		</soldiers>
+	</document>
