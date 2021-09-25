@@ -61,5 +61,13 @@
 				<homeCity>Vatutine</homeCity>
 				<hobby>Carp fishing/Guitar playng/Bike cycling</hobby>
 			</soldier>
+                        <soldier>
+				<number>8</number>
+				<nameOfSlack>[]Billy_Bones</nameOfSlack>
+				<name>Dmitriy Tolkachov</name>
+				<pseudo>Billy_Bones</pseudo>
+				<homeCity>Kryvyi Rih</homeCity>
+				<hobby>Run/Bike cycling</hobby>
+			</soldier>
 		</soldiers>
-	</document>
+	   </document>
