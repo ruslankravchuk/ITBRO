@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<document>
+		<head>
+			<groupname>Insider</groupname>
+			<docDate>24.09.2021</docDate>
+		</head>
+		<soldiers>
+			<soldier number="1" name="Denys" pseudo="DannyUA" homeCity="Kiyv" hobby="mixed martial arts" hobby="vynil records" hobby="anime" >VDenys Kutimskyi</soldier>
+			<soldier number="2" name="test" pseudo="test" homeCity="test" hobby="test">Tetiana</soldier>
+		</soldiers>
+	</document>
