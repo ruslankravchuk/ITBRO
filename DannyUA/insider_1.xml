@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<document>
+		<head>
+			<groupname>Insider</groupname>
+			<docDate>24.09.2021</docDate>
+		</head>
+		<soldiers>
+			<soldier>
+				<number>21</number>
+				<nameOfSlack>Denys Kutimskyi</nameOfSlack>
+				<name>Denys</name>
+				<pseudo>DannyUA</pseudo>
+				<homeCity>Kiyv</homeCity>
+				<hobby>mixed martial arts</hobby>
+				<hobby>vynil records</hobby>
+				<hobby>anime</hobby>
+			</soldier>
+			<soldier>
+				<number>2</number>
+				<nameOfSlack>Tetiana</nameOfSlack>
+				<name>Tetiana</name>
+				<pseudo>test</pseudo>
+				<homeCity>test</homeCity>
+				<hobby>test</hobby>
+			</soldier>
+		</soldiers>
+	</document>
