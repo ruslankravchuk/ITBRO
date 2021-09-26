@@ -144,5 +144,12 @@
 				<homeCity>Brovary</homeCity>
 				<hobby>cycling</hobby>
 			</soldier>
+			<soldier>
+				<number>18</number>
+				<nameOfSlack>Oleksandr</nameOfSlack>
+				<name>Sasha</name>
+				<pseudo>sasha555m</pseudo>
+				<homeCity>Lviv</homeCity>
+			</soldier>
 		</soldiers>
 	   </document>
