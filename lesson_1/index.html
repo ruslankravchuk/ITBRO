@@ -8,14 +8,48 @@
   <title>можливості html, xml, md, json</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script src="https://use.fontawesome.com/3b107851d4.js"></script>
 </head>
 
 <body>
-<main class='main'>
-  <div class="container">
+  <main class='main'>
+    <div class="container">
       <h1 class="title">Можливості html, xml, md, json</h1>
-      <section>
+      <a href="#" title="На початок" class="topbutton">^Доверху</a>
+      <div class="list-group">
+        <h4 class="list-group-item-heading"> Зміст:</h4>
+        <p class="list-group-item-text"></p>
+        <a href="#about-languages-html" class="list-group-item ">
+          <h4 class="list-group-item-heading">- Інформація про переваги і недоліки html, xml, md, json в форматі HTML
+          </h4>
+          <p class="list-group-item-text"></p>
+        </a>
+        <a href="#about-languages-md" class="list-group-item">
+          <h4 class="list-group-item-heading">- Інформація про переваги і недоліки html, xml, md, json в форматі
+            Markdown</h4>
+          <p class="list-group-item-text"></p>
+        </a>
+        <a href="#about-languages-json" class="list-group-item">
+          <h4 class="list-group-item-heading">- Порівняння властивостей html, xml, md, json в форматі JSON</h4>
+          <p class="list-group-item-text"></p>
+        </a>
+        <a href="#about-markdown" class="list-group-item">
+          <h4 class="list-group-item-heading">- Шпаргалка по Markdown</h4>
+          <p class="list-group-item-text"></p>
+        </a>
+        <a href="#about-forms" class="list-group-item">
+          <h4 class="list-group-item-heading">- Різновиди форм</h4>
+          <p class="list-group-item-text"></p>
+        </a>
+        <a href="#about-us" class="list-group-item">
+          <h4 class="list-group-item-heading">- Про нас</h4>
+          <p class="list-group-item-text"></p>
+        </a>
+        <hr>
+      </div>
+      <section id="about-languages-html" class="main_about-languages-html">
         <h3>Інформація про переваги і недоліки html, xml, md, json в форматі HTML</h3>
         <ul>
           <li class='opportunity'>
@@ -34,8 +68,9 @@
             <a href="difference/index.html">Різниця HTML--XML--MD--JSON</a>
           </li>
         </ul>
+        <hr>
       </section>
-      <section>
+      <section id="about-languages-md">
         <h3>Інформація про переваги і недоліки html, xml, md, json в форматі Markdown (завантажити за посиланнями нижче)
         </h3>
         <p>
@@ -50,229 +85,29 @@
         <p>
           <a href="md/json-table.md" download>JSON cинтаксис</a>
         </p>
+        <hr>
       </section>
-      <section>
-        <h3>Про властивості html, xml, md, json в форматі json (завантажити за посиланнями нижче)</h3>
+      <section id="about-languages-json">
+        <h3>Про властивості html, xml, md, json в форматі JSON (завантажити за посиланнями нижче)</h3>
         <p>
           <a href="diference-table.json" download>Порівняння властивостей html, xml, md, json</a>
         </p>
+        <hr>
       </section>
     </div>
 
     <!-- Шпаргалка по Markdown       -->
-    <section class="handbook">
+    <section id="about-markdown" class="handbook">
       <div class="container">
         <h2>Шпаргалка по Markdown</h2>
         <div class="twelve columns">
-          <p><b>Markdown</b> is a simple way to format text that looks great on any device. It doesn’t do anything fancy
-            like change the font size, color, or type &mdash; just the essentials, using keyboard symbols you already
-            know.</p>
+          <a href="./md/md-tutorial/index.html"> Базовий синтаксис Markdown</a>
         </div>
-        <div class="twelve columns center">
-          <table class="tg">
-            <thead>
-              <tr>
-                <th class="tg-bobw">
-                  <span style="font-weight:bold">Type</span>
-                </th>
-                <th class="tg-bobw">
-                  <span style="font-weight:bold">Or</span>
-                </th>
-                <th class="tg-bobw">
-                  <span style="font-weight:bold">… to Get</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">*Italic*</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">_Italic_</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">Italic</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">**Bold**</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">__Bold__</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">Bold</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal"># Heading 1</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">Heading 1</span><br><span style="font-weight:normal">=========</span>
-                </td>
-                <td class="tg-j6zm">
-                  <span style="font-weight:bold">Heading 1</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">## Heading 2</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">Heading 2</span><br><span style="font-weight:normal">---------</span>
-                </td>
-                <td class="tg-j6zm">
-                  <span style="font-weight:bold">Heading 2</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">[Link](http://a.com)</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">[Link][1]</span><br><span
-                    style="font-weight:normal">⋮</span><br><span style="font-weight:normal">[1]: http://b.org</span>
-                </td>
-                <td class="tg-7h26">
-                  <a href="https://commonmark.org/">Link</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">![Image](http://url/a.png)</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">![Image][1]</span>
-                  <br>
-                  <span style="font-weight:normal">⋮</span>
-                  <br>
-                  <span style="font-weight:normal">[1]: http://url/b.jpg</span>
-                </td>
-                <td class="tg-7zrl">
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">&gt; Blockquote</span>
-                </td>
-                <td class="tg-7zrl">
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">Blockquote</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">* List</span>
-                  <br>
-                  <span style="font-weight:normal">* List</span>
-                  <br>
-                  <span style="font-weight:normal">* List</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">- List</span>
-                  <br>
-                  <span style="font-weight:normal">- List</span>
-                  <br>
-                  <span style="font-weight:normal">- List</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">List</span>
-                  <br>
-                  <span style="font-weight:normal">List</span>
-                  <br>
-                  <span style="font-weight:normal">List</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">1. One</span>
-                  <br>
-                  <span style="font-weight:normal">2. Two</span>
-                  <br>
-                  <span style="font-weight:normal">3. Three</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">1) One</span>
-                  <br>
-                  <span style="font-weight:normal">2) Two</span>
-                  <br>
-                  <span style="font-weight:normal">3) Three</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">One</span>
-                  <br>
-                  <span style="font-weight:normal">Two</span>
-                  <br>
-                  <span style="font-weight:normal">Three</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">Horizontal rule:</span>
-                  <br>
-                  <br>
-                  <span style="font-weight:normal">---</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">Horizontal rule:</span>
-                  <br>
-                  <br>
-                  <span style="font-weight:normal">***</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">Horizontal rule:</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">`Inline code` with backticks</span>
-                </td>
-                <td class="tg-7zrl">
-
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">Inline code with backticks</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">```</span>
-                  <br>
-                  <span style="font-weight:normal"># code block</span>
-                  <br>
-                  <span style="font-weight:normal">print '3 backticks or'</span>
-                  <br>
-                  <span style="font-weight:normal">print 'indent 4 spaces'</span>
-                  <br>
-                  <span style="font-weight:normal">```</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal">····# code block</span>
-                  <br>
-                  <span style="font-weight:normal">····print '3 backticks or'</span>
-                  <br>
-                  <span style="font-weight:normal">····print 'indent 4 spaces'</span>
-                </td>
-                <td class="tg-7zrl">
-                  <span style="font-weight:normal"># code block</span>
-                  <br>
-                  <span style="font-weight:normal">print '3 backticks or'</span>
-                  <br>
-                  <span style="font-weight:normal">print 'indent 4 spaces'</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+      </div>  
     </section>
 
     <!-- Форми -->
-    <h2 class="title">Різновиди форм (приклади) </h2>
+    <h2 id="about-forms" class="title">Різновиди форм (приклади) </h2>
     <div class="container">
       <section class="big__forms">
         <h3>
@@ -407,7 +242,7 @@
           </button>
         </form>
       </section>
-    </div>  
+
       <section class='work-volunter'>
         <h3 class='title' style="font-family:verdana;color:#9900cc;">
           Форма замовлень для волонтерів
@@ -599,7 +434,6 @@
           </form>
         </div>
       </section>
-
       <section class="order">
         <div class="row">
           <div class="col-75">
@@ -687,8 +521,9 @@
           </div>
         </div>
       </section>
+    </div>
   </main>
-  <footer>
+  <footer class="about-us" id="about-us">
     <section class="group">
       <div class="container">
         <div class="group_info">
