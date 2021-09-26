@@ -78,5 +78,23 @@
 				<hobby>Psychology</hobby>
 				<knowledge>HTML,CSS,JS,WP</knowledge>
 			</soldier>
+			<soldier>
+				<number>10</number>
+				<nameOfSlack>Denys Kutimskyi</nameOfSlack>
+				<name>Denys</name>
+				<pseudo>DannyUA</pseudo>
+				<homeCity>Kiyv</homeCity>
+				<hobby>mixed martial arts</hobby>
+				<hobby>vynil records</hobby>
+				<hobby>anime</hobby>
+			</soldier>
+			<soldier>
+				<number>11</number>
+				<nameOfSlack>[]Roman</nameOfSlack>
+				<name>Roman</name>
+				<pseudo>Dozor</pseudo>
+				<homeCity>Kyiv</homeCity>
+				<hobby>fishing</hobby>
+			</soldier>
 		</soldiers>
 	   </document>
