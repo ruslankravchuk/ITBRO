@@ -53,6 +53,10 @@ label, select {
   font-size: 24px;
 }
 
+h1, h2, h3 {
+  text-align: center;
+}
+
 .btn {
   background-color: #4CAF50;
   color: white;
@@ -129,6 +133,7 @@ span.price {
 
 
 
+
 @media (max-width: 800px) {
   .row {
     flex-direction: column-reverse;
@@ -139,6 +144,22 @@ span.price {
   }
 }
 
-h1, h2 {
-  text-align: center;
-}
+.topbutton {
+  width:100px;
+  border:2px solid #ccc;
+  background:#f7f7f7;
+  text-align:center;
+  padding:10px;
+  position:fixed;
+  bottom:50px;
+  right:0px;
+  cursor:pointer;
+  color:#333;
+  font-family:verdana;
+  font-size:12px;
+  text-decoration: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  }
