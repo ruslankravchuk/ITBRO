@@ -12,10 +12,12 @@
 			<soldier number="5" name="Yurii" pseudo="Rachuk" homeCity="Zaporizhzhia" hobby="guitar">YuriiRachuk</soldier>
 			<soldier number="6" name="Ruslan" pseudo="Ruslan" homeCity="Zhytomyr" hobby="bicycle">RuslanKravchuk</soldier>
 			<soldier number="7" name="Олександр Гребінь" pseudo="Suddenly Snail" homeCity="Vatutine" hobby="Carp fishing/Guitar playng/Bike cycling">Олександр Гребінь</soldier>
-      <soldier number="8" name="Dmitriy Tolkachov" pseudo="Billy_Bones" homeCity="Kryvui Rig" hobby="Run/Bike cycling">Billy_Bones</soldier>
+      		<soldier number="8" name="Dmitriy Tolkachov" pseudo="Billy_Bones" homeCity="Kryvui Rig" hobby="Run/Bike cycling">Billy_Bones</soldier>
 			<soldier number="9" name="Tetiana" pseudo="ATO-it" homeCity="Severodonetsk" hobby="Psychology" knowledge="HTML,CSS,JS,WP">[][]Tetiana</soldier>
-			<div>			
-			<soldier number="10" name="Denys" pseudo="DannyUA" homeCity="Kiyv" hobby="mixed martial arts" hobby="vynil records" hobby="anime" >VDenys Kutimskyi</soldier>
-			<soldier number="11" name="Roman" pseudo="Dozor" homeCity="Kyiv" hobby="fishing">RomanDozor</soldier>
+			<soldier number="10" name="Oleksandr" pseudo="Black" homeCity="Vinnytsya" hobby="cycling">OleksandrChornyy</soldier>
+			<soldier number="11" name="Denys" pseudo="DannyUA" homeCity="Kiyv" hobby="mixed martial arts" hobby="vynil records" hobby="anime" >VDenys Kutimskyi</soldier>
+			<soldier number="12" name="Roman" pseudo="Dozor" homeCity="Kyiv" hobby="fishing">RomanDozor</soldier>
+			<soldier number="13" name="Wadim" pseudo="Mukoid" homeCity="Uman" hobby="Hunting, Rock Music, History">Wadim Mukoid</soldier>
+
 		</soldiers>
 	</document>
