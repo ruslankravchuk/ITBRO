@@ -1,0 +1,41 @@
+{
+  "Fname/Lname": "Volodymyr Lomko",
+  "age": 30,
+  "Country": "Ukraine",
+  "Properties": [
+    "Driving a car",
+    "Maried",
+    "Hobby - fishing"
+  ]
+    }
+    {
+      "Fname/Lname": "John Smith",
+      "age": 29,
+      "Country": "USA",
+      "Properties": [
+        "Driving a car",
+        "Not married",
+        "Hobby - hunting"
+      ]
+    }
+    {
+      "Fname/Lname": "Jessica Johnson",
+      "age": 32,
+      "Country": "Canada",
+      "Properties": [
+        "Driving a car",
+        "Maried",
+        "Hobby - cooking"
+      ]
+    }
+    {
+      "Fname/Lname": "Juanita Diabolo",
+      "age": 23,
+      "Country": "Spain",
+      "Properties": [
+        "Does not drive a car",
+        "Not married",
+        "Hobby - rally"
+      ]
+    }
+
