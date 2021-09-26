@@ -22,5 +22,6 @@
 			<soldier number="15" name="Kos" pseudo="Kostyantyn" homeCity="Cherkasy" hobby="Shootinge">Kos</soldier>	
 			<soldier number = "16" nameOfSlack ="[][]Сергей" name ="Serj" pseudo="Kambrod" homeCity="Dnepr" hobby="Rock Music, Gotic-Rock, Beer" > Сергей </soldier>
 			<soldier number="17" name="Eduard" pseudo="BlackFast" homeCity="Brovary" hobby="cycling">EduardDykanj</soldier>
+			<soldier number="18" nameOfSlack="Oleksandr" name="Sasha" pseudo="sasha555m" homeCity="Lviv">Oleksandr</soldier>
 		</soldiers>
 	</document>
