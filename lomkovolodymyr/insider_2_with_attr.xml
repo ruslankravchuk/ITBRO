@@ -2,10 +2,9 @@
 	<document>
 		<head>
 			<groupname>Insider</groupname>
-			<docDate>23.09.2021</docDate>
+			<docDate>26.09.2021</docDate>
 		</head>
 		<soldiers>
-			<soldier number="1" name="Vladyslav" pseudo="Hans" homeCity="Vinnytsya" hobby="historical medieval battle">VladyslavHans</soldier>
-			<soldier number="4" name="Volodymyr" pseudo="Indeets" homeCity="Mariupol" hobby="cars cooking fishing">Volodymyr Lomko</soldier>
+			<soldier number="1" name="Volodymyr" pseudo="Indeets" homeCity="Mariupol" hobby="cars cooking fishing">[]Volodymyr Lomko</soldier>
 		</soldiers>
 	</document>

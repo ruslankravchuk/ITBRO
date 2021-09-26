@@ -2,20 +2,11 @@
 	<document>
 		<head>
 			<groupname>Insider</groupname>
-			<docDate>23.09.2021</docDate>
+			<docDate>26.09.2021</docDate>
 		</head>
 		<soldiers>
 			<soldier>
 				<number>1</number>
-				<nameOfSlack>VladyslavHans</nameOfSlack>
-				<name>Vladyslav</name>
-				<pseudo>Hans</pseudo>
-				<homeCity>Vinnytsya</homeCity>
-				<hobby>historical medieval battle</hobby>
-			</soldier>
-			<!--info about Volodymyr Lomko-->
-			<soldier>
-				<number>3</number>
 				<nameOfSlack>[]Volodymyr Lomko</nameOfSlack>
 				<name>Volodymyr</name>
 				<pseudo>Indeets</pseudo>
