@@ -78,5 +78,13 @@
 				<hobby>Psychology</hobby>
 				<knowledge>HTML,CSS,JS,WP</knowledge>
 			</soldier>
+			<soldier>
+				<number>10</number>
+				<nameOfSlack>[]OleksandrChornyy</nameOfSlack>
+				<name>Oleksandr</name>
+				<pseudo>Black</pseudo>
+				<homeCity>Vinnytsya</homeCity>
+				<hobby>cycling</hobby>
+			</soldier>
 		</soldiers>
 	   </document>
