@@ -112,5 +112,37 @@
 				<homeCity>Uman</homeCity>
 				<hobby>Hunting, Rock Music, History</hobby>
 			</soldier>	
+			<soldier>
+				<number>14</number>
+				<nameOfSlack>[]Volodymyr Lomko</nameOfSlack>
+				<name>Volodymyr</name>
+				<pseudo>Indeets</pseudo>
+				<homeCity>Mariupol</homeCity>
+				<hobby>cars cooking fishing</hobby>
+			</soldier>
+			<soldier>
+				<number>15</number>
+				<nameOfSlack>Kos</nameOfSlack>
+				<name>Kostyantyn</name>
+				<pseudo>Zabishny</pseudo>
+				<homeCity>Cherkasy</homeCity>
+				<hobby>shooting</hobby>
+			</soldier>
+			<soldier>
+				<number>16</number>
+				<nameOfSlack>[][]Сергей</nameOfSlack>
+				<name>Serj</name>
+				<pseudo>Kambrod</pseudo>
+				<homeCity>Dnepr</homeCity>
+				<hobby> Rock Music, Gotic-Rock, Beer</hobby>
+		   </soldier>
+		   <soldier>
+				<number>17</number>
+				<nameOfSlack>Eduard</nameOfSlack>
+				<name>Eduard</name>
+				<pseudo>Fast</pseudo>
+				<homeCity>Brovary</homeCity>
+				<hobby>cycling</hobby>
+			</soldier>
 		</soldiers>
 	   </document>

@@ -18,6 +18,9 @@
 			<soldier number="11" name="Denys" pseudo="DannyUA" homeCity="Kiyv" hobby="mixed martial arts" hobby="vynil records" hobby="anime" >VDenys Kutimskyi</soldier>
 			<soldier number="12" name="Roman" pseudo="Dozor" homeCity="Kyiv" hobby="fishing">RomanDozor</soldier>
 			<soldier number="13" name="Wadim" pseudo="Mukoid" homeCity="Uman" hobby="Hunting, Rock Music, History">Wadim Mukoid</soldier>
-
+			<soldier number="14" name="Volodymyr" pseudo="Indeets" homeCity="Mariupol" hobby="cars cooking fishing">Volodymyr Lomko</soldier>		
+			<soldier number="15" name="Kos" pseudo="Kostyantyn" homeCity="Cherkasy" hobby="Shootinge">Kos</soldier>	
+			<soldier number = "16" nameOfSlack ="[][]Сергей" name ="Serj" pseudo="Kambrod" homeCity="Dnepr" hobby="Rock Music, Gotic-Rock, Beer" > Сергей </soldier>
+			<soldier number="17" name="Eduard" pseudo="BlackFast" homeCity="Brovary" hobby="cycling">EduardDykanj</soldier>
 		</soldiers>
 	</document>
