@@ -1,0 +1,606 @@
+<!-- зачаровано сквадом
+.dP"Y8 88  dP""b8 8b    d8    db      888888
+`Ybo." 88 dP   `" 88b  d88   dPYb      88__
+o.`Y8b 88 Yb  "88 88YbdP88  dP__Yb     88""
+8bodP' 88  YboodP 88 YY 88 dP""""Yb   888888
+-->
+
+<!DOCTYPE html> 
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown туторіал</title>
+    <link href="css/prism.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <img src="images/SIGMAwallpaperV2.png" alt="SIGMA-SQUAD">
+            <h1> Туторіал з Markdown</h1>
+        <!-- <h6><code>Затвердженно міністерством магії</code></h6> -->
+        </div>
+        <div class="main">
+            <p>Абзаци створюються за допомогою порожнього рядка. Якщо навколо тексту зверху і знизу є порожні рядки, то
+                текст перетворюється в абзац.</p>
+            <p>Щоб зробити перенесення рядка замість абзацу, потрібно поставити два пробілу в кінці попереднього рядка.
+            </p>
+            <p>Заголовки відзначаються дієз `#` на початку рядка, від одного до шести. наприклад:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown">
+    # Заголовок першого рівня #
+    ## Заголовок h2
+    ### Заголовок h3
+    #### Заголовок h4
+    ##### Заголовок h5
+    ###### Заголовок h6
+                    </code>
+                </pre>
+                <pre>
+                    <h1>Заголовок першого рівня</h1>  <!--Element h1-h6 not allowed as child of element pre in this context-->
+                    <h2>Заголовок h2</h2>
+                    <h3>Заголовок h3</h3>
+                    <h4>Заголовок h4</h4>
+                    <h5>Заголовок h5</h5>
+                    <h6>Заголовок h6</h6>
+                </pre>
+            </div>
+            <p>У декоративних цілях заголовки можна «закривати» із зворотного боку.</p>
+            <h3>Списки</h3>
+            <p>Для розмітки невпорядкованих списків можна використовувати або *, або -, або +:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown">
+    - елемент 1
+    - елемент 2
+    - елемент ...
+                    </code>
+                </pre>
+                <pre>  <!--Element ul not allowed as child of element pre in this context-->
+                    <ul> 
+                        <li>елемент 1</li>
+                        <li>елемент 2</li>
+                        <li>елемент ...</li>
+                    </ul>
+                </pre>
+            </div>
+            <p>Вкладені пункти мають бути створені чотирма пробілами перед маркером пункту:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown">
+    * елемент 1
+    * елемент 2
+        * вкладений елемент 2.1
+        * вкладений елемент 2.2
+    * елемент ...
+                    </code>
+                </pre>
+                <pre>
+                    <ul> <!--Element ul not allowed as child of element pre in this context-->
+                        <li>елемент 1</li>
+                        <li>елемент 2
+                            <ul>
+                                <li>вкладений елемент 2.1</li>
+                                <li>вкладений елемент 2.2</li>
+                            </ul>
+                        </li>
+                        <li>елемент ...</li>
+                    </ul>
+                </pre>
+            </div>
+            <p>Впорядкований список:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown">
+    1. елемент 1
+    2. елемент 2
+        1. вкладений
+        2. вкладений
+    3. елемент 3
+    4. Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+    Suspendisse id sem consectetuer libero luctus adipiscing.
+                    </code>
+                </pre>
+                <pre>
+                    <ol> <!--Element ol not allowed as child of element pre in this context-->
+                        <li>елемент 1</li>
+                        <li>елемент 2
+                            <ol>
+                                <li>вкладений</li>
+                                <li>вкладений</li>
+                            </ol>
+                        </li>
+                        <li>елемент ...</li>
+                    </ol>
+                </pre>
+            </div>
+            <p>Насправді не важливо як в коді пронумеровані пункти, головне, щоб перед елементом списку стояла цифра
+                (будь-яка) з точкою. Можна зробити і так:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown">
+    0. елемент 1
+    0. елемент 2
+    0. елемент 3
+    0. елемент 4
+                    </code>
+                </pre>
+                <pre>
+                    <ol> <!--Element ol not allowed as child of element pre in this context-->
+                        <li>елемент 1</li>
+                        <li>елемент 2</li>
+                        <li>елемент 3</li>
+                        <li>елемент 4</li>
+                    </ol>
+                </pre>
+            </div>
+            <p>Список з абзацами:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown">
+    Один абзац. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+    Два абзаца. Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+    Suspendisse id sem consectetuer libero luctus adipiscing.
+
+    Три абзаца. Ea, quis, alias nobis porro quos laborum minus sed fuga odio
+    dolore natus quas cum enim necessitatibus magni provident non saepe sequi?
+
+    Чотири абзаца (Чотири пробіла на початку або один tab).
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <p>Один абзац. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                    <p>Два абзаца. Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem
+                        consectetuer libero luctus adipiscing.</p>
+
+                    <p>Три абзаца. Ea, quis, alias nobis porro quos laborum minus sed fuga odio dolore natus quas cum
+                        enim necessitatibus magni provident non saepe sequi?</p>
+
+                    <p>Чотири абзаца (Чотири пробіла на початку або один tab).</p>
+                </div>
+            </div>
+            <h3>Цитати</h3>
+            <p>Цитати оформляються як в емейл-пошті, за допомогою символу `>`:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown">
+    > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+    > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+    > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+    >
+    > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+    > id sem consectetuer libero luctus adipiscing.
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <blockquote>
+                        <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in,
+                            laoreet vitae, risus.</p>
+
+                        <p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem consectetuer
+                            libero luctus adipiscing.</p>
+                    </blockquote>
+                </div>
+            </div>
+            <p>Або більш ледачим способом, коли знак `>` ставиться перед кожним елементом цитати, чи то абзац, заголовок
+                або порожній рядок:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown">
+    > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+    consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+    Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+    >
+    > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+    id sem consectetuer libero luctus adipiscing.
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <blockquote>
+                        <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in,
+                            laoreet vitae, risus.</p>
+
+                        <p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem consectetuer
+                            libero luctus adipiscing.</p>
+                    </blockquote>
+                </div>
+            </div>
+            <p>У цитати можна вставляти все що завгодно, в тому числі вкладені цитати:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown">
+    > ## This is a header.
+    >
+    > 1.   This is the first list item.
+    > 2.   This is the second list item.
+    >
+    > > Вкладена цитата.
+    >
+    > Here's some example code:
+    >
+    >     return shell_exec("echo $input | $markdown_script");
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <blockquote>
+                        <h2>This is a header.</h2>
+                        <ol>
+                            <li>This is the first list item.</li>
+                            <li>This is the second list item.</li>
+                        </ol>
+                        <blockquote>
+                            <p>Вкладена цитата.</p>
+                        </blockquote>
+                        <p>Here's some example code:</p>
+                        <pre><code>return shell_exec("echo $input | $markdown_script");</code></pre>
+                    </blockquote>
+                </div>
+            </div>
+            <h3>Вихідний код</h3>
+            <p>У чистому Маркдауні блоки коду відбиваються 4 пробілами на початку кожного рядка.</p>
+            <p>Але в GitHub-Flavored Markdown (скорочено GFM) є більш зручний спосіб: ставимо по три апострофа (на
+                клавіші "~") до і після коду. Також можна вказати мову вихідного коду.</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown"> 
+    ```html
+    <h1 class="foo">h1. Heading 1</h1>
+    <h2>h2. Heading 2</h2>
+    <h3>h3. Heading 3</h3>
+    <h4>h4. Heading 4</h4>
+    <h5>h5. Heading 5</h5>
+    <h6>h6. Heading 6</h6>
+    ```
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <pre> 
+                        <code class="language-html">  <!--Bad value prism-html for attribute type on element script-->
+                            <script type="prism-html">  
+    <h1 class="foo">h1. Heading 1</h1>
+    <h2>h2. Heading 2</h2>
+    <h3>h3. Heading 3</h3>
+    <h4>h4. Heading 4</h4>
+    <h5>h5. Heading 5</h5>
+    <h6>h6. Heading 6</h6>
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <p>Найприємніше, що в коді не потрібно замінювати кутові дужки `<>` і амперсанд `&` на їх html-суті.</p> <!--Saw <>. Probable causes: Unescaped < (escape as &lt;) or mistyped start tag-->
+            <h3>Інлайн код</h3>
+            <p>Для вставки коду всередині пропозицій потрібно укладати цей код в апострофи (на
+                клавіші "~"). Приклад:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown">
+                        <script type="prism-html-markdown">
+    `<html class =" ie no-js ">`
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <pre>
+                        <code class="language-html"> <!--Bad value prism-html for attribute type on element script-->
+                            <script type="prism-html"> 
+    <html class =" ie no-js ">
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <p>Якщо всередині коду є апостроф, то код треба обрамити подвійними апострофами:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown"> 
+    ``There is a literal backtick (`) here.``
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <pre>
+                        <code class="language-html"> <!--Bad value prism-html for attribute type on element script-->
+                            <script type="prism-html"> 
+    There is a literal backtick (`) here.
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <h3>Горизонтальна риска</h3>
+            <p>"hr" створюється трьома зірочками або трьома рисками:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown">  <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown"> 
+    There is a text
+    ***
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <p>There is a text</p><hr>
+                </div>
+            </div>
+            <h3>Посилання</h3>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown">
+    [Це вбудоване посилання з title елементом](http://example.com/link "Я посилання").
+    Це — [без title](http://example.com/link).
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <p>Це вбудоване <a href="http://example.com/link" title="Я ссылка">посилання з title елементом</a> Це — <a href="http://example.com/link">без title</a></p>
+                </div>
+            </div>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown">
+    [1]: http://example.com/ "Optional Title Here"
+    [2]: http://example.com/some
+    [id]: http://example.com/links (Optional Title Here)
+    [короткий запис]: http://example.com/short
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <p>А ось <a href="http://example.com/" title="Optional Title Here">приклад</a> <a href="http://example.com/some">декількох</a> <a href="http://example.com/links" title="Optional Title Here">посилань</a> з розміткою як у виносок. Підійде і <a href="http://example.com/short">короткий запис</a> без вказівки id.</p>
+                </div>
+            </div>
+            <p>Виноска довгих посилань з речення сприяє збереженню читабельності вихідника. Виноски можна розташовувати в будь-якому місці документа.</p>
+            <h3>Акцент</h3>
+            <p>Виділяти слова можна за допомогою `*` і `_`. Одним символом для похилого тексту, два символу для жирного тексту, три - для похилого і жирного одночасно.</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown">
+    _italic_
+    *italic*
+    __strong__
+    **strong**
+    ***strong italic***
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <p>Наприклад, це <i>_italic_</i> і це теж <i>* italic *</i>. А ось так вже <strong>__strong__</strong>, і так теж <strong>** strong **</strong>. А так <strong><i>*** жирний і похилий ***</i></strong> одночасно.</p>
+                </div>
+            </div>
+            <h3>Зображення</h3>
+            <p>Зображення без `alt` текста:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown">
+    ![](images/IMG_1997.PNG)
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <p><img src="images/IMG_1997.PNG" alt=""></p>
+                </div>
+            </div>
+            <p>Зображення з `alt` текстом:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown">
+    ![Alt text](images/IMG_1997.PNG "Можна вказати title")
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <p><img src="images/IMG_1997.PNG" alt="Alt text" title="Можна вказати title"></p>
+                </div>
+            </div>
+            <p>Cинтаксис як у посилань, тільки перед відкриваючою квадратною дужкою ставиться знак оклику.</p>
+            <p>Зображення виноски:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown">
+    ![Зображення][image1]
+    ![Зображення][image2]
+    ![Зображення][image3]
+
+    [image1]: images/IMG_1997.PNG
+    [image2]: images/IMG_1997.PNG
+    [image3]: images/IMG_1997.PNG
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <p><img src="images/IMG_1997.PNG" alt="Alt text"><img src="images/IMG_1997.PNG" alt="Alt text"><img src="images/IMG_1997.PNG" alt="Alt text"></p>
+                </div>
+            </div>
+            <p>Зображення посилання:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown">
+    [![Alt text](images/IMG_1997.PNG)]
+    (http://example.com/)
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <p><a href="http://example.com/"><img src="images/IMG_1997.PNG" alt="Alt text"></a></p>
+                </div>
+            </div>
+            <h3>Використання HTML всередині Markdown</h3>
+            <p>Mожно змішувати Markdown і HTML. Якщо на якісь елементи потрібно поставити класи або атрибути, сміливо використовуємо HTML:</p>
+            <div class="markdownHighLights">
+                <pre> 
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown">
+    Виділяти слова можна за допомогою * і _.
+    Наприклад, це <em> italic </ em>
+    і це теж <i> italic </ i>.
+    А ось так вже <b> strong </ b>, і так теж <strong> strong </ strong>.
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <p>Виділяти слова можна за допомогою * і _. Наприклад, це <i>italic</i> і це теж <i>italic</i>. А ось так вже <strong>strong</strong>, і так теж <strong>strong.</strong></p>
+                </div>
+            </div>
+            <p>Можна і навпаки, всередині HTML-тегів використовувати Маркдаун:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-html"> <!--Bad value prism-html for attribute type on element script-->
+                        <script type="prism-html">
+    <Section class = "someclass">
+
+        ### Приклад Маркдауна всередині HTML
+
+        Виділяти слова можна за допомогою `*` і `_`.
+        Наприклад, це _italic_ і це теж * italic *.
+        А ось так вже __strong__, і так теж ** strong **.
+
+    </Section>
+                    </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                        <h3> Приклад Маркдауна всередині HTML </h3>
+                        <p> Виділяти слова можна за допомогою <code> * </code> і <code> _ </code>. Наприклад, це <em> italic </em> і це теж <em> italic </em>. А ось так вже <strong> strong </strong>, і так теж <strong> strong </strong>. </p>
+                </div>
+            </div>
+            <h3>Таблиці</h3>
+            <p>У чистому Маркдауні немає синтаксису для таблиць, а в GFM є:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown">
+    First Header  | Second Header
+    ------------- | -------------
+    Content Cell  | Content Cell
+    Content Cell  | Content Cell
+                        </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <table>
+                        <thead>
+                        <tr>
+                        <th>First Header</th>
+                        <th>Second Header</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td>Content Cell</td>
+                        <td>Content Cell</td>
+                        </tr>
+                        <tr>
+                        <td>Content Cell</td>
+                        <td>Content Cell</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p>Для краси можна і з боків лінії поставити:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown">
+    |First Header  | Second Header|
+    |------------- | -------------|
+    |Content Cell  | Content Cell |
+    |Content Cell  | Content Cell |
+                        </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <table>
+                        <thead>
+                        <tr>
+                        <th>First Header</th>
+                        <th>Second Header</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td>Content Cell</td>
+                        <td>Content Cell</td>
+                        </tr>
+                        <tr>
+                        <td>Content Cell</td>
+                        <td>Content Cell</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p>Можна керувати вирівнюванням стовпців за допомогою двокрапки:</p>
+            <div class="markdownHighLights">
+                <pre>
+                    <code class="language-markdown"> <!--Bad value prism-html-markdown for attribute type on element script-->
+                        <script type="prism-html-markdown">
+    | Left-Aligned  | Center Aligned  | Right Aligned |
+    |:------------- |:---------------:| -------------:|
+    | col 3 is      | some wordy text |    **100grn** |
+    | col 2 is      | centered        |       12grn   |
+    | zebra stripes | are neat        |      ~~1grn~~ |
+                        </script>
+                    </code>
+                </pre>
+                <div class="MDDescription">
+                    <table>
+                        <thead>
+                        <tr>
+                        <th style="text-align:left">Left-Aligned</th>
+                        <th style="text-align:center">Center Aligned</th>
+                        <th style="text-align:right">Right Aligned</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td style="text-align:left">col 3 is</td>
+                        <td style="text-align:center">some wordy text</td>
+                        <td style="text-align:right"><strong>100grn</strong></td>
+                        </tr>
+                        <tr>
+                        <td style="text-align:left">col 2 is</td>
+                        <td style="text-align:center">centered</td>
+                        <td style="text-align:right">12grn</td>
+                        </tr>
+                        <tr>
+                        <td style="text-align:left">zebra stripes</td>
+                        <td style="text-align:center">are neat</td>
+                        <td style="text-align:right"><s>1grn</s></td>
+                        </tr>
+                        </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>ЗАЧАРОВАНО SIGMA Σ 2021</h2>
+        </div>
+    </div>
+    <script src="./js/prism.js"></script>
+</body>
+
+
+</html>

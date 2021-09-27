@@ -1,0 +1,128 @@
+<!-- зачаровано сквадом
+.dP"Y8 88  dP""b8 8b    d8    db      888888
+`Ybo." 88 dP   `" 88b  d88   dPYb      88__
+o.`Y8b 88 Yb  "88 88YbdP88  dP__Yb     88""
+8bodP' 88  YboodP 88 YY 88 dP""""Yb   888888
+-->
+
+<!DOCTYPE HTML>
+ <html> <!-- Consider adding a lang attribute to the html start tag to declare the language of this document. -->
+
+<head>
+  <meta charset="utf-8">
+  <title>FORM</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+  <form>
+    <div class="formDiv">
+      <p>
+        <b><label for="text">Обов'язкові поля:</label></b><Br> <!-- The value of the for attribute of the label element must be the ID of a non-hidden form control. -->
+        <input type="text" placeholder="Обов'язково заповніть *" size="20" maxlength="12" required>
+      </p>
+      <p>
+        <b><label for="password">Паролі з обмеженною кількістю символів та з обов'язковим заповненням: 
+          </label></b><Br>
+        <input type="password" placeholder="Введіть пароль" size="20" maxlength="12" required>
+      </p>
+      <p>
+        <b><label for="text">Поле з обмеженою кількістю символів до 12: </label></b><Br> <!-- The value of the for attribute of the label element must be the ID of a non-hidden form control. -->
+        <input type="text" placeholder="Введіть номер телефону" size="20" maxlength="12">
+      </p>
+      <p>
+        <b><label for="number">Числове поле: </label></b><Br>
+        <input type="number" placeholder="Введіть число" size="20"> <!-- Attribute size not allowed on element input at this point. -->
+      </p>
+      <p>
+        <b><label for="email">Поле для вводу емейлу: </label></b><Br>
+        <input type="email" placeholder="Введіть emeil" size="20">
+      </p>
+      <p>
+        <b><label for="tel">Поле для вводу номеру телефона: </label></b><Br>
+        <input type="tel" placeholder="Введіть телефон" size="20">
+      </p>
+      <p>
+        <b><label for="range">Поле типу range: </label></b><Br>
+        <input type="range" name="range" min="0" max="25">
+      </p>
+      <p>
+        <b><label for="url">Поле для вводу посилання: </label></b><Br>
+        <input type="url" name="url" placeholder="введіть посилання">
+      </p>
+      <p>
+        <b><label for="color">Поле для вибору кольору: </label></b><Br>
+        <input type="color">
+      </p>
+      <p>
+        <b><label for="date">Дата: </label></b><Br>
+        <input type="date" name="date">
+      </p>
+      <p>
+        <b><label for="file">Додавання файлу:</label></b><Br>
+        <input type="file" name="file">
+      </p>
+      <p>
+        <b><label for="image">Кнопка - малюнок:</label></b><Br>
+        <input type="image" name="image" src="./photo.jpeg" width="50"> <!-- Element input is missing required attribute alt -->
+      </p>
+      <p> <b>Вибери одне:</b></p>
+      <p> <input type="radio" name="answer" value="a1">1<Br>
+        <input type="radio" name="answer" value="a2">2<Br>
+        <input type="radio" name="answer" value="a3">3
+      </p>
+      <p> <b>Підтверди все:</b></p>
+      <p> <input type="checkbox" name="answer" value="a1">1<Br>
+        <input type="checkbox" name="answer" value="a2">2<Br>
+        <input type="checkbox" name="answer" value="a3">3
+      </p>
+      <p>
+        <b>Текстове поле:</b><Br>
+        <textarea rows="10" cols="45" name="text"></textarea>
+      </p>
+      <p>
+        <b>Текстове поле з парметром "readonly":</b><Br>
+        <textarea rows="10" cols="45" name="text" readonly>
+
+          const Counter = () => {
+          const [clicks, setClicks] = useState(0);
+          const [step1, setStep1] = useState(1);
+          const [step2, setStep2] = useState(1);
+
+          const showValue = () => {
+            setTimeout(() => {
+              alert(clicks);
+            }, 3000)
+          }
+        </textarea>
+      </p>
+      <p>
+        <b>Селекторне поле:</b><Br>
+        <select>
+
+          <option>Пункт 1</option>
+
+          <option>Пункт 2</option>
+
+        </select>
+      </p>
+      <p>
+        <b>Мульти селект</b>
+        <select name="multi" id="multi" multiple>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </p>
+      <p>
+        <button type="reset"> Відмінити зміни </button>
+        <button type="submit"> Відправити </button>
+      </p>
+    </div>
+  </form>
+
+</body>
+
+</html>
