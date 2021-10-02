@@ -1,0 +1,220 @@
+@import '_normalize'
+@import '_varible'
+@import '_animations'
+main
+    max-width: 100%
+    min-height: 100vh
+    margin: 0 auto
+    background-repeat: no-repeat
+    +flex
+    position: relative
+    background-size: cover
+    overflow: hidden
+    .submarine
+     position: absolute
+     bottom: .4vw
+     right:  42%
+     max-height: 13vw
+     z-index: 1
+     min-width: 24vw
+     animation: anim_u-96_boom 20s linear infinite normal paused
+     >div:first-child
+        min-height: 17vw
+        width: 19vw
+        background-repeat: no-repeat
+        background-size: contain
+        img:first-child
+         position: absolute
+         top: 6.9vw
+         left: 3.3vw
+         width: 1.7vw
+         z-index: -1
+     .cat
+       position: absolute
+       z-index: -1
+       left: 15%
+       top: 4.8vw
+       animation: anim_cat_boom 20s linear infinite normal paused
+       img
+          transform: rotate(-38deg)
+          width: 6.5vw
+     .bubbles
+       width: 3vw
+       position: absolute
+       top: 1vw
+       right: 2vw
+       height: 11vw
+       div:first-child
+           img
+               animation: anim_bubbl 1.6s infinite linear  paused
+       div:nth-child(2)
+            img
+               animation: anim_bubbl 2s infinite linear  paused
+       div:nth-child(3)
+            img
+               animation: anim_bubbl 2s infinite linear paused
+       div:nth-child(4)
+            img
+               animation: anim_bubbl 2.5s infinite linear  paused
+       div:nth-child(5)
+            img
+               animation: anim_bubbl 1.4s infinite linear paused
+
+    .wave
+     bottom: 0
+     height: 23vw
+     min-width: 100%
+     position: absolute
+     overflow: hidden
+     >div:nth-child(1), div:nth-child(2)
+      min-height: 100%
+      min-width: 100%
+      position: absolute
+      bottom: 0
+      background-repeat: no-repeat
+      background-size: cover
+     .wave_1
+          background-image: url(../img/wave_2.png)
+          animation: anim_wave_1 4s ease infinite alternate paused
+          width: 115vw
+     .wave_2
+          background-image: url(../img/wave.png)
+          animation: anim_wave_2 4s ease infinite alternate  paused
+          width: 115vw
+    .big_ice
+      max-height: 20vw
+      max-width: 9vw
+      position: absolute
+      top: 50%
+      left: 50%
+      z-index: 1
+      +flex
+      flex-direction: column
+      opacity: 1
+      padding: 0
+      box-sizing: border-box
+      animation: anim_ice 2.6s linear infinite alternate paused
+      img
+        max-width: 12vw
+      img:nth-child(2)
+         margin-top: -3.5vw
+         z-index: -1
+      img:last-child
+         position: absolute
+         top: -7vw
+         left: 2.5vw
+         opacity: 0
+         animation: anim_flag_boom 20s linear infinite normal paused
+    .mine
+       width: 3.5vw
+       height: 4vw
+       background-image: url(..//img/mine.png)
+       position: absolute
+       top: 16.9vw
+       background-size: 1232% 736%
+       background-position: 66% 45%
+       z-index: 1
+       right: 12vw
+       animation: anim_mine_boom 20s linear infinite normal paused
+    .fire_boom
+       width: 3.5vw
+       height: 4vw
+       position: absolute
+       top: 16.9vw
+       z-index: 1
+       right: 12vw
+       animation: anim_fire_boom  20s linear infinite normal paused
+
+    .torpeds
+      position: absolute
+      left: 160vw
+      top: 40vw
+      +flex
+      animation: torped_boom 20s linear infinite normal paused
+    .aurora, .stars_on_sky
+      min-height: 23vw
+      min-width: 100%
+      position: absolute
+      background-repeat: no-repeat
+      background-size: cover
+      top: 0
+    .aurora
+      background-size: 100% 302%
+      top: 12vh
+      min-height: 11vw
+    .stars_on_sky
+      min-height: 17vw
+      .frozen
+       width: 2vw
+       height: 2vw
+       background-color: rgba(36,124,178, 0.1)
+       outline-style: none
+       cursor: pointer
+       background-size: 100% 100%
+       border: 0px
+       right: 6vw
+       top: 6vw
+       position: absolute
+       animation: rotating 1s linear infinite alternate
+      .boolid
+       width: 5vw
+       height: 5vw
+       background-image: url(..//img/comet.png)
+       background-color: rgba(36,124,178, 0.1)
+       outline-style: none
+       cursor: pointer
+       background-size: 111% 113%
+       border: 0px
+       left: 16vw
+       top: -1vw
+       position: absolute
+       animation: comet 4s linear infinite paused
+      &>div
+          position: absolute
+      .messadge
+         position: absolute
+         right: 5.6vw
+         top: 9vw
+         max-height: 3vw
+         display: none
+         align-items: center
+         flex-direction: column
+         p
+          font-size: 1rem
+          color: red
+          margin: 0
+          font-family: "roboto"
+          animation: blink .6s ease alternate infinite
+
+      .star
+         &_one
+           top: 10vw
+           right: 3vw
+           animation: anim_star_one 1s  infinite alternate paused
+           img
+             width: .7vw
+         &_two
+           top: 7vw
+           left: 12vw
+           animation: anim_star_one 2.5s  infinite alternate paused
+           img
+              width: .7vw
+         &_three
+           top: 5vw
+           left: 42vw
+           animation: anim_star_one 1.5s  infinite alternate paused
+           img
+               width: .7vw
+
+    .anim
+          animation-play-state: paused
+    .popup
+      +flex
+      font-size: 22px
+      background-color: white
+      min-width: 200px
+      min-height: 200px
+
+
+
+
