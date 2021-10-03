@@ -1,0 +1,42 @@
+{
+  "name": "my_and_luda",
+  "version": "1.0.0",
+  "description": "for_busines",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "gulp": "gulp"
+  },
+  "author": "Russ",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-uglify": "^3.0.2",
+    "smart-grid": "^2.1.2"
+  },
+  "dependencies": {
+    "gulp-less2sass": "0.0.2"
+  },
+  " overrideBrowserslist": [
+    "last 2 version",
+    "> 2%",
+    "IE 10",
+    "maintained node versions",
+    "not dead"
+  ]
+}
