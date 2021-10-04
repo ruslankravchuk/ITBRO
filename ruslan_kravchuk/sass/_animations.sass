@@ -1,0 +1,187 @@
+@keyframes anim_u-96 
+    0% 
+      transform: translateX(60vw) scale(.8) rotateY(0deg)
+    10% 
+       transform: translateX(50vw) scale(1) rotateY(0deg)
+    
+    50% 
+       transform: translateX(-49vw) scale(.7) rotateY(0deg) 
+       filter: blur(1px)  
+    56% 
+       transform: translateX(-55vw) scale(.3) rotateY(180deg)
+       filter: blur(5px)
+    90% 
+       transform: translateX(58vw)  scale(.3) rotateY(180deg)
+       filter: blur(2px)
+    100%
+       transform: translateX(60vw) scale(.8) rotateY(0deg)
+       filter: blur(0px)
+
+@keyframes anim_u-96_boom 
+    0% 
+      transform: translateX(60vw) scale(.8) rotateY(0deg)
+    35% 
+       transform: translateX(10vw) scale(1) skew(0, -5deg) 
+    55% 
+       transform: translateX(10vw) scale(1) skew(0, 5deg) 
+    75% 
+       transform: translateX(10vw) scale(1) skew(0, -5deg)        
+    100%
+       transform: translateX(10vw) scale(1) rotateY(0deg)
+       filter: blur(0px)
+
+@keyframes torped
+    0% 
+      transform: translateX(30vw) scale(.7) rotateY(180deg) skew(0, 10deg)    
+    49% 
+       transform: translateX(-60vw) scale(.7) rotateY(180deg) skew(0, 10deg) 
+       filter: blur(1px)  
+    58% 
+       transform: translateX(-110vw) scale(.3) rotateY(180deg) skew(0, 10deg)      
+       filter: blur(5px)
+    60% 
+       transform: translateX(-110vw) scale(.3) rotateY(0deg) skew(0, 10deg)      
+       filter: blur(5px)    
+    100%
+       transform: translateX(40vw) scale(.5) rotateY(0deg)skew(0, -10deg)
+       filter: blur(0px)
+
+@keyframes torped_boom
+    0% 
+      transform: translateX(-10vw)  rotateY(180deg) skew(0, 16deg)
+      opacity: 1        
+    48% 
+      transform: translateX(-77vw)  rotateY(180deg) skew(0, 16deg) 
+      opacity: 1        
+    60% 100%
+       transform: translateX(-77vw) rotateY(180deg)  skew(0, 16deg) 
+       opacity: 0    
+
+@keyframes anim_mine_boom 
+    0% 
+       opacity: 0 
+    19% 
+       opacity: 0     
+    20%
+       opacity: 1
+    55%
+       opacity: 1
+    60%    
+       opacity: 0
+    100%
+       opacity: 0 
+
+@keyframes anim_fire_boom 
+    0% 
+       opacity: 0 
+    47% 
+       opacity: 0     
+    51%
+       opacity: 1
+       transform: scale(2)
+    55%
+       opacity: 1
+       transform: scale(2.5)
+    70%    
+       opacity: 1
+    100%
+       opacity: 0        
+
+@keyframes  anim_bubbl
+    0% 
+      opacity: 1
+      transform: translateY(0vw)
+    25% 
+       transform: translateY(-3vw) translateX(2vw)       
+    75% 
+       transform: translateY(-6vw) translateX(4vw)
+    85%
+       opacity: .6
+       transform: translateY(-8vw) translateX(4.5vw)
+    100%
+       transform: translateY(-10vw) translateX(5vw)
+       opacity: 0
+@keyframes anim_cat_boom
+    0%
+       transform: translateY(0vw)       
+    58%
+       transform: translateY(0vw)        
+    60%
+       transform: translateY(-19.2vw) rotate(30deg) 
+    80%
+       transform: translateY(-19.2vw) rotate(45deg) 
+    85%
+       transform: translateY(-18.2vw) rotate(30deg) 
+    95%
+       transform: translateY(-17.7vw) rotate(45deg)
+    100% 
+        transform: translateY(0vw)
+
+@keyframes anim_flag_boom
+    0%
+       transform: translateY(0vw) 
+       opacity: 0
+    90% 
+       opacity: 0       
+    95%
+       opacity: 1    
+    100% 
+        transform: translateY(0vw) 
+        opacity: 1       
+@keyframes anim_wave_1 
+    0%, 100%
+       transform: translateX(-15vw)
+       opacity: .1             
+    50%
+       opacity: 1 
+       transform: translateX(0vw)   
+@keyframes anim_wave_2 
+    0%, 100%
+       opacity: 1
+       transform: translateX(0vw)             
+    50%
+       transform: translateX(-15vw)
+       opacity: .1
+@keyframes anim_ice 
+    0%
+         transform: rotate(19deg) translateY(0vw)   
+    
+    100%   
+         transform: translateY(2vw) rotate(-24deg)
+
+@keyframes anim_star_one
+     0%
+        opacity: 1
+        transform: scale(1.5)
+        filter: blur(0px)
+
+     100% 
+        opacity: 0
+        transform: scale(1.3)
+        filter: blur(4px)
+
+@keyframes blink
+      from 
+         opacity: 0
+      to 
+         opacity: 1
+@keyframes rotating 
+      from 
+         transform: rotate(-8deg)
+         filter: blur(2px)         
+      to 
+         transform: rotate(8deg)
+         filter: blur(0px)
+@keyframes comet 
+      0% 
+         opacity: 1
+         filter: blur(1px)
+         transform: rotateY(180deg) scale(.3)  translateY(-6vw)  translateX(0vw)
+      50%
+            
+      100%
+         opacity: 0
+         filter: blur(.6px)
+         transform: rotateY(180deg) scale(1) translateY(12vw) translateX(-13vw)
+
+                                  
