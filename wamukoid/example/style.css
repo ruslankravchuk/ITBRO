@@ -1,0 +1,48 @@
+h1 {
+  color: red;
+  text-align: center;
+}
+h2 {
+  color: blue;
+  text-align: center;
+}
+p, li {
+    color: green;
+}
+li {
+<!--  list-style-type: none; -->
+      list-style-type: kannada;
+      margin-top: 25px;
+      font-size: 200%;
+
+}
+ul {
+  list-style: disclosure-closed;
+}
+
+ul li::before {
+  content: "\200B";
+}
+.special {
+  color: orange;
+  font-weight: i;
+}
+.special2 {
+  color: black;
+  font-weight: bold;
+}
+h1 + p {
+  font-size: 200%;
+}
+a:link {
+  color: pink;
+}
+a:hover {
+  text-decoration: none;
+}
+body {
+  margin: 100px 100px 0;
+}
+footer{
+  text-align: right;
+}
