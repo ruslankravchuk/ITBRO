@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img/academi.JPG" type="images/x-icon">
+  <link rel="stylesheet" href="css/quality.css">
+  <title>Властивості CSS</title>
+</head>
+
+<body>
+  <article>
+    <h1>
+      Основи CSS. Топ стилів, що застосовуються в верстці.
+    </h1>
+    <p>
+      У цїй роботі по верстці сайтів застосовані приклади використання основних стилів CSS.
+    </p>
+    <h2>
+      Опис
+    </h2>
+    <nav>
+      <ul>
+        <li>
+          <a target="_self" href="#textdesign">
+            Стилі, що застосовуються для оформлення тексту
+          </a>
+        </li>
+        <li>
+          <a href="#item-position">
+            Позиціонування елементів
+          </a>
+        </li>
+        <li>
+          <a href="#indentation">
+            Відступи
+          </a>
+        </li>
+        <li>
+          <a href="#fon">
+            Фон
+          </a>
+        </li>
+        <li>
+          <a href="#scale">
+            Розміри
+          </a>
+        </li>
+        <li>
+          <a href="#pseudo">
+            Псевдокласи
+          </a>
+        </li>
+        <li>
+          <a href="#dop-psevdo">
+            Додаткові псевдокласи
+          </a>
+        </li>
+        <li>
+          <a href="#pseudo-elements">
+            Псевдоелементи
+          </a>
+        </li>
+        <li>
+          <a href="#animation">
+            Анімація
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <p>
+      Знаючи їх, можна зверстати досить складний макет сайту.
+    </p>
+    <p>
+      Давайте я вас з ними познайомлю.
+    </p>
+    <a class="btn" target="_blank" href="https://www.w3schools.com/css/default.asp">
+      Більш детально про CSS
+    </a>
+    <a class="btn" target="_blank" href="https://jsfiddle.net/user/webref/fiddles/">
+      АБО ТУТ- ПРИКЛАДИ
+    </a>
+    <form action="http://google.com/search/" target="_blank">
+      <p>
+        <input class="search" type="search" name="text" placeholder="Пошук по сайту">
+        <input type="hidden" name="as_sitesearch" value="/attribute.html">
+        <input type="submit" value="Знайти"></p>
+    </form>
+    <section id="textdesign" class="textdesign">
+      <h2>
+        Стилі, що застосовуються для оформлення тексту
+      </h2>
+      <ul>
+        <li>
+          <strong>
+            font-family
+          </strong>
+          <p>
+            Даний стиль служить для завдання гарнітури шрифту. Назва шрифтів перераховуються через кому, в разі, якщо
+            назва
+            складається більш ніж з одне слово необхідно використовувати лапки.
+          </p>
+          <p>
+            Приклад використання стилю:
+          </p>
+          <blockquote>
+            <p class="ff-noserif">
+              font-family: (шрифт без засічок), Arial, Helvetica, sans-serif;
+            </p>
+            <p class="ff-serifont">
+              font-family: (шрифт з засічками), "Times New Roman", Times, serif;
+            </p>
+            <p class="ff-monospafont">
+              font-family: (моноширинний шрифт), "Courier New", Courier, monospaced;
+            </p>
+          </blockquote>
+        </li>
+        <li>
+          <strong>
+            font-size
+          </strong>
+          <p>
+            Задається розмір шрифту (Наприклад, 14px, 12px і т.п.)
+          </p>
+          <p>
+            Приклад використання стилю:
+          </p>
+          <blockquote>
+            <p class="font12">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptates neque beatae eligendi unde?
+              Doloribus, a ullam ex fuga dolorem asperiores. Consectetur vero ducimus sapiente cumque sunt quam tenetur
+              mollitia?
+            </p>
+            <p class="font14">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptates neque beatae eligendi unde?
+              Doloribus, a ullam ex fuga dolorem asperiores. Consectetur vero ducimus sapiente cumque sunt quam tenetur
+              mollitia?
+            </p>
+          </blockquote>
+        </li>
+        <li>
+          <strong>
+            font-style
+          </strong>
+          <p>
+            Ця властивість визначає яким буде шрифт - звичайний, курсив (italic) або з нахилом (oblique)
+          </p>
+          <p>
+            Приклад використання стилю:
+          </p>
+          <blockquote>
+            <p class="fontyn">
+              <b>font-style:normal;</b><br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptates neque beatae eligendi unde?
+              Doloribus, a ullam ex fuga dolorem asperiores. Consectetur vero ducimus sapiente cumque sunt quam tenetur
+              mollitia?
+            </p>
+            <p class="fonty-ital">
+              <b>font-style: italic;</b><br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptates neque beatae eligendi unde?
+              Doloribus , a ullam ex fuga dolorem asperiores. Consectetur vero ducimus sapiente cumque sunt quam tenetur
+              mollitia?
+            </p>
+            <p class="fonty-obliq">
+              <b>font-style: oblique;</b><br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptates neque beatae eligendi unde?
+              Doloribus , a ullam ex fuga dolorem asperiores. Consectetur vero ducimus sapiente cumque sunt quam tenetur
+              mollitia?
+            </p>
+          </blockquote>
+        </li>
+        <li>
+          <strong>
+            color
+          </strong>
+          <p>
+            Даний стиль задає колір тексту. Для завдання кольору можна використовувати:
+          </p>
+          <ul>
+            <li class="colorhex">
+              як Хекс-значення кольору (16-річна система числення): color: #aa5588,
+            </li>
+            <li class="colorkey">
+              так і ряд ключових слів (color: red, color: black...)
+            </li>
+            <li class="colorRGB">
+              або від 0 до 255 (в десятичній системі числення): color: rgb(51, 193, 26);
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong>
+              text-align
+            </strong>
+          </p>
+          <p>
+            Даний стиль задає вирівнювання тексту всередині батьківського блоку. Може мати значення <b>left, right,
+              center</b>.
+            Є ще - <b>justify</b> , яке вирівнює текст по всій ширині батьківського блоку.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>
+              line-height
+            </strong>
+          </p>
+          <p>
+            Даний стиль задає відстань між рядків у текстовому блоці (або, іншими словами, змінює висоту рядка тексту,
+            ще
+            по розумному це називається "інтерліньяж").
+          </p>
+          <p>
+            Значення данної властивості задається у відсотках (100%, 150% ...), множником (1 - інтерліньяж за
+            замовчуванням,
+            1.5 - збільшений в півтора рази) або точним значенням в пікселах (10px, 1.5 em ...).
+          </p>
+          <p>
+            Наприклад, <b>line-height:20px;</b>
+          </p>
+          <blockquote>
+            <p class="lineH">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloribus obcaecati quas voluptatibus,
+              temporibus, nobis quam, necessitatibus aliquid numquam fugit natus deserunt provident harum fuga vero eum
+              cumque sed dolore!
+            </p>
+          </blockquote>
+          <p>
+            Наприклад, <b>line-height: 180%;</b>
+          </p>
+          <blockquote>
+            <p class="linerate">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloribus obcaecati quas voluptatibus,
+              temporibus, nobis quam, necessitatibus aliquid numquam fugit natus deserunt provident harum fuga vero eum
+              cumque sed dolore!
+            </p>
+          </blockquote>
+        </li>
+        <li>
+          <strong>
+            text-transform
+          </strong>
+          <p>
+            Якщо з якої-небудь причини вам необхідно змінити регістр букв в тексті веб-сторінки, на допомогу прийде
+            властивість CSS
+            text-transform.
+          </p>
+          <p>
+            Приклад використання стилю:
+          </p>
+          <blockquote>
+            <p class="tt-upp">
+              <b>text-transform: uppercase.</b> Робить великими (прописними) всі букви в тексті
+            </p>
+            <p class="tt-lower">
+              <b>text-transform:lowercase.</b> Робить малими всі букви в тексті
+            </p>
+            <p class="tt-cap">
+              <b>text-transform:capitalize.</b> Робить великою першу літеру кожного слова в тексті.
+            </p>
+            <p class="tt-none">
+              <b>text-transform:none.</b> Не робить змін.
+            </p>
+            <p class="tt-inh">
+              <b>text-transform:inherit.</b> Успадковує значення батька.
+            </p>
+          </blockquote>
+        </li>
+        <li>
+          <strong>
+            text-decoration
+          </strong>
+          <p>
+            Використовуючи властивість CSS text-decoration, можна додавати додаткові ефекти для тексту, такі як
+            підкреслення,
+            закреслення, миготіння.
+          </p>
+          <p>
+            Приклад використання стилю:
+          </p>
+          <blockquote>
+            <p class="td-under">
+              <b>text-decoration: underline.</b> Нижнє підкреслення тексту
+            </p>
+            <p class="td-over">
+              <b>text-decoration:overline.</b> Верхнє підкреслення тексту
+            </p>
+            <p class="td-line">
+              <b>text-decoration:line-through.</b> Закреслення тексту
+            </p>
+            <p class="td-none">
+              <b>text-decoration:none.</b> Видалення всіх ефектів.
+            </p>
+            <p class="td-inh">
+              <b>text-decoration:inherit.</b> Успадковує значення батька.
+            </p>
+          </blockquote>
+        </li>
+        <li>
+          <strong>
+            text-shadow
+          </strong>
+          <p>
+            Ще один спосіб прикрасити веб-сторінку - зробити текст з тінню в CSS. При грамотному застосуванні даного
+            стилю можна
+            вдало виділити заголовок, абзац, частина тексту. Ви можете налаштувати колір тіні, її зміщення і розмиття.
+          </p>
+          <img src="img/text-shadow.PNG" alt="text-shadow">
+          <p>
+            Приклад використання стилю:
+          </p>
+          <blockquote>
+            <p class="t-shad">
+              <b>text-shadow</b>
+            </p>
+            <p class="t-shad2">
+              <b>text-shadow</b>
+            </p>
+          </blockquote>
+        </li>
+        <li>
+          <p>
+            <strong>
+              letter-spacing
+            </strong>
+          </p>
+          <p class="let-spa">
+            Міжсимвольна відстань. Значення данної властивості вказується в одиницях довжини (пікселі, дюйми, pt), або у
+            відносних
+            одиницях - em.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>
+              word-spacing
+            </strong>
+          </p>
+          <p class="w-spacing">
+            Властивість CSS word-spacing відрізняється від попереднього тим, що встановлює відстань між словами, а не
+            між символами.
+            Для даної властивості теж передбачені значення "normal" і "inherit". Можна задавати негативні значення. Тут
+            показаний
+            приклад запису стилю та його вигляд:
+            <b>p {
+              word-spacing: 6px;
+              }</b>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>
+              font-weight
+            </strong>
+          </p>
+          <p class="fontbold">
+            При бажанні зробити текст блоку жирним - використовуйте стиль <span style="color:blue">font-weight:
+              bold</span>.
+          </p>
+          <p>
+            Якщо ви навпаки хочете прибрати жирне виділення - тут все просто <span
+              style="color: blueviolet;">font-weight:
+              normal</span>
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section id="item-position" class="item-position">
+      <h2>
+        Позиціонування елементів
+      </h2>
+      <ul>
+        <li>
+          <p>
+            <strong>
+              position
+            </strong>
+          </p>
+          <p>
+            За допомогою цієї властивості визначається позиція елемента щодо браузера:
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>
+              position:absolute
+            </strong>
+          </p>
+          <p>
+            Вказує, що елемент абсолютно позиціонується, при цьому інші елементи відображаються на веб-сторінці немов
+            абсолютно позиціонованого елемента і немає. Положення елемента задається властивостями left, top, right і
+            bottom, також на положення впливає значення властивості position батьківського елемента. Так, якщо у батька
+            значення position встановлено як static або батька немає, то відлік координат ведеться від краю вікна
+            браузера. Якщо у батька значення position задано як fixed, relative або absolute, то відлік координат
+            ведеться
+            від краю батьківського елементу.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>
+              position:relative
+            </strong>
+          </p>
+          <p>
+            Положення елемента встановлюється щодо його вихідного місця. Додавання властивостей left, top, right і
+            bottom
+            змінює
+            позицію елемента і зрушує його в ту чи іншу сторону від первісного розташування.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>
+              position:inherit
+            </strong>
+          </p>
+          <p>
+            Успадковує значення батька
+          </p>
+          <p>
+            Наприклад,
+          </p>
+          <blockquote class="posit">
+            <p class="posit-a">
+              <b>position: absolute;
+                left: 100px;
+                top: 50px;right: 50px;
+                bottom: 50px;</b><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias aspernatur culpa reiciendis corrupti
+              tenetur raittione quaerat, voluptatem perferendis dolor repudiandae minus expedita at, sapiente ipsum
+              officiis
+              ipsa nobis? Nesciunt.
+            </p>
+          </blockquote>
+        </li>
+      </ul>
+    </section>
+    <section id="indentation" class="indentation">
+      <h2>
+        Відступи
+      </h2>
+      <p>
+        Нижче доданий скріншот з позначками для кращого розуміння структури блоку:
+        <img src="img/indents.PNG" alt="Відступи">
+      </p>
+      <ul>
+        <li>
+          <p>
+            <strong>
+              padding
+            </strong>
+          </p>
+          <p>
+            Дана властивість формує відступ всередині блоку- внутрішній відступ (значення в пікселях)
+          </p>
+          <a href="http://htmlbook.ru/css/padding">Padding</a>
+          <img src="img/padding.PNG" alt="padding">
+        </li>
+        <li>
+          <p>
+            <strong>
+              margin
+            </strong>
+          </p>
+          <p>
+            Задає відступи від меж блоку- зовнішній відступ. Якщо у елемента немає батьків, відступом буде відстань від
+            краю
+            елемента до краю вікна браузера з урахуванням того, що у самого вікна за замовчуванням теж встановлені
+            відступи.
+            Щоб їх позбутися, слід встановлювати значення <b>margin</b> для селектора <b>body</b> рівне нулю.
+          </p>
+          <a href="http://htmlbook.ru/css/margin" target="_blank">Margin</a>
+          <img src="img/margin.PNG" alt="margin">
+        </li>
+        <li>
+          <p>
+            <strong>
+              border
+            </strong>
+          </p>
+          <p>
+            Властивість CSS border це універсальна властивість для вказівки всіх персональних властивостей меж одразу:
+            <a href="https://developer.mozilla.org/ru/docs/Web/CSS/border-width" target="_blank">
+              border-width,
+            </a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/CSS/border-style" target="_blank">
+              border-style,
+            </a> і
+            <a href="https://developer.mozilla.org/ru/docs/Web/CSS/border-color" target="_blank">
+              border-color.
+            </a>
+          </p>
+          <blockquote class="bord"">
+            <p class=" sol">
+            <b>border: solid;</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias aspernatur culpa reiciendis corrupti
+            tenetur raittione quaerat, voluptatem perferendis dolor repudiandae minus expedita at, sapiente ipsum
+            officiis
+            ipsa nobis? Nesciunt.
+            </p>
+            <p class="dash">
+              <b>border: dashed red;</b><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias aspernatur culpa reiciendis corrupti
+              tenetur raittione quaerat, voluptatem perferendis dolor repudiandae minus expedita at, sapiente ipsum
+              officiis
+              ipsa nobis? Nesciunt.
+            </p>
+            <p class="remsol">
+              <b>border: 1rem solid;</b><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias aspernatur culpa reiciendis corrupti
+              tenetur raittione quaerat, voluptatem perferendis dolor repudiandae minus expedita at, sapiente ipsum
+              officiis
+              ipsa nobis? Nesciunt.
+            </p>
+            <p class="th-double">
+              <b>border: thick double #32a1ce;</b><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias aspernatur culpa reiciendis corrupti
+              tenetur raittione quaerat, voluptatem perferendis dolor repudiandae minus expedita at, sapiente ipsum
+              officiis
+              ipsa nobis? Nesciunt.
+            </p>
+            <p class="b-rgba">
+              <b>border: 4mm ridge rgba(170, 50, 220, .6);</b><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias aspernatur culpa reiciendis corrupti
+              tenetur raittione quaerat, voluptatem perferendis dolor repudiandae minus expedita at, sapiente ipsum
+              officiis
+              ipsa nobis? Nesciunt.
+            </p>
+          </blockquote>
+        </li>
+        <li>
+          <p>
+            <strong>
+              border-radius
+            </strong>
+          </p>
+          <p>
+            Закруглення кутів у CSS можна зробити для любого елемента HTML-сторінки. Для цього необхідно замінити своє
+            значення
+            border-radius з відповідним значенням. Часто всього значення вказується в пікселях, але можна також
+            використовувати і
+            інші одиниці, наприклад, em або відсотки (в останньому випадку, коли розрахунок робиться відносно ширини
+            блоку).
+          </p>
+          <blockquote>
+            <p class="borderElement">
+              Наприклад. <br>
+              Можна зробити закруглені краї лише для верхніх або нижніх кутів (<b>border-radius: 25px;</b>), або задати
+              кожному куту різний радіус скруглення
+            </p>
+            <p class="borderElyps">
+              Замість простих круглих кутів можна задати еліптичне скруглення. Для цього понадобиться вказати два
+              значення,
+              розділені косою лінією (для горизонтальної та вертикальної напівосі елліпсу). <b>border-radius:
+                200px/100px;</b>
+            </p>
+          </blockquote>
+          <p>
+            <b>Принцип скруглення кутів.</b>
+
+            На малюнку нижче показано, яким чином обраховується скругленість кутів у CSS. Так, якщо для кута вказано
+            одне значення, - наприклад, 20
+            пікселів, - це означає, що закруглення буде відбуватися по колу з радіусом 20 пікселів. У випадку, коли
+            задаються
+            два значення через косую лінію, наприклад, 30px / 20px, закруглення кутів буде відбуватися по еліпсу. Перше
+            значення в
+            такому випадку є довжиною горизонтальної напівосі еліпсу - 30 пікселів, а друге - довжина вертикальної
+            напівосі -
+            20 пікселів:
+            <img src="img/border-radius.PNG" alt="border-radius">
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section id="fon" class="fon">
+      <h2>
+        Фон
+      </h2>
+      <h3>
+        background-color
+      </h3>
+      <p>
+        Визначає колір фону елемента. Хоча ця властивість не буде наслідувати властивості свого батька, через те, що
+        початкове значення встановлюється прозорим, колір фону дочірніх елементів збігається з кольором фону
+        батьківського
+        елементу.
+      </p>
+      <blockquote class="fonbody">
+        background-color: #3366CC;
+        <p class="fontext">
+          <b>background-color: RGB(249, 201, 16);</b>
+          <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta neque ratione earum sint nesciunt harum odio
+          illo, facere sequi suscipit nulla optio accusantium, architecto natus repellendus recusandae vel veritatis
+          officiis.
+          Exercitationem quibusdam aspernatur sint saepe accusamus quaerat, repudiandae aut aliquid veritatis nobis
+          voluptates explicabo eveniet quia itaque velit. Sunt, omnis. Repellat, omnis reprehenderit deserunt odio eos
+          atque nemo aliquam totam.
+          Vero, aut possimus.
+        </p>
+      </blockquote>
+      <h3>
+        background-image
+      </h3>
+      <p>
+        Встановлює
+        <a href="https://www.w3schools.com/cssref/pr_background-image.asp">
+          фонове зображення для елемента.
+        </a>
+        Якщо одночасно для елемента задано колір фону, він буде показаний, поки
+        фонова картинка не завантажиться повністю. Те ж відбудеться, якщо зображення не доступні або їх показ в браузері
+        відключений. У разі наявності в малюнку прозорих областей, через них буде проглядатися фоновий колір. В CSS3
+        допустимо вказувати кілька фонових зображень, перераховуючи їх параметри через кому.
+      </p>
+      <img class='backimg' src="img/bg-image.PNG" alt="background-image">
+      <h3>
+        Box-shadow
+      </h3>
+      <p>
+        Можна додати до елементів тіні та змінювати їх зовнішній вигляд за допомогою CSS-властивостей <b>box-shadow.</b>
+        Цей стиль
+        здатний виконати цікаві ефекти, наприклад, об'ємність і трьоххмерність блоку. Властивістю тіні є описані вище
+        зміщення по X та Y від елемента, радіус розмиття та його радіус, а також колір.
+      </p>
+      <blockquote>
+        <p class="box-sh1">
+          box-shadow: 10px 5px 5px red;
+        </p>
+        <p class="box-sh2">
+          box-shadow: 60px -16px teal;
+        </p>
+        <p class="box-sh3">
+          box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+        </p>
+        <p class="box-sh4">
+          box-shadow: inset 5em 1em gold;
+        </p>
+        <p class="box-sh5">
+          border-radius: 50%;
+          box-shadow: inset 0.3em 0.3em 0.9em black;
+        </p>
+      </blockquote>
+    </section>
+    <section id="scale" class="scale">
+      <h2>
+        Розміри
+      </h2>
+      <h3>
+        height
+      </h3>
+      <p>
+        Задає висоту даного блоку або інших елементів (наприклад img)
+      </p>
+      <ul>
+        <li>
+          <strong>height: auto (default)</strong>
+          <div class="heig">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt libero esse perspiciatis voluptatum.
+            Laborum
+            voluptatum, iure culpa amet accusamus deserunt enim nostrum id dolor adipisci officiis eaque explicabo optio
+            temporibus?
+          </div>
+        </li>
+        <li>
+          <strong>height: 50px</strong>
+          <div class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+            pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Maecenas
+            imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Pellentesque interdum, nisl nec interdum
+            maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</div>
+        </li>
+      </ul>
+      <h3>
+        widht
+      </h3>
+      <p>
+        Задає ширину даного блок або інших елементів (наприклад img)
+      </p>
+      <ul>
+        <li>
+          <strong>
+            widht:auto
+          </strong>
+          <div class="wid-a">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam adipisci illo eos. Est officia, deserunt
+            nostrum tempore expedita nam, blanditiis facere saepe incidunt autem nobis et similique enim alias
+            accusantium?
+          </div>
+        </li>
+        <li>
+          <strong>
+            width: 150px
+          </strong>
+          <div class="wid-b">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam adipisci illo eos. Est officia, deserunt
+            nostrum tempore expedita nam, blanditiis facere saepe incidunt autem nobis et similique enim alias
+            accusantium?
+          </div>
+        </li>
+        <li>
+          <strong>
+            width: 50%
+          </strong>
+          <div class="wid-c">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam adipisci illo eos. Est officia, deserunt
+            nostrum tempore expedita nam, blanditiis facere saepe incidunt autem nobis et similique enim alias
+            accusantium?
+          </div>
+        </li>
+      </ul>
+      <h3>
+        max-height,max-widht
+      </h3>
+      <p>
+        Задає максимальну висоту/ширину даного елемента
+      </p>
+      <h3>
+        min-height,min-widht
+      </h3>
+      <p>
+        Задає мінімальну висоту/ширину даного елемента
+      </p>
+    </section>
+    <section id="pseudo" class="pseudo">
+      <h2>
+        Псевдокласи
+      </h2>
+      <p>
+        <b><a class="mate" href="/attribute.html" target="_blank">
+            Це посилання на Довідник
+          </a></b>
+      </p>
+      <h3>
+        a:visited
+      </h3>
+      <p>
+        Даний псевдоклас,навпаки, застосовує стиль до вже відвіданих посилань;
+      </p>
+      <h3>a:hover</h3>
+      <p>Даний псевдоклас (рожевий колір) визначає стиль для даного елемента при наведенні на нього курсором, при цьому
+        елемент ще не є активним (a:link and a:visited)
+      </p>
+      <h3>a:active</h3>
+      <p>Визначає стиль для активного посилання (голубий колір).
+      </p>
+      <h3>
+        a:focus
+      </h3>
+      <p>
+        застосовує стиль до елементу при фокусуванні на ньому (наприклад, при установці курсора в рядок пошуку);
+      </p>
+      <h3>
+        :checked
+      </h3>
+      <p>
+        Позначений перемикач відповідає кожному відміченому "input" елементу (лише для перемикачів і прапорців) та
+        елемента
+        "option".
+      </p>
+      <p>
+        <blockquote>
+          <form action="#">
+            <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+            <input type="radio" value="female" name="gender"> Female<br>
+            <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+            <input type="checkbox" value="Car"> I have a car
+          </form>
+        </blockquote>
+      </p>
+      <h3>
+        :target
+      </h3>
+      <p>
+        Відповідає елементу, з яким пов'язано ( наприклад,<a href="#"></a>)
+      </p>
+      <p>
+        <blockquote>
+          <h4>
+            Зміст1 - колір червоний. <br>
+            Зміст2- зелений фон з жовтою рамкою
+          </h4>
+          <p>
+            <a href="#news1">
+              Перейти до нового змісту 1
+            </a>
+          </p>
+          <p>
+            <a href="#news2">
+              Перейти до нового змісту 2
+            </a>
+          </p>
+          <p>
+            <b>Клацніть на посилання вгорі : target selector виділить поточний активний HTML-якір.</b>
+          </p>
+          <p id="news1">
+            Новий зміст 1...
+          </p>
+          <p id="news2">
+            Новий зміст 2...
+          </p>
+        </blockquote>
+      </p>
+    </section>
+    <section id="dop-psevdo">
+      <h2>
+        Додаткові псевдокласи
+      </h2>
+      <h3>
+        :first-child
+      </h3>
+      <p>Застосовується до першого дочірнього елементу селектора, який розташований в дереві
+        елементів документа (у прикладі- виділено жирним).
+      </p>
+      <h3>
+        :nth-child(2)
+      </h3>
+      <p>
+        Відповідає елементу, який є порядковим номером дитини його батька (нижче виділено червоним).
+      </p>
+      <h3>
+        :nth-last-child(4)
+      </h3>
+      <p>
+        Відповідає елементу, який є порядковим номером дитини, у зворотному порядку (синій колір)
+      </p>
+      <h3>
+        :last-child
+      </h3>
+      <p>
+        Відповідає останньому дочірньому елементу (The five paragraph).
+      </p>
+      <h3>
+        :nth-child(odd), :nth-child(even)
+      </h3>
+      <p>
+        Дозволяє вибрати парні (even) і непарні (odd) дочірні елементи
+      </p>
+      <h3>
+        :only-of-type
+      </h3>
+      <p>
+        Застосовується до дочірнього елементу зазначеного типу за умови, що той є у батька єдиною дитиною свого типу (у
+        прикладі-зелений колір)
+      </p>
+      <p>
+        <blockquote class="chil">
+          <p>The first paragraph.</p>
+          <p>The second paragraph.</p>
+          <p>The third paragraph.</p>
+          <p>The fourth paragraph.</p>
+          <table>
+            <tr>
+              <td>Нечетный номер</td>
+            </tr>
+            <tr>
+              <td>Четный номер</td>
+            </tr>
+            <tr>
+              <td>Нечетный номер</td>
+            </tr>
+            <tr>
+              <td>Четный номер</td>
+            </tr>
+          </table>
+          <span>Я такий єдиний у свого батька!</span>
+          <p>The five paragraph.</p>
+        </blockquote>
+      </p>
+    </section>
+    <section id="pseudo-elements">
+      <h2>
+        Псевдоелементи
+      </h2>
+      <h3>
+        ::after
+      </h3>
+      <p>
+        використовується разом з властивістю contentі дозволяє вивести необхідні дані після вмісту елемента;
+      </p>
+      <p>
+        <blockquote>
+          <p class="psevdo">
+            My name is Donald
+          </p>
+          <p>
+            I live in Ducksburg
+          </p>
+        </blockquote>
+      </p>
+      <h3>
+        ::before
+      </h3>
+      <p>
+        Виконує схожу функцію, що і попередній, тільки виводить дані перед вмістом елементу (<b>вище на таблиці - знак
+          оклику"!"</b>)
+      </p>
+      <h3>
+        ::selection
+      </h3>
+      <p>
+        цей псевдоелемент розпізнається браузерами тільки при використанні двох двокрапок і дозволяє встановити колір і
+        фон для тексту, який виділений користувачем;
+      </p>
+      <p>
+        <blockquote class="sel">
+          <h4>
+            Select some text on this page:
+          </h4>
+          <p>
+            This is a paragraph.
+          </p>
+          <div>
+            This is some text in a div element.
+          </div>
+        </blockquote>
+      </p>
+      <h3>
+        ::first-letter
+      </h3>
+      <blockquote class="fir-let">
+        <p>Використовується для зміни стилю першого символу в тексті елемента.</p>
+        <p>
+          My name is Donald.
+        </p>
+        <p>
+          I live in Duckburg.
+        </p>
+        <p>
+          My best friend is Mickey.
+        </p>
+      </blockquote>
+      <h3>
+        ::first-line
+      </h3>
+      <p>
+        Використовується для зміни стилю першого рядка тексту елемента (вище - виділено жовтим кольором).
+      </p>
+
+    </section>
+    <section id="animation" class="animation">
+      <h2>
+        Анімація
+      </h2>
+      <h3>
+        transition
+      </h3>
+      <p>
+        Визначає ефект переходу між двома елементами, точніше між їх станами
+      </p>
+      <p>
+        <b>Наведіть курсор на елемент нижче, щоб побачити ефект переходу:</b>
+      </p>
+      <div class="trans">
+        Наведи на мене!
+      </div>
+    </section>
+  </article>
+  <footer>
+    <p>
+      &copy; 2019. ITBRO. All rights reserved | Design by Krapotka
+    </p>
+  </footer>
+</body>
+
+</html>

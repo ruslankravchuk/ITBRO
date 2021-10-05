@@ -1,0 +1,449 @@
+/*Специфікація*/
+*,
+*:before,
+*:after {
+  -webkit- box-sizing: border-box;
+  -moz- box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 25px;
+  margin: 30px 150px 50px;
+  max-width: 900px;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 25px;
+  color: rgb(230, 39, 96);
+}
+
+h3 {
+  font-size: 20px;
+  color: rgb(196, 53, 10);
+}
+
+strong {
+  font-size: 18px;
+}
+
+.btn {
+  background-color: #008cba;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.search {
+  padding: 5px 2px 5px 25px;
+  background: url("http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s25/search.png") no-repeat scroll 0 50%;
+}
+
+blockquote {
+  padding: 7px 17px 10px 21px;
+  margin: 25px 0;
+  position: relative;
+  background: #efefef;
+  border: 1px solid #f37c13;
+  border-left-color: rgb(243, 124, 19);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left: 18px solid #f37c13;
+}
+
+/*Стилі, що застосовуються для оформлення тексту*/
+
+.ff-noserif {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ff-serifont {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.ff-monospafont {
+  font-family: "Courier New", Courier, monospaced;
+}
+
+.font12 {
+  font-size: 12px;
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+.fontyn {
+  font-style: normal;
+}
+
+.fonty-ital {
+  font-style: italic;
+}
+
+.fonty-obliq {
+  font-style: oblique;
+}
+
+.colorhex {
+  color: #aa5588;
+}
+
+.colorkey {
+  color: red;
+}
+
+.colorRGB {
+  color: rgb(51, 193, 26);
+}
+
+.lineH {
+  line-height: 20px;
+}
+
+.linerate {
+  line-height: 180%;
+}
+
+.tt-upp {
+  text-transform: uppercase;
+}
+
+.tt-lower {
+  text-transform: lowercase;
+}
+
+.tt-cap {
+  text-transform: capitalize;
+}
+
+.tt-none {
+  text-transform: none;
+}
+
+.tt-inh {
+  text-transform: inherit;
+}
+
+.td-under {
+  text-decoration: underline;
+}
+
+.td-over {
+  text-decoration: wavy overline lime;
+}
+
+.td-line {
+  text-decoration: line-through;
+}
+
+.t-shad {
+  text-shadow: 3px 5px 6px #6c9;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #366b50;
+}
+
+.t-shad2 {
+  text-shadow: 0 1px 0 #cac8c8, 0 2px 0 #c7c5c5, 0 3px 0 #bbbaba,
+    0 4px 0 #b7b6b6, 0 5px 0 #a9a6a6, 0 6px 1px rgba(0, 0, 0, 0.2),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1),
+    0 3px 5px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.2),
+    0 10px 10px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+}
+
+.let-spa {
+  letter-spacing: 5px;
+}
+
+.w-spacing {
+  word-spacing: 6px;
+}
+
+.fontbold {
+  font-weight: bold;
+}
+
+/*Позиціонування елементів*/
+blockquote.posit {
+  height: 200px;
+}
+
+.posit-a {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  right: 50px;
+  bottom: 50px;
+}
+
+/* Відступи */
+.bord {
+  height: auto;
+}
+
+.sol {
+  border: solid;
+}
+
+.dash {
+  border: dashed red;
+}
+
+.remsol {
+  border: 1rem solid;
+}
+
+.th-double {
+  border: thick double #32a1ce;
+}
+
+.b-rgba {
+  border: 4mm ridge rgba(170, 50, 220, 0.6);
+}
+
+.borderElement {
+  background-color: #eeddff;
+  border: 6px solid #7922cc;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.borderElyps {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  height: 200px;
+  background-color: #eeddff;
+  border: 3px solid #f7b3b3;
+  border-radius: 200px/100px;
+}
+
+/* Колір фона */
+.fonbody {
+  background-color: #3366cc;
+}
+
+.fontext {
+  background-color: RGB(249, 201, 16);
+}
+
+.backimg {
+  width: 80%;
+}
+
+.box-sh1 {
+  width: 360px;
+  border: 3px solid #787878;
+  box-shadow: 10px 5px 5px red;
+  margin-bottom: 35px;
+}
+
+.box-sh2 {
+  width: 460px;
+  border: 1px solid #787878;
+  box-shadow: 60px -16px teal;
+  margin-bottom: 35px;
+}
+
+.box-sh3 {
+  width: 560px;
+  border: 3px solid #787878;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  margin-bottom: 35px;
+}
+
+.box-sh4 {
+  width: 660px;
+  border: 3px solid #787878;
+  box-shadow: inset 5em 1em gold;
+  margin-bottom: 35px;
+}
+
+.box-sh5 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 200px;
+  width: 500px;
+  border-radius: 50%;
+  box-shadow: inset 0.3em 0.3em 0.9em black;
+}
+
+/*Розміри*/
+.heig {
+  height: auto;
+  border: 1px solid black;
+}
+
+.b {
+  display: inline-block;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.wid-a {
+  width: auto;
+  border: 1px solid black;
+}
+
+.wid-b {
+  width: 150px;
+  border: 1px solid black;
+}
+
+.wid-c {
+  width: 50%;
+  border: 1px solid black;
+}
+
+/*Псевдокласи*/
+.mate:link {
+  color: red;
+}
+
+.mate:visited {
+  color: purple;
+}
+
+.mate:hover {
+  color: hotpink;
+}
+
+.mate:active {
+  color: blue;
+}
+
+.mate:focus {
+  border: 1px solid yellow;
+}
+
+input:checked {
+  height: 50px;
+  width: 50px;
+}
+
+#news1:target {
+  color: red;
+}
+
+#news2:target {
+  border: 1px solid yellow;
+  background-color: green;
+}
+
+/* Додаткові псевдокласи */
+
+.chil>p:first-child {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.chil>p:nth-child(2) {
+  background: red;
+}
+
+.chil>p:nth-last-child(4) {
+  background: blue;
+}
+
+.chil>p:last-child {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+tr:nth-child(odd) {
+  background-color: #a2ded0;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(204, 80, 42);
+}
+
+.chil>span:only-of-type {
+  text-decoration: underline;
+  color: green;
+}
+
+/* Псевдоелементи */
+
+p.psevdo::after {
+  content: " - Вітаю!";
+  color: green;
+}
+
+blockquote::before {
+  content: "!";
+  position: absolute;
+  left: -15px;
+  font: 48px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+  color: #fff;
+  top: 50%;
+  margin-top: -30px;
+}
+
+/* Code for Firefox */
+.sel h4::-moz-selection,
+.sel p::-moz-selection,
+.sel div::-moz-selection {
+  color: red;
+  background: yellow;
+}
+
+.sel h4::selection {
+  color: red;
+  background: yellow;
+}
+
+.fir-let p::first-letter {
+  font-size: 200%;
+  color: #8a2be2;
+}
+
+.fir-let p:nth-child(1)::first-line {
+  background-color: yellow;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*Анімація*/
+.trans {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+  padding: 10px 10px;
+}
+
+.trans:hover {
+  width: 300px;
+}
+
+footer {
+  background-color: rgb(190, 185, 185);
+}
+
+footer p {
+  text-align: center;
+}
