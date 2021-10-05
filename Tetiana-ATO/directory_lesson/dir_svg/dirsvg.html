@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0' />
+  <meta content='true' name='HandheldFriendly' />
+  <meta content='width' name='MobileOptimized' />
+  <meta content='yes' name='apple-mobile-web-app-capable' />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SVG</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>
+        Довідник по SVG:
+      </h1>
+      <div>
+        <ul>
+          <li>
+            <a href="#razsvgrect">SVG прямокутник</a>
+          </li>
+          <li>
+            <a href="#razsvgcircle">SVG коло</a>
+          </li>
+          <li>
+            <a href="#razsvgellipse">SVG елліпс</a>
+          </li>
+          <li>
+            <a href="#razsvgline">SVG відрізок line</a>
+          </li>
+          <li>
+            <a href="#razsvgline-dash">SVG властивість &lt;stroke-dasharray&gt;</a>
+          </li>
+          <li>
+            <a href="#razpolyline">SVG ламана лінія &lt;polyline&gt;</a>
+          </li>
+          <li>
+            <a href="#razpolygone">SVG ламана лінія - багатокутник</a>
+          </li>
+          <li>
+            <a href="#raztext">SVG &lt;text&gt;</a>
+            <ul>
+              <li>
+                <a href="#raztext-transform">SVG &lt;text-transform&gt;</a>
+              </li>
+              <li>
+                <a href="#raztext-tspan">SVG &lt;text-tspan&gt;</a>
+              </li>
+              <li>
+                <a href="#raztext-link">SVG текст як посилання</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#razpath">SVG контур</a>
+            <ul>
+              <li>
+                <a href="#raztextpath">SVG &lt;textpath&gt;</a>
+              </li>
+              <li>
+                <a href="#razgcubic">Cubic Bézier</a>
+              </li>
+              <li>
+                <a href="#razgroup-multiple">G group-multiple</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://msiter.ru/tutorials/svg/svg_filter">SVG - фільтри</a>
+            <ul>
+              <li>
+                <a href="#raz-feGaussianBlur">Ефект розмиття</a>
+              </li>
+              <li>
+                <a href="#raz-feOffset">Створення тіні</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="http://css.yoksel.ru/svg-gradients/">SVG-градієнти</a>
+            <ul>
+              <li>
+                <a href="#raz-linearGradient">Лінійний градієнт</a>
+              </li>
+              <li>
+                <a href="#raz-radialGradient">Радіальний градієнт</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- rect -->
+    <section class="raz" id="razsvgrect">
+      <h2>SVG прямокутник - &lt;rect&gt;</h2>
+      <svg>
+        <rect width="100" height="100" rx="20" ry="0" fill="#BBC42A" />
+      </svg>
+      <p>
+        <a href="https://codepen.io/jonitrythall/pen/525df2422b0ebc54c71a48d27534ea5e" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //rect -->
+    <!-- circle -->
+    <section class="raz" id="razsvgcircle">
+      <h2>SVG коло - &lt;circle&gt;</h2>
+      <svg>
+        <circle r="75" cx="75" cy="75" fill="#ED6E46" />
+      </svg>
+      <p>
+        <a href="https://codepen.io/jonitrythall/pen/088bbada7eed6739d09715666b945141" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //circle -->
+    <!-- ellipse -->
+    <section class="raz" id="razsvgellipse">
+      <h2>SVG елліпс - &lt;ellipse&gt;</h2>
+      <svg>
+        <ellipse rx="100" ry="50" cx="100" cy="100" fill="#529fca" />
+      </svg>
+      <p>
+        <a href="https://codepen.io/jonitrythall/pen/8ec26dac6d5b64bc663c03f01c5d60e0" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //ellipse -->
+    <!-- SVG отрезок line -->
+    <section class="raz" id="razsvgline">
+      <h2>SVG відрізок line</h2>
+      <svg>
+        <line x1="10" y1="10" x2="90" y2="90" stroke="#765373" stroke-width="8" />
+      </svg>
+      <p>
+        <a href="https://codepen.io/jonitrythall/pen/cc2e9717926d08889837208467e392a0" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //SVG отрезок line -->
+    <!-- SVG  stroke-dasharray -->
+    <section class="raz" id="razsvgline-dash">
+      <h2>SVG властивість &lt;stroke-dasharray&gt;</h2>
+      <svg height="80" width="300">
+        <g fill="none" stroke="black" stroke-width="4">
+          <path stroke-dasharray="5,5" d="M5 20 l215 0" />
+          <path stroke-dasharray="10,10" d="M5 40 l215 0" />
+          <path stroke-dasharray="20,10,5,5,5,10" d="M5 60 l215 0" />
+        </g>
+      </svg>
+      <p>
+        <a href="https://codepen.io/ATO-IT/pen/XWJaPGg" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- SVG  stroke-dasharray -->
+    <!-- polyline -->
+    <section class="raz" id="razpolyline">
+      <h2>SVG ламана лінія &lt;polyline&gt;</h2>
+      <svg>
+        <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" fill="white" stroke="#BBC42A"
+          stroke-width="6" />
+      </svg>
+      <p>
+        <a href="https://codepen.io/jonitrythall/pen/558d73574360c37158f4ad03214c7eb9" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //polyline -->
+    <!-- polygon -->
+    <section class="raz" id="razpolygone">
+      <h2>SVG ламана лінія - багатокутник &lt;polygon&gt;</h2>
+      <svg>
+        <polygon points="50,5 100,5 125,30 125,80 100,105 50,105 25,80 25,30" fill="#ED6E46" />
+      </svg>
+      <p>
+        <a href="https://codepen.io/jonitrythall/pen/fc0d7f048d266c6845b8e1f28b80eefc" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //polygon -->
+    <!-- text -->
+    <section class="raz" id="raztext">
+      <h2>SVG &lt;text&gt;</h2>
+      <svg width="620" height="100">
+        <text x="30" y="90" fill="#ED6E46" font-size="100" font-family="'Leckerli One', cursive">Watermelon</text>
+      </svg>
+      <p>
+        <a href="https://codepen.io/jonitrythall/pen/e62394e43969fecb4269036260a3a575" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //text -->
+    <!-- text transform -->
+    <section class="raz" id="raztext-transform">
+      <h2>SVG &lt;text-transform&gt;</h2>
+      <svg height="100" width="200">
+        <text x="15" y="15" fill="red" transform="rotate(30 20,40)">Я люблю SVG</text>
+      </svg>
+      <p>
+        <a href="https://codepen.io/ATO-IT/pen/BaydOYE" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!--//text transform -->
+    <!--text-tspan-->
+    <section class="raz" id="raztext-tspan">
+      <h2>SVG &lt;text-tspan&gt;</h2>
+      <svg height="90" width="200">
+        <text x="10" y="20" style="fill:red;">Вітаю:
+          <tspan x="10" y="45">З новим</tspan>
+          <tspan x="10" y="70">2020 роком!</tspan>
+        </text>
+      </svg>
+      <p>
+        <a href="https://codepen.io/ATO-IT/pen/gObxdeZ" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!--//text-tspan-->
+    <!-- text-link -->
+    <section class="raz" id="raztext-link">
+      <h2>SVG текст як посилання (з елементом &lt;A:xlink&gt;)</h2>
+      <svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <a xlink:href="https://msiter.ru/tutorials/svg" target="_blank">
+          <text x="0" y="15" fill="red">Я люблю SVG!</text>
+        </a>
+      </svg>
+      <p>
+        <a href="https://codepen.io/ATO-IT/pen/bGNrxOb" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!--//text-link -->
+    <!-- path -->
+    <section class="raz" id="razpath">
+      <h2>SVG &lt;path&gt;</h2>
+      <svg height="300" width="300">
+        <path d="M 100 100 L 200 200 H 10 V 40 H 70" fill="#59fa81" stroke="#d85b49" stroke-width="3" />
+      </svg>
+      <p>
+        <a href="https://codepen.io/ATO-IT/pen/LYEjORV" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //path -->
+    <!-- textpath -->
+    <section class="raz" id="raztextpath">
+      <h2>SVG &lt;textpath&gt;</h2>
+      <svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+          <path id="MyPath" d="M 20 40 Q 260 240 400 500" />
+        </defs>
+        <use xlink:href="#MyPath" fill="none" stroke="#59fa81" />
+        <text font-family="Courier New" font-size="42.5" font-weight="700" fill="#59fa81">
+          <textPath xlink:href="#MyPath">
+            Wow such a nice SVG tut
+          </textPath>
+        </text>
+      </svg>
+      <p>
+        <a href="https://codepen.io/ATO-IT/pen/LYEjORV" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //textpath -->
+    <!-- Cubic Bézier -->
+    <section class="raz" id="razgcubic">
+      <h2>
+        The C and c Cubic Bézier commands
+      </h2>
+      <svg>
+        <path fill="none" stroke="#333333" stroke-width="3" d="M10,55 C15,5 100,5 100,55" />
+      </svg>
+      <p>
+        <a href="https://codepen.io/jonitrythall/pen/e73337f3b9e3e47444dc1e6ce17828b3" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //Cubic Bézier -->
+    <!-- G group-multiple -->
+    <section class="raz" id="razgroup-multiple">
+      <h2>
+        The &lt;G&gt; element you can group multiple elements
+      </h2>
+      <svg width="200" height="200">
+        <rect x="0" y="0" width="100" height="100" fill="#529fca" />
+        <g id="my-group">
+          <rect x="0" y="100" width="100" height="100" fill="#59fa81" />
+          <rect x="100" y="0" width="100" height="100" fill="#ad4a3d" />
+        </g>
+      </svg>
+      <p>
+        <a href="https://codepen.io/ATO-IT/pen/eYmEevX" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //G group-multiple -->
+    <!-- SVG feGaussianBlur -->
+    <section class="raz" id="raz-feGaussianBlur">
+      <h2>
+        Ефект розмиття
+      </h2>
+      <p>
+        <ul>
+          <li>
+            Атрибут id елемента <b>filter</b> визначає унікальне ім'я фільтра
+          </li>
+          <li>
+            Ефект розмиття створюється за допомогою елемента
+            <b>feGaussianBlur</b>
+          </li>
+          <li>
+            Частина in = "SourceGraphic" визначає, що ефект створюється для всього елемента
+          </li>
+          <li>
+            Атрибут <b>stdDeviation</b> визначає розмір розмиття
+          </li>
+          <li>
+            Атрибут <b>filter</b> елемента <b>rect</b> пов'язує посиланням елемент з фільтром "f1"
+          </li>
+        </ul>
+      </p>
+      <svg height="110" width="110">
+        <defs>
+          <filter id="f0" x="0" y="0">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+          </filter>
+        </defs>
+        <rect width="90" height="90" stroke="green" stroke-width="3" fill="yellow" filter="url(#f0)" />
+      </svg>
+    </section>
+    <!--//SVG feGaussianBlur -->
+    <!-- SVG feOffset -->
+    <section class="raz" id="raz-feOffset">
+      <h2>
+        Створення тіні за допомогою SVG
+      </h2>
+      <p>
+        Фільтр <b>feColorMatrix</b> використовується для трансформації кольорів зміненого зображення в сторону чорного
+        кольору. Три
+        значення '0.2' в матриці множаться на значення червоного, зеленого і синього каналів. Зменшення їх значень
+        змінює
+        колір в бік чорного (значення чорного кольору = 0)
+      </p>
+      <svg height="140" width="140">
+        <defs>
+          <filter id="f4" x="0" y="0" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+            <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+              values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+            <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+          </filter>
+        </defs>
+        <rect width="90" height="90" stroke="green" stroke-width="3" fill="yellow" filter="url(#f4)" />
+      </svg>
+      <p>
+        <a href="https://codepen.io/ATO-IT/pen/PowKyzo" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //SVG feOffset -->
+    <!-- linear-Gradient -->
+    <section class="raz" id="raz-linearGradient">
+      <h2>
+        Лінійний градієнт - &lt;linearGradient&gt;
+      </h2>
+      <div>
+        <svg height="150" width="400">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+        </svg>
+      </div>
+      <div>
+        <svg height="150" width="400">
+          <defs>
+            <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad2)" />
+        </svg>
+      </div>
+      <div>
+        <svg height="150" width="400">
+          <defs>
+            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad3)" />
+          <text fill="#ffffff" font-size="45" font-family="Verdana" x="150" y="86">SVG</text>
+        </svg>
+      </div>
+      <div>
+        <svg width="740" height="200">
+          <defs>
+            <linearGradient id="MyGradient" x1="0" y1="0" x2="100%" y2="0%">
+              <!--20% spreadMethod="repeat"-->
+              <stop offset="0%" stop-color="crimson" />
+              <stop offset="10%" stop-color="purple" />
+              <stop offset="10%" stop-color="red" />
+              <stop offset="20%" stop-color="crimson" />
+              <stop offset="20%" stop-color="orangered" />
+              <stop offset="30%" stop-color="red" />
+              <stop offset="30%" stop-color="orange" />
+              <stop offset="40%" stop-color="orangered" />
+              <stop offset="40%" stop-color="gold" />
+              <stop offset="50%" stop-color="orange" />
+              <stop offset="50%" stop-color="yellowgreen" />
+              <stop offset="60%" stop-color="gold" />
+              <stop offset="60%" stop-color="green" />
+              <stop offset="70%" stop-color="yellowgreen" />
+              <stop offset="70%" stop-color="steelblue" />
+              <stop offset="80%" stop-color="skyblue" />
+              <stop offset="80%" stop-color="mediumpurple" />
+              <stop offset="90%" stop-color="steelblue" />
+              <stop offset="90%" stop-color="purple" />
+              <stop offset="100%" stop-color="mediumpurple" />
+            </linearGradient>
+
+            <pattern id="p-stripes" patternUnits="userSpaceOnUse" width="200" height="200" viewbox="0 0 200 200">
+              <rect width="200" height="200" fill="url(#MyGradient)" />
+            </pattern>
+          </defs>
+          <text x="30%" y="100%" fill="url(#MyGradient)" font-size="40">
+            <tspan x="15%" y="50%">З наступаючим Новим</tspan>
+            <tspan x="30%" y="90%">2020 роком!</tspan>
+          </text>
+        </svg>
+      </div>
+      <p>
+        <a href="https://codepen.io/ATO-IT/pen/Jjoymba" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //linear-Gradient -->
+    <!-- radial-Gradient -->
+    <section class="raz" id="raz-radialGradient">
+      <h2>
+        Радіальний градієнт - &lt;radialGradient&gt;
+      </h2>
+      <div>
+        <svg height="150" width="500">
+          <defs>
+            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+              <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+              <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+            </radialGradient>
+          </defs>
+          <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+        </svg>
+      </div>
+      <div>
+        <svg height="150" width="500">
+          <defs>
+            <radialGradient id="grad2" cx="30%" cy="30%" r="30%" fx="50%" fy="50%">
+              <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+              <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+            </radialGradient>
+          </defs>
+          <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad2)" />
+        </svg>
+      </div>
+      <p>
+        <a href="https://codepen.io/ATO-IT/pen/QWwMZvG" target="_blank">Дивитись Демо</a>
+      </p>
+    </section>
+    <!-- //radial-Gradient -->
+
+
+    <!-- Мильні бульбашки <svg viewBox="0 0 200 200">
+      <defs>
+        <!- Разноцветный градиент -->
+    <!-- <linearGradient id="gradient--colors" x1="0" y1="100%" x2="100%" y2="0">
+          <stop offset="0%" stop-color="dodgerblue" />
+          <stop offset="50%" stop-color="fuchsia" />
+          <stop offset="100%" stop-color="yellow" />
+        </linearGradient> -->
+
+    <!-- Градиент прозрачности разноцветного слоя -->
+    <!-- <radialGradient id="gradient--colors-transparency" fx="25%" fy="25%">
+          <stop offset="0%" stop-color="black" />
+          <stop offset="30%" stop-color="black" stop-opacity=".2" />
+          <stop offset="97%" stop-color="white" stop-opacity=".4" />
+          <stop offset="100%" stop-color="black" />
+        </radialGradient> -->
+
+    <!-- Маска прозрачности разноцветного слоя -->
+    <!-- <mask id="mask--colors-transparency">
+          <rect fill="url(#gradient--colors-transparency)" width="100%" height="100%"></rect>
+        </mask> -->
+
+    <!-- Градиент для прозрачности -->
+    <!-- <radialGradient id="gradient--bw-light" fy="10%">
+          <stop offset="60%" stop-color="black" stop-opacity="0" />
+          <stop offset="90%" stop-color="white" stop-opacity=".25" />
+          <stop offset="100%" stop-color="black" />
+        </radialGradient> -->
+
+    <!-- Маска для нижнего отражения -->
+    <!-- <mask id="mask--light-bottom">
+          <rect fill="url(#gradient--bw-light)" width="100%" height="100%"></rect>
+        </mask> -->
+
+    <!-- Маска для верхнего отражения -->
+    <!-- <mask id="mask--light-top">
+          <rect fill="url(#gradient--bw-light)" width="100%" height="100%" transform="rotate(180, 100, 100)"></rect>
+        </mask> -->
+
+    <!-- Градиент блика -->
+    <!-- <radialGradient id="gradient--spot" fy="20%">
+          <stop offset="10%" stop-color="white" stop-opacity=".7" />
+          <stop offset="70%" stop-color="white" stop-opacity="0" />
+        </radialGradient>
+      </defs> -->
+
+    <!-- Нижний блик -->
+    <!-- <ellipse rx="40" ry="20" cx="150" cy="150" fill="url(#gradient--spot)" transform="rotate(-225, 150, 150)">
+      </ellipse> -->
+
+    <!-- Нижнее отражение -->
+    <!-- <circle r="50%" cx="50%" cy="50%" fill="aqua" mask="url(#mask--light-bottom)">
+      </circle> -->
+
+    <!-- Верхнее отражение -->
+    <!-- <circle r="50%" cx="50%" cy="50%" fill="yellow" mask="url(#mask--light-top)">
+      </circle> -->
+
+
+    <!-- Верхний блик -->
+    <!-- <ellipse rx="55" ry="25" cx="55" cy="55" fill="url(#gradient--spot)" transform="rotate(-45, 55, 55)">
+      </ellipse> -->
+
+    <!-- Фигура с маской и разноцветным градиентом -->
+    <!-- <circle r="50%" cx="50%" cy="50%" fill="url(#gradient--colors)" mask="url(#mask--colors-transparency)">
+      </circle>
+
+    </svg> -->
+
+    <!--Демо мильні бульбашки 
+      <div class="demo">
+      <div class="demo__content">
+
+        <svg class="svg svg--defs"> -->
+
+    <!-- Bubble transparency -->
+    <!-- <radialGradient id="grad--bw" fx="25%" fy="25%">
+            <stop offset="0%" stop-color="black" />
+            <stop offset="30%" stop-color="black" stop-opacity=".2" />
+            <stop offset="97%" stop-color="white" stop-opacity=".4" />
+            <stop offset="100%" stop-color="black" />
+          </radialGradient>
+
+          <mask id="mask" maskContentUnits="objectBoundingBox">
+            <rect fill="url(#grad--bw)" width="1" height="1"></rect>
+          </mask> -->
+
+    <!-- Light spot -->
+    <!-- <radialGradient id="grad--spot" fx="50%" fy="20%">
+            <stop offset="10%" stop-color="white" stop-opacity=".7" />
+            <stop offset="70%" stop-color="white" stop-opacity="0" />
+          </radialGradient> -->
+
+    <!-- Top & bottom light -->
+    <!-- <radialGradient id="grad--bw-light" _fx="25%" fy="10%">
+            <stop offset="60%" stop-color="black" stop-opacity="0" />
+            <stop offset="90%" stop-color="white" stop-opacity=".25" />
+            <stop offset="100%" stop-color="black" />
+          </radialGradient>
+
+          <mask id="mask--light-top" maskContentUnits="objectBoundingBox">
+            <rect fill="url(#grad--bw-light)" width="1" height="1" transform="rotate(180, .5, .5)"></rect>
+          </mask>
+
+          <mask id="mask--light-bottom" maskContentUnits="objectBoundingBox">
+            <rect fill="url(#grad--bw-light)" width="1" height="1"></rect>
+          </mask> -->
+
+    <!-- Colors of bubble -->
+    <!-- <linearGradient id="grad" x1="0" y1="100%" x2="100%" y2="0">
+            <stop offset="0%" stop-color="dodgerblue" class="stop-1" />
+            <stop offset="50%" stop-color="fuchsia" class="stop-2" />
+            <stop offset="100%" stop-color="yellow" class="stop-3" />
+          </linearGradient>
+
+          <mask id="mask--collapse" maskContentUnits="objectBoundingBox">
+            <circle r=".5" cx=".5" cy=".5" class="collapse-circle"></circle>
+          </mask>
+
+          <symbol id="splash">
+            <g class="splash__group" fill="none" stroke="white" stroke-opacity=".8">
+              <circle r="49%" cx="50%" cy="50%" stroke-width="3%" stroke-dasharray="1% 10%"
+                class="splash__circle _hidden">
+              </circle>
+              <circle r="44%" cx="50%" cy="50%" stroke-width="2%" stroke-dasharray="1% 5%"
+                class="splash__circle _hidden">
+              </circle>
+              <circle r="39%" cx="50%" cy="50%" stroke-width="1%" stroke-dasharray="1% 8%"
+                class="splash__circle _hidden">
+              </circle>
+              <circle r="33%" cx="50%" cy="50%" stroke-width="3%" stroke-dasharray="1% 6%"
+                class="splash__circle _hidden">
+              </circle>
+              <circle r="26%" cx="50%" cy="50%" stroke-width="1%" stroke-dasharray="1% 7%"
+                class="splash__circle _hidden">
+              </circle>
+              <circle r="18%" cx="50%" cy="50%" stroke-width="1%" stroke-dasharray="1% 8%"
+                class="splash__circle _hidden">
+              </circle>
+            </g>
+          </symbol>
+        </svg>
+
+        <div class="demo__defs hidden">
+          <svg class="svg bubble" viewBox="0 0 200 200">
+            <g class="bubble__group">
+              <ellipse rx="20%" ry="10%" cx="150" cy="150" fill="url(#grad--spot)" transform="rotate(-225, 150, 150)"
+                class="shape _hidden"></ellipse>
+              <circle r="50%" cx="50%" cy="50%" fill="aqua" mask="url(#mask--light-bottom)" class="shape _hidden">
+              </circle>
+              <circle r="50%" cx="50%" cy="50%" fill="yellow" mask="url(#mask--light-top)" class="shape _hidden">
+              </circle>
+              <ellipse rx="55" ry="25" cx="55" cy="55" fill="url(#grad--spot)" transform="rotate(-45, 55, 55)"
+                class="shape _hidden"></ellipse>
+              <circle r="50%" cx="50%" cy="50%" fill="url(#grad)" mask="url(#mask)" class="shape _hidden"></circle>
+            </g>
+
+            <use xlink:href="#splash" class="bubble__splash" />
+           
+          </svg>
+        </div>
+
+        <header class="demo__title demo-title">
+          <svg class="svg demo-title__splash" viewBox="0 0 200 200">
+            <use xlink:href="#splash" />
+          </svg>
+
+          <h1 class="demo-title__content">
+            Bubbles
+            <span class="demo__tip">Click bubble to burst it!</span>
+          </h1>
+        </header>
+      </div>
+
+    </div> -->
+  </main>
+  <footer>
+    <p class="footer" align="center">
+      &copy;2019 IT-BRO. All rights reserved | Proekt by Krapotka
+    </p>
+  </footer>
+  <script src="js/bubbles.js" type="text/javascript"> </script>
+</body>
+
+</html>
