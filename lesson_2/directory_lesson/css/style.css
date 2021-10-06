@@ -17,12 +17,6 @@ a:hover {
   color: #520FA4;
 }
 
-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  color: inherit;
-}
 
 .container {
   max-width: 1220px;
@@ -81,12 +75,11 @@ section {
   display: flex;
 }
 
-.button {
-  text-transform: uppercase;
-  border: 1px solid #fff;
-  font-size: 18px;
-  line-height: 22px;
-  padding: 29px 45px;
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: inherit;
 }
 
 fieldset {
@@ -149,4 +142,68 @@ fieldset {
 
 .dir__copy-text {
   text-align: center;
+}
+
+
+
+
+
+.menu__btn {
+  display: none;
+}
+
+@media (max-width:960px) {
+  .menu {
+    order: 1;
+  }
+
+  .menu__list {
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    background-color: #444444;
+    right: 0;
+    text-align: center;
+    padding: 20px 0;
+    transform: translateY(-500px);
+    transition: all .5s;
+  }
+
+  .menu__list.menu__list--active {
+    transform: translateY(0);
+  }
+
+  .menu__list-link {
+    padding: 20px 0;
+    display: block;
+    color: #ffffff;
+  }
+
+  .menu__list-link:hover {
+    border-bottom: none;
+  }
+
+  .menu__btn {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    height: 24px;
+    border: none;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .menu__btn::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #000000;
+    left: 0;
+    top: 9px;
+
+  }
 }
