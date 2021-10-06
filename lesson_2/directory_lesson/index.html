@@ -2,50 +2,63 @@
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
 <html lang="uk">
-<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+  <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 
-<head>
-	<!-- Заголовок страницы в браузере -->
-	<title>Курс ITBRO - react </title>
+<head>	
 	<!-- Кодировка страницы -->
-	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-	<link rel="icon" href="jpeg/academi.JPG" type="images/x-icon">
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Заголовок страницы в браузере -->
+	<title>Курс ITBRO - react </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap" rel="stylesheet">	
+  <link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <!-- Отображаемое тело страницы -->
 
 <body>
-	<!--header-->
-	<header>
-		<img class='dir-jpg' src="jpeg/academi.JPG" alt="IT BRO Academy">
-		<nav class="dir-nav1">
-			<ul class='dir-nav1-list'>
-				<li class='dir-nav1-list-order'>
-					<a class='dir-nav1-list-order-section' href="#DirHTML">
-						Інформація по HTML
-					</a>
-				</li>
-				<li class='dir-nav1-list-order'>
-					<a class='dir-nav1-list-order-section' href="#DirCss">
-						Інформація по CSS
-					</a>
-				</li>
-				<li class='dir-nav1-list-order'>
-					<a class='dir-nav1-list-order-section' href="#DirJs">
-						Інформація по JS
-					</a>
-				</li>
-				<li class='dir-nav1-list-order'>
-					<a class='dir-nav1-list-order-section' href="#DirPrograms">
-						Програми для роботи
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<hr>
-	<hr>
-	<hr>
+	<!--header-->	
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/" class="logo">
+          <img class= "logo__link" src="jpeg_logo/logo_3.png" alt="logo">
+        </a>
+        <nav class="menu">
+          <button class="menu__btn"></button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#DirHTML" class="menu__list-link">
+                Інфо з HTML			 
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#DirCss" class="menu__list-link">
+                Інфо з CSS
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#DirJs" class="menu__list-link">
+                Інфо з JS
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#DirPrograms" class="menu__list-link">
+                Програми для роботи
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__list-link">
+                Різниця HTML--XML--MD--JSON
+              </a>
+            </li>
+          </ul>
+        </nav>        
+      </div>
+    </div>
+  </header>
 	<!--//header-->
 	<!--main-->
 	<main class='container'>
@@ -361,7 +374,7 @@
 	<!--footer-->
 	<footer class='footer'>
 		<div class='dir-copy'>
-			<p class="dir-copy-text" align="center"> © 2019 УКР. All rights reserved | Design by Krapotka</p>
+			<p class="dir-copy-text" align="center"> © 2021. All rights reserved | Design by INSIDER</p>
 		</div>
 	</footer>
 	<!--//footer-->
