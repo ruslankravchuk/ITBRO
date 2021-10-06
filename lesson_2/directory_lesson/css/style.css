@@ -23,6 +23,7 @@ button {
 .container {
   max-width: 1220px;
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 body {
@@ -43,6 +44,12 @@ body {
   font-size: 48px;
   line-height: 48px;
   font-weight: 400;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 50px;
+  display: flex;
 }
 
 .button {
@@ -80,10 +87,34 @@ body {
 }
 
 .menu__list-link:hover {
-  border-bottom: 1px solid #060606;
+  border-bottom: 1px solid #520FA4;
+  font-weight: 700;
+  color: #520FA4;
 }
 
 .logo__link {
   width: 100px;
   height: 100px;
+}
+
+.dir__sec {}
+
+.dir__sec-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dir__sec-items {
+  max-width: 100%;
+  width: 25%;
+  padding: 10px 20px;
+}
+
+.dir__sec-items:nth-child(4) {
+  padding-right: 0;
+}
+
+.items {
+  width: 50%;
 }
