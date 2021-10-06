@@ -36,7 +36,7 @@ body {
   background: #ffffff;
 }
 
-.title {
+h1 {
   font-family: 'spaceagecyrillic';
   padding: 100px 0;
   font-size: 68px;
@@ -147,7 +147,7 @@ fieldset {
 
 
 
-
+/* стилі для бургер-меню */
 .menu__btn {
   display: none;
 }
