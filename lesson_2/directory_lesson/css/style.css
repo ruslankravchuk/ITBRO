@@ -45,7 +45,7 @@ body {
 .title {
   font-family: 'spaceagecyrillic';
   padding: 100px 0;
-  font-size: 48px;
+  font-size: 68px;
   line-height: 48px;
   font-weight: 700;
   text-align: center;
@@ -69,6 +69,11 @@ h3 {
   line-height: 30px;
   font-weight: 400;
   width: 100%;
+  color: #0763EE;
+}
+
+p {
+  margin-bottom: 15px;
 }
 
 section {
@@ -83,6 +88,11 @@ section {
   line-height: 22px;
   padding: 29px 45px;
 }
+
+fieldset {
+  margin-bottom: 20px;
+}
+
 
 .header__inner {
   display: flex;
@@ -137,6 +147,6 @@ section {
   padding-right: 0;
 }
 
-.items {
-  /* width: 33,3%; */
+.dir__copy-text {
+  text-align: center;
 }
