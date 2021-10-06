@@ -13,6 +13,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+  color: #520FA4;
+}
+
 button {
   border: none;
   background-color: transparent;
@@ -43,8 +48,28 @@ body {
   padding: 100px 0;
   font-size: 48px;
   line-height: 48px;
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
+}
+
+h2,
+h3 {
+  font-family: 'spaceagecyrillic';
+  padding: 30px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  width: 100%;
 }
 
 section {
@@ -97,8 +122,6 @@ section {
   height: 100px;
 }
 
-.dir__sec {}
-
 .dir__sec-item {
   display: flex;
   justify-content: space-between;
@@ -116,5 +139,5 @@ section {
 }
 
 .items {
-  width: 50%;
+  /* width: 33,3%; */
 }
