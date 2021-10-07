@@ -23,7 +23,7 @@ button {
 
 .container {
   max-width: 1220px;
-  padding: 0 10px;
+  padding: 10px;
   margin-top: 90px;
   background-color: rgb(204, 204, 9);
 }
@@ -81,17 +81,22 @@ section {
 }
 
 .menu__list-link {
-  text-transform: uppercase;
-  color: #000000;
-  font-size: 14px;
-  line-height: 18px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid transparent;
-  transition: all .5s;
+  background-color: #424742;
+  border: none;
+  color: rgb(204, 204, 9);
+  padding: 1px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: auto;
+  border-radius: 5px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .menu__list-link:hover {
-  border-bottom: 1px solid #520FA4;
+  border-bottom: 1px solid rgb(204, 204, 9);
   font-weight: 700;
   color: #520FA4;
 }
@@ -144,5 +149,5 @@ section {
 }
 
 .dir__sec-top {
-  background-color:rgb(204, 204, 9);
+  background-color: rgb(204, 204, 9);
 }
