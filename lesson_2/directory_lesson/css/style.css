@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: #520FA4;
+  color: #AEBF3B;
 }
 
 
@@ -27,13 +27,15 @@ a:hover {
 body {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
-  color: #1B1818;
+  color: #020202;
   font-size: 16px;
   line-height: 19px;
+  background: #e4e4e4;
 }
 
 .header {
-  background: #ffffff;
+  min-height: 100vh;
+
 }
 
 h1 {
@@ -61,9 +63,9 @@ h2 {
 h3 {
   font-size: 20px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 700;
   width: 100%;
-  color: #0763EE;
+  color: #bdb828;
 }
 
 p {
@@ -97,16 +99,19 @@ fieldset {
 
 .menu__list {
   display: flex;
+  flex-wrap: wrap;
+
 }
 
 .menu__item {
-  margin: 0 15px;
+
+  margin: 15px 15px;
 }
 
 .menu__list-link {
   text-transform: uppercase;
-  color: #000000;
   font-size: 14px;
+  font-weight: 700;
   line-height: 18px;
   padding-bottom: 5px;
   border-bottom: 1px solid transparent;
@@ -114,9 +119,8 @@ fieldset {
 }
 
 .menu__list-link:hover {
-  border-bottom: 1px solid #520FA4;
-  font-weight: 700;
-  color: #520FA4;
+  border-bottom: 1px solid #AEBF3B;
+  color: #AEBF3B;
 }
 
 .logo__link {
@@ -144,8 +148,81 @@ fieldset {
   text-align: center;
 }
 
+form {
+  margin-bottom: 150px;
+}
 
+/* стилі для кнопки */
+.btn-class {
+  position: absolute;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 3px rgba(128, 128, 128, 1),
+    0px 4px rgba(118, 118, 118, 1),
+    0px 5px rgba(108, 108, 108, 1),
+    0px 6px rgba(98, 98, 98, 1),
+    6px 7px rgba(88, 88, 88, 1),
+    0px 8px rgba(78, 78, 78, 1),
+    10px 14px 6px -1px rgba(128, 128, 128, 1);
 
+  transition: all .1s ease-in-out;
+  background-color: #E8E8E8;
+
+  background-image:
+    -webkit-gradient(linear, left bottom, left top,
+      color-stop(50%, rgba(255, 255, 255, 0)),
+      color-stop(50%, rgba(255, 255, 255, 0.3)),
+      color-stop(100%, rgba(255, 255, 255, 0.2))),
+
+    -webkit-gradient(linear, left top, right top,
+      color-stop(0%, rgba(210, 210, 210, 0.3)),
+      color-stop(20%, rgba(210, 210, 210, 0)),
+      color-stop(80%, rgba(210, 210, 210, 0)),
+      color-stop(100%, rgba(210, 210, 210, 0.3))),
+
+    -webkit-gradient(linear, left top, right top,
+      color-stop(0%, rgba(255, 255, 255, 0)),
+      color-stop(20%, rgba(255, 255, 255, 0.5)),
+      color-stop(80%, rgba(255, 255, 255, 0.5)),
+      color-stop(100%, rgba(255, 255, 255, 0))),
+
+    -webkit-gradient(linear, 0% 100%, 100% 0%,
+      color-stop(0%, rgba(255, 255, 255, 0)),
+      color-stop(40%, rgba(255, 255, 255, 0)),
+      color-stop(40%, #D2D2D1),
+      color-stop(60%, #D2D2D1),
+      color-stop(60%, rgba(255, 255, 255, 0)),
+      color-stop(100%, rgba(255, 255, 255, 0)));
+
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+
+  color: #3A474D;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  text-shadow: 0px 1px #fff,
+    0px -1px #262F33;
+
+}
+
+.btn-class:hover {
+  color: #AEBF3B;
+  text-shadow: 0px -1px #97A63A;
+  cursor: pointer;
+}
+
+.btn-class:active {
+  box-shadow: 0px 3px rgba(128, 128, 128, 1),
+    0px 4px rgba(118, 118, 118, 1),
+    0px 5px rgba(108, 108, 108, 1),
+    0px 6px rgba(98, 98, 98, 1),
+    0px 7px rgba(88, 88, 88, 1),
+    0px 8px rgba(78, 78, 78, 1),
+    0px 10px 2px 0px rgba(128, 128, 128, .6);
+  transform: translate(0, 5px);
+}
 
 /* стилі для бургер-меню */
 .menu__btn {
@@ -160,10 +237,8 @@ fieldset {
   .menu__list {
     display: block;
     position: absolute;
-    top: 125px;
     left: 0;
-    background-color: #444444;
-    right: 0;
+    background-color: #4c4b4b00;
     text-align: center;
     padding: 20px 0;
     transform: translateY(-500px);
@@ -172,12 +247,13 @@ fieldset {
 
   .menu__list.menu__list--active {
     transform: translateY(0);
+    top: 62px;
   }
 
   .menu__list-link {
     padding: 20px 0;
     display: block;
-    color: #ffffff;
+    border-bottom: none;
   }
 
   .menu__list-link:hover {
@@ -204,6 +280,34 @@ fieldset {
     background-color: #000000;
     left: 0;
     top: 9px;
+    margin-bottom: 20px;
 
   }
 }
+
+/* ще стилі для кнопки
+.btn-class {
+  display: inline-block;
+  color: #705D07;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  padding: 10px 40px;
+  background: rgba(0, 196, 244, 0.93);
+  background: -o-linear-gradient(225deg, rgba(0, 196, 244, 0.93) 0%, rgba(3, 96, 120, 0.93) 100%);
+  background: -moz-linear-gradient(225deg, rgba(0, 196, 244, 0.93) 0%, rgba(3, 96, 120, 0.93) 100%);
+  background: -webkit-linear-gradient(225deg, rgba(0, 196, 244, 0.93) 0%, rgba(3, 96, 120, 0.93) 100%);
+  background: linear-gradient(225deg, rgba(0, 196, 244, 0.93) 0%, rgba(3, 96, 120, 0.93) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00c4f4", endColorstr="#036078", GradientType=1);
+  text-transform: uppercase;
+  transition: all .5s;
+}
+
+.btn-class:hover,
+.btn-class:active {
+  background-color: #fefefe;
+  color: #000000;
+} */

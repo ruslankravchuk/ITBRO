@@ -30,43 +30,41 @@
           <button class="menu__btn"></button>
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="#DirHTML" class="menu__list-link">
+              <a href="#DirHTML" class=" menu__list-link">
                 Інфо з HTML			 
               </a>
             </li>
             <li class="menu__item">
-              <a href="./difference.html" class="menu__list-link">
+              <a href="difference.html" target="_blank" class=" menu__list-link">
                 Різниця HTML--XML--MD--JSON
               </a>
             </li>
             <li class="menu__item">
-              <a href="#DirCss" class="menu__list-link">
+              <a href="#DirCss" class=" menu__list-link">
                 Інфо з CSS
               </a>
             </li>
             <li class="menu__item">
-              <a href="#DirJs" class="menu__list-link">
+              <a href="#DirJs" class=" menu__list-link">
                 Інфо з JS
               </a>
             </li>
             <li class="menu__item">
-              <a href="#DirPrograms" class="menu__list-link">
+              <a href="#DirPrograms" class=" menu__list-link">
                 Програми для роботи
               </a>
             </li>            
           </ul>
         </nav>        
-      </div>
+      </div>      
+      <h1 class="title" >
+			Довідник
+		  </h1>    
     </div>
   </header>
 	<!--//header-->
 	<!--main-->
-	<main class="main">
-    <div class="container">
-      <h1 class="title" >
-			Довідник
-		  </h1>
-    </div>
+	<main class="main">    
     <!-- Інформація по HTML -->
     <section>
       <div class="container">
@@ -141,7 +139,7 @@
               Практика з HTML
               </h3>
               <a target="_blank" href="index_linklibrary.html">
-                    HTML Library
+                    MY HTML LIBRARY
               </a>
             </div>
           </div> 
@@ -160,7 +158,7 @@
           <ul class="dir__sec-item">
             <li class="dir__sec-items">
               <a target="_blank" class="dir__sec-links" href="property/attribute.html">
-                Властивості CSS
+                ВЛАСТИВОСТІ CSS
               </a>
             </li>
             <li class="dir__sec-items">
@@ -195,7 +193,7 @@
                   </a>
                 </li> -->
                 <li>
-                  <a target="_blank" class="dir__sec-links" href="../2/directorysvg/dirsvg.html">Довідник по SVG</a>
+                  <a target="_blank" class="dir__sec-links" href="dir_svg/dirsvg.html">МІЙ ДОВІДНИК ПО SVG</a>
                 </li>
                 <li>
                   <a target="_blank" class="dir__sec-links" href="https://jakearchibald.github.io/svgomg/">
@@ -230,7 +228,7 @@
               </ul>
             </li>
             <li class="dir__sec-items">
-              <a target="_blank" class="dir__sec-links" href="https://habr.com/ru/post/467555/">
+              <a target="_blank" class="dir__sec-links" href="https://css-tricks.com/how-well-do-you-know-css-layout/">
                 Тест на знання CSS
               </a>
             </li>
@@ -391,7 +389,7 @@
                 <label>
                   E-mail:
                 </label>
-                <input type="email" required>
+                <input type="email" required pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+">
               </p>
             </fieldset>
             <fieldset title="Емоції">
@@ -403,19 +401,19 @@
                     <label for="angry">
                       Не подобається
                     </label>
-                    <input type="checkbox" name="angry" id="angry" value="angry">
+                    <input type="radio" name="emotions" id="angry" value="angry">
                   </li>
                   <li>
                     <label for="happy">
                       Подобається
                     </label>
-                    <input type="checkbox" name="happy" id="happy" value="happy">
+                    <input type="radio" name="emotions" id="happy" value="happy">
                   </li>
                   <li>
                     <label for="ambivalent">
                       Мені байдуже
                     </label>
-                    <input type="checkbox" name="ambivalent" id="ambivalent" value="ambivalent">
+                    <input type="radio" name="emotions" id="ambivalent" value="ambivalent">
                   </li>
                 </ul>              
             </fieldset>
@@ -424,13 +422,8 @@
                 Відгук, побажання, запитання
               </p>  
               <textarea name="comment" cols="40" rows="3"></textarea>              
-            </fieldset>
-            <br>
-            <br>
-            <p>
-              <input type="submit" value="Відправити">
-              <input type="reset" value="Очистити">
-            </p>
+            </fieldset>              
+            <button class="btn-class" type="submit">ВІДПРАВИТИ</button>           
           </form>
         </div>
       </div>
