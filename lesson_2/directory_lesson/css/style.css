@@ -15,8 +15,10 @@ a {
 
 a:hover {
   color: #AEBF3B;
+  border-bottom: 2px solid #AEBF3B;
+  transition: all 0.4s ease;
+  max-width: 100%;
 }
-
 
 .container {
   max-width: 1220px;
@@ -30,7 +32,8 @@ body {
   color: #020202;
   font-size: 16px;
   line-height: 19px;
-  background: #e4e4e4;
+  background: #c3c3c3;
+
 }
 
 .header {
@@ -40,11 +43,14 @@ body {
 
 h1 {
   font-family: 'spaceagecyrillic';
-  padding: 100px 0;
+  padding: 20px 0;
   font-size: 68px;
-  line-height: 48px;
+  line-height: 88px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 0;
+  margin-top: 80px;
+
 }
 
 h2,
@@ -95,6 +101,11 @@ fieldset {
   align-items: center;
   height: 100px;
   padding-top: 20px;
+}
+
+a.logo:hover,
+img.logo__link:hover {
+  text-decoration: none !important;
 }
 
 .menu__list {
@@ -152,6 +163,114 @@ form {
   margin-bottom: 150px;
 }
 
+/* стилі для h1, h2, h3 */
+
+.titlefont {
+  color: rgb(235, 235, 235);
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+  text-shadow: rgb(125, 125, 125) -1px -1px 0px, rgb(115, 115, 115) -2px -2px 0px, rgb(105, 105, 105) -3px -3px 0px, rgb(90, 90, 90) -4px -4px 0px, rgba(20, 20, 20, 0.498039) -6px -6px 5px;
+  text-align: center;
+
+}
+
+.titlefont2 {
+  color: rgb(235, 235, 235);
+  font-size: 100px;
+  text-shadow: rgb(20, 20, 20) -1px 1px 0px, rgb(20, 20, 20) -2px 2px 0px, rgb(20, 20, 20) -3px 3px 0px, rgb(20, 20, 20) -4px 4px 0px, rgb(30, 30, 30) -5px 5px 0px, rgb(40, 40, 40) -6px 6px 0px, rgba(40, 40, 40, 0.901961) -7px 7px 0px, rgba(40, 40, 40, 0.8) -8px 8px 1px, rgba(40, 40, 40, 0.701961) -9px 9px 3px, rgba(40, 40, 40, 0.6) -10px 10px 4px, rgba(40, 40, 40, 0.498039) -11px 11px 5px;
+  text-align: center;
+
+}
+
+.titlefont3 {
+  text-shadow: rgba(0, 0, 0, 0.498039) -15px 15px 10px, rgba(0, 0, 0, 0.498039) 15px 15px 10px;
+  text-align: center;
+  color: rgb(235, 235, 235);
+  font-size: 100px;
+}
+
+.titlefont4 {
+  color: rgb(110, 110, 110);
+  font-size: 100px;
+  text-shadow: rgba(255, 0, 0, 0.2) -3px 0px 5px, rgba(0, 0, 255, 0.2) 3px 0px 5px, rgba(0, 255, 0, 0.2) 0px 3px 5px;
+  text-align: center;
+}
+
+/* .titlefont4 {
+  color: rgb(30, 30, 30);
+  font-size: 100px;
+  text-shadow: rgb(15, 15, 15) 1px -1px 0px, rgb(120, 120, 120) -1px 1px 0px;
+  text-align: center;
+
+}
+
+.titlefont5 {
+  color: rgb(30, 30, 30);
+  font-size: 100px;
+  text-shadow: rgb(5, 5, 5) -1px 1px 3px, rgb(190, 190, 190) 1px -1px 3px;
+  text-align: center;
+
+} */
+
+/* стилі при наведенні a:hover */
+.d3Box {
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  background: #03A9F4;
+  color: white;
+  transform-style: preserve-3d;
+  transform-origin: 50% 0% 0;
+}
+
+.d3Box::before {
+  content: attr(data-hover);
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0% 0;
+  background: #AEBF3B;
+  padding: 0px 4px;
+}
+
+.d3Box:hover,
+.d3Box:focus {
+  transition: all 0.4s ease;
+  transform: translateY(0px) rotateX(90deg);
+}
+
+.d3Box:hover::before {
+  transition: all 0.4s ease;
+}
+
+/* ******* */
+.maxWidth::before {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  margin: 0px 4px;
+  max-width: 0;
+  border-bottom: 2px solid #AEBF3B;
+  color: #AEBF3B;
+  content: attr(data-hover);
+  transition: max-width 0.5s;
+}
+
+.maxWidth:hover,
+.maxWidth:focus,
+.maxWidth:hover::before {
+  transition: all 0.4s ease;
+  max-width: 100%;
+}
+
+/* end стилі при наведенні a:hover */
+
+
 /* стилі для кнопки */
 .btn-class {
   position: absolute;
@@ -165,7 +284,6 @@ form {
     6px 7px rgba(88, 88, 88, 1),
     0px 8px rgba(78, 78, 78, 1),
     10px 14px 6px -1px rgba(128, 128, 128, 1);
-
   transition: all .1s ease-in-out;
   background-color: #E8E8E8;
 
