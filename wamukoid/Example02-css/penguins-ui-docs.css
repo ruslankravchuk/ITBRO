@@ -1,0 +1,11 @@
+.p_ui h1 .red-letter {
+    color: #E63946;
+}
+.p_ui .logo {
+    font-size: 60px;
+    margin-bottom: 8px;
+}
+.p_ui .desc {
+    margin-top: 0;
+    color: #6D6D6D;
+}
