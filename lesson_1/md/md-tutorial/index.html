@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>MD tutorial</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="header_text"> Що таке Markdown?</h1>
+    <div class="header_logo">
+      <img src="./img/markdown.png" alt="markdowm-logo" width="400" height="250">
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="main_header">
+        <p class="text">
+          <strong>Markdown</strong> - мова розмітки текстів. Такі тексти легко писати і читати.
+          Їх можна без особливих пробелм конвертувати в HTML. Більшість програмістів використовують Markdown для
+          написання документації, описів своїх проєктів,
+          написання блогів і так далі.
+          <hr>
+      </div>
+      <div class="main_nav">
+      </div>
+      <div class="list-group">
+        <h4 class="list-group-item-heading"> <strong>Синтаксис Markdown:</strong> </h4>
+        <p class="list-group-item-text"></p>
+        <a href="#about-headers" class="list-group-item ">
+          <h4 class="list-group-item-heading">- створення заголовків</h4>
+          <p class="list-group-item-text"></p>
+        </a>
+        <a href="#about-paragraphs" class="list-group-item">
+          <h4 class="list-group-item-heading">- створення параграфів</h4>
+          <p class="list-group-item-text"></p>
+        </a>
+        <a href="#about-text" class="list-group-item">
+          <h4 class="list-group-item-heading">- виділення тексту</h4>
+          <p class="list-group-item-text"></p>
+        </a>
+        <a href="#about-list" class="list-group-item">
+          <h4 class="list-group-item-heading">- створення списків</h4>
+          <p class="list-group-item-text"></p>
+        </a>
+        <a href="#about-images" class="list-group-item">
+          <h4 class="list-group-item-heading">- зображення</h4>
+          <p class="list-group-item-text"></p>
+        </a>
+      </div>
+      <section id="#about-paragraphs" class="main_about-headers">
+        <h2>Заголовки</h2> Щоб створити заголовок, додайте знак(#) перед словом або фразою. Кількість
+        знаків, які ви використовуєте, має відповідати рівню заголовка. Наприклад, щоб створити третій
+        рівень заголовка, використовуйте три знаки (наприклад, ### Мій заголовок).
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" class="table-secondary">Markdown</th>
+              <th scope="col" class="table-secondary">HTML</th>
+              <th scope="col" class="table-secondary">Вигляд на сторінці</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td># Заголовок 1 рівня</td>
+              <td>&lt;h1&gt; Заголовок 1 рівня &lt;/h1&gt;</td>
+              <td>
+                <h1>Заголовок 1 рівня</h1>
+              </td>
+            </tr>
+            <tr>
+              <td>## Заголовок 2 рівня</td>
+              <td>&lt;h2&gt; Заголовок 2 рівня &lt;/h2&gt;</td>
+              <td>
+                <h2>Заголовок 2 рівня</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>### Заголовок 3 рівня</td>
+              <td>&lt;h3&gt; Заголовок 3 рівня &lt;/h3&gt;</td>
+              <td>
+                <h3>Заголовок 3 рівня</h3>
+              </td>
+            </tr>
+            <tr>
+              <td>#### Заголовок 4 рівня</td>
+              <td>&lt;h4&gt; Заголовок 4 рівня &lt;;/h4&gt;;</td>
+              <td>
+                <h4>Заголовок 4 рівня</h4>
+              </td>
+            </tr>
+            <tr>
+              <td>##### Заголовок 5 рівня</td>
+              <td>&lt;h5&gt; Заголовок 5 рівня &lt;;/h5&gt;;</td>
+              <td>
+                <h5>Заголовок 5 рівня</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>###### Заголовок 6 рівня</td>
+              <td>&lt;h6&gt; Заголовок 6 рівня &lt;/h6&gt;</td>
+              <td>
+                <h6>Заголовок 6 рівня</h6>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="main_about-headers">
+        <h2>Альтернативний синтаксис для заголовків 1 та 2 рівнів</h2> Окрім знаків #, заголовки 1 та 2 рівня можна
+        створювати за допомогою знаків = та -. У рядку під текстом додайте будь-яку кількість ==
+        символів для рівня заголовка 1 або - символів для рівня заголовка 2.
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" class="table-secondary">Markdown</th>
+              <th scope="col" class="table-secondary">HTML</th>
+              <th scope="col" class="table-secondary">Вигляд на сторінці</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Заголовок 1 рівня
+                <p>============</p>
+              </td>
+              <td>&lt;h1&gt; Заголовок 1 рівня &lt;/h1&gt;</td>
+              <td>
+                <h1>Заголовок 1 рівня</h1>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Заголовок 2 рівня
+                <p>------------------</p>
+              </td>
+              <td>&lt;h2&gt; Заголовок 2 рівня &lt;/h2&gt;</td>
+              <td>
+                <h2>Заголовок 2 рівня</h2>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="about-paragraphs" class="main_about-paragraphs">
+        <h2>Параграфи</h2> Для створення абзаців використовуйте порожній рядок, щоб відокремити один або кілька рядків
+        тексту.
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" class="table-secondary">Markdown</th>
+              <th scope="col" class="table-secondary">HTML</th>
+              <th scope="col" class="table-secondary">Вигляд на сторінці</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Я дуже люблю користуватися Markdown. <p></p>
+
+                <p> Я думаю, що відтепер я буду використовувати його для форматування всіх своїх документів.</p>
+              </td>
+              <td>
+                <p>&lt;p&gt; Я дуже люблю користуватися Markdown. &lt;/p&gt;</p>
+
+
+                <p>&lt;p&gt; Я думаю, що відтепер я буду використовувати його для форматування всіх своїх документів.
+                  &lt;/p&gt; </p>
+              </td>
+              <td>
+                <p>Я дуже люблю користуватися Markdown. </p>
+
+                <p>Я думаю, що відтепер я буду використовувати його для форматування всіх своїх документів.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="about-text" class="main_about-text">
+        <h2>Виділення тексту</h2> Щоб виділити текст жирним шрифтом, додайте дві зірочки або підкреслення перед і після
+        слова чи
+        фрази. Щоб виділити середину слова для наголосу, додайте дві зірочки без пробілів навколо літер. Щоб виділити
+        курсивом текст, додайте одну зірочку або підкреслення перед і після слова чи фрази. Щоб виділити курсивом
+        середину слова для наголосу, додайте одну зірочку без пробілів навколо літер.
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" class="table-secondary">Markdown</th>
+              <th scope="col" class="table-secondary">HTML</th>
+              <th scope="col" class="table-secondary">Вигляд на сторінці</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Мені подобається **жирний текст**.
+              </td>
+              <td>
+                Мені подобається &lt;strong&gt; жирний текст &lt;strong&gt;.
+              </td>
+              <td>
+                Мені подобається <strong> жирний текст.</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Мені подобається __жирний текст__.
+              </td>
+              <td>
+                Мені подобається &lt;strong&gt; жирний текст &lt;strong&gt;.
+              </td>
+              <td>
+                Мені подобається <strong> жирний текст.</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Мені подобається **жирний** текст.
+              </td>
+              <td>
+                Мені подобається &lt;strong&gt; жирний &lt;strong&gt; текст .
+              </td>
+              <td>
+                Мені подобається <strong> жирний </strong> текст.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Курсивний текст - це *спів пташки*
+              </td>
+              <td>
+                Курсивний текст - це &lt;em&gt; спів пташки &lt;em&gt;.
+              </td>
+              <td>
+                Курсивний текст - це <em>спів пташки</em>.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Курсивний текст - це _спів пташки_
+              </td>
+              <td>
+                Курсивний текст - це &lt;em&gt; спів пташки &lt;em&gt;.
+              </td>
+              <td>
+                Курсивний текст - це <em>спів пташки</em>.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Курсивний текст - це *спів* пташки
+              </td>
+              <td>
+                Курсивний текст - це &lt;em&gt; спів &lt;em&gt; пташки.
+              </td>
+              <td>
+                Курсивний текст - це <em>спів </em> пташки.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="about-list" class="main_about-list">
+        <h2>Списки</h2> Щоб створити упорядкований список, додайте рядки -позиції з номерами, за якими йдуть крапки.
+        Цифри не обов’язково повинні бути впорядковані , але список повинен починатися з цифри один
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" class="table-secondary">Markdown</th>
+              <th scope="col" class="table-secondary">HTML</th>
+              <th scope="col" class="table-secondary">Вигляд на сторінці</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                1. Перший елемент. <br>
+                2. Другий елемент.<br>
+                3. Третій елемент. <br>
+                4. Четвертий елемент. <br>
+              </td>
+              <td>
+                &lt;ol&gt;<br>
+                &lt;li&gt;
+                Перший елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Другий елемент.
+                &lt;li&gt;<br>
+                &lt;li&gt;
+                Третій елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Четвертий елемент.
+                &lt;/li&gt;<br>
+                &lt;ol&gt;
+                <br>
+                <br>
+                <br>
+                <br>
+              </td>
+              <td>
+                1. Перший елемент. <br>
+                2. Другий елемент.<br>
+                3. Третій елемент. <br>
+                4. Четвертий елемент. <br>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                1. Перший елемент. <br>
+                1. Другий елемент.<br>
+                1. Третій елемент. <br>
+                1. Четвертий елемент. <br>
+              </td>
+              <td>
+                &lt;ol&gt;<br>
+                &lt;li&gt;
+                Перший елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Другий елемент.
+                &lt;li&gt;<br>
+                &lt;li&gt;
+                Третій елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Четвертий елемент.
+                &lt;/li&gt;<br>
+                &lt;ol&gt;
+                <br>
+                <br>
+                <br>
+                <br>
+              </td>
+              <td>
+                1. Перший елемент. <br>
+                2. Другий елемент.<br>
+                3. Третій елемент. <br>
+                4. Четвертий елемент. <br>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                1. Перший елемент. <br>
+                8. Другий елемент.<br>
+                3. Третій елемент. <br>
+                5. Четвертий елемент. <br>
+              </td>
+              <td>
+                &lt;ol&gt;<br>
+                &lt;li&gt;
+                Перший елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Другий елемент.
+                &lt;li&gt;<br>
+                &lt;li&gt;
+                Третій елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Четвертий елемент.
+                &lt;/li&gt;<br>
+                &lt;ol&gt;
+                <br>
+                <br>
+                <br>
+                <br>
+              </td>
+              <td>
+                1. Перший елемент. <br>
+                2. Другий елемент.<br>
+                3. Третій елемент. <br>
+                4. Четвертий елемент. <br>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                - Перший елемент. <br>
+                - Другий елемент.<br>
+                - Третій елемент. <br>
+                - Четвертий елемент. <br>
+              </td>
+              <td>
+                &lt;ul&gt;<br>
+                &lt;li&gt;
+                Перший елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Другий елемент.
+                &lt;li&gt;<br>
+                &lt;li&gt;
+                Третій елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Четвертий елемент.
+                &lt;/li&gt;<br>
+                &lt;ul&gt;
+                <br>
+                <br>
+                <br>
+                <br>
+              </td>
+              <td>
+                1. Перший елемент. <br>
+                2. Другий елемент.<br>
+                3. Третій елемент. <br>
+                4. Четвертий елемент. <br>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                * Перший елемент. <br>
+                * Другий елемент.<br>
+                * Третій елемент. <br>
+                * Четвертий елемент. <br>
+              </td>
+              <td>
+                &lt;ul&gt;<br>
+                &lt;li&gt;
+                Перший елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Другий елемент.
+                &lt;li&gt;<br>
+                &lt;li&gt;
+                Третій елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Четвертий елемент.
+                &lt;/li&gt;<br>
+                &lt;ul&gt;
+                <br>
+                <br>
+                <br>
+                <br>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    Перший елемент.
+                  </li>
+                  <li>
+                    Другий елемент.
+                  <li>
+                    Третій елемент.
+                  </li>
+                  <li>
+                    Четвертий елемент.
+                  </li>
+                </ul>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                + Перший елемент. <br>
+                + Другий елемент.<br>
+                + Третій елемент. <br>
+                + Четвертий елемент. <br>
+              </td>
+              <td>
+                &lt;ul&gt;<br>
+                &lt;li&gt;
+                Перший елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Другий елемент.
+                &lt;li&gt;<br>
+                &lt;li&gt;
+                Третій елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Четвертий елемент.
+                &lt;/li&gt;<br>
+                &lt;ul&gt;
+                <br>
+                <br>
+                <br>
+                <br>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    Перший елемент.
+                  </li>
+                  <li>
+                    Другий елемент.
+                  <li>
+                    Третій елемент.
+                  </li>
+                  <li>
+                    Четвертий елемент.
+                  </li>
+                </ul>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                - Перший елемент. <br>
+                - Другий елемент.<br>
+                - Третій елемент. <br>
+                - Четвертий елемент. <br>
+              </td>
+              <td>
+                &lt;ul&gt;<br>
+                &lt;li&gt;
+                Перший елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Другий елемент.
+                &lt;li&gt;<br>
+                &lt;li&gt;
+                Третій елемент.
+                &lt;/li&gt;<br>
+                &lt;li&gt;
+                Четвертий елемент.
+                &lt;/li&gt;<br>
+                &lt;ul&gt;
+                <br>
+                <br>
+                <br>
+                <br>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    Перший елемент.
+                  </li>
+                  <li>
+                    Другий елемент.
+                  <li>
+                    Третій елемент.
+                  </li>
+                  <li>
+                    Четвертий елемент.
+                  </li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="about-images" class="main_about-images">
+        <h2>Зображення</h2> Для вставки зображень в документ використайте знак ! в квадоатних дужках додайте
+        альтернативний текст та безпосередньо URL-адресу зображення.
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" class="table-secondary">Markdown</th>
+              <th scope="col" class="table-secondary">HTML</th>
+              <th scope="col" class="table-secondary">Вигляд на сторінці</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>![Альтернативний текст](/шлях/до/зображення.jpg)</p>
+              </td>
+              <td>
+                &lt;img src="./шлях/до/зображення.jpg" alt="альтернативний тескт"&gt;
+              </td>
+              <td>
+                <img src="./img/markdown.png" alt="markdowm-logo" width="100" height="70">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
