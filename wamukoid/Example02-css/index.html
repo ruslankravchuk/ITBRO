@@ -5,26 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Команда Insider</title>
+    <title>Команда INSIDER</title>
     <link rel="stylesheet" href="penguins-ui.css">
     <link rel="stylesheet" href="penguins-ui-docs.css">
 </head>
 
 <body class="p_ui">
     <header id="top">
-        <h1 class="p_ui">Представляем команду Insider</h1>
+        <h1 class="p_ui"><span class="red-letter">Представляем Вашій увазі команду INSIDER</span></h1>
         <hr>
         <nav>
             <ul>
-                <li><a href="#list">Список учасників команди</a></li>
-                <li><a href="#url">Сторінка на GitHub</></li>
+                <li><a href="#motto"><code>Девіз команди</code></a></li>
+                <li><a href="#list"><code>Список учасників команди</code></a></li>
+                <li><a href="#url"><code>Сторінка на GitHub</code></></li>
             </ul>
         </nav>
+        <hr>
         <p class="position-block">
-            Наш логотип  <img class="p_ui" src="logo_3.png" alt="Logo">
+            Наш логотип  <img class="logo" src="logo_3.png" alt="Logo">
         </p>
     </header>
     <main class="p_ui-container">
+        <section>
+            <hr>
+            <h3 id="motto">Девіз команди</h3>
+            <blockquote>
+                <p> - Кращий спосіб навчитися чогось - зануритися з головою в процес і почати діяти ще до того, як стане ясно, що потрібно робити</p>
+                <p> - Вирости себе і допоможи іншим зростати разом з нами</p>
+            </blockquote>
+        </section>
         <hr>
         <h3 id="list">Список учасників команди</h3>
         <table>
@@ -317,7 +327,7 @@
                         Zhytomyr
                     </td>
                     <td>
-                        fishing Bike cycling
+                        bicycle
                     </td>
                 </tr>
                 <tr>
@@ -337,17 +347,51 @@
                         run
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        18
+                    </td>
+                    <td>
+                        Sasha
+                    </td>
+                    <td>
+                        Oleksandr
+                    </td>
+                    <td>
+                        Lviv
+                    </td>
+                    <td>
+                        bicycle
+                    </td>
+                </tr>
             </tbody>
         </table>
         <hr>
  </main>
-        <footer>
-            <p>Сторінка на <a href="https://github.com/ruslankravchuk/ITBRO">GitHub</a>.</p>
+                    <footer>
+                        <p>Сторінка на <a id="url" href="https://github.com/ruslankravchuk/ITBRO">GitHub</a>.</p>
+                    <div class="position-container">
+                        <div class="position-block">Ліричний відступ в якості P.S.: наша некомпетентність не дозволяє нам оцінити чужу некомпетентність
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="form-cage"></div>
+                        <div class="form-h">Зворотній зв'язок</div>
+                        <form action="#" method="POST" enctype="multipart/form-data" class="form__body">
+                            <div><input class="form-input" autocomplete="off" type="text" name="name" placeholder="Ім'я">
+                            </div>
+                            <div><input class="form-input" type="text" name="mail_phone" placeholder="E-mail чи номер телефона"></div>
+                            <div><textarea class="form-text form-input" name="text" placeholder="Ваші побажання"></textarea></textarea>
+                            </div>
+                            <button type="submit" class="form-btn">відправити</button>
+                        </form>
+                    </div>
+                    </div>
                     </footer>
                     <h3 class="p_ui">Бажаємо всім хорошого коду :-)</h3>
 
                     <p>
-                        <a id="url" href="#top">Вгору</a>
+                        <a href="#top">Вгору</a>
                     </p>
 </body>
 
