@@ -274,17 +274,17 @@ td {
 }
 
 .position-block {
-    display: absolute;
+    display: block;
     border: 1px solid var(--accent-red);
-    padding: 1em 1px 1px 1px;
-    background-color: transparent;
+    padding: 20px;
+    background-color:transparent;
 }
 
 .position-block-absolute {
     position: absolute;
     left: 200px;
     bottom: 120px;
-    background-color: lavenderblush;
+    background-color: transparent;
     border: 1px solid var(--accent-red);
     padding: 20px;
 }
