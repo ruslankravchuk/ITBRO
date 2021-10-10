@@ -277,7 +277,7 @@ td {
     display: absolute;
     border: 1px solid var(--accent-red);
     padding: 1em 1px 1px 1px;
-    background-color: lavenderblush
+    background-color: transparent;
 }
 
 .position-block-absolute {
