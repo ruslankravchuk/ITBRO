@@ -25,7 +25,7 @@ button {
   max-width: 1220px;
   padding: 10px;
   margin-top: 90px;
-  background-color: rgb(204, 204, 9);
+  background-color: transparent;
 }
 
 body {
@@ -37,17 +37,18 @@ body {
 }
 
 .header {
-  background-color: rgb(204, 204, 9);
+  background-color: transparent;
 }
 
 .title {
   font-family: 'spaceagecyrillic';
-  padding: 100px 0;
-  font-size: 48px;
-  line-height: 48px;
-  font-weight: 400;
+  padding: 90px;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 70;
   text-align: center;
-  background-color: rgb(204, 204, 9);
+  background-color: transparent;
+  
 }
 
 section {
@@ -69,7 +70,7 @@ section {
   align-items: center;
   height: 100px;
   padding-top: 20px;
-  background-color: rgb(204, 204, 9);
+  background-color: transparent;
 }
 
 .menu__list {
@@ -98,7 +99,7 @@ section {
 .menu__list-link:hover {
   border-bottom: 1px solid rgb(204, 204, 9);
   font-weight: 700;
-  color: #520FA4;
+  color: rgb(204, 204, 9);
 }
 
 .logo__link {
@@ -145,7 +146,7 @@ section {
 }
 
 .logo {
-  background-color: rgb(204, 204, 9);
+  background-color: transparent;
 }
 
 .dir__sec-top {
