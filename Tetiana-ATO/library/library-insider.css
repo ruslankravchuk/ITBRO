@@ -1,10 +1,14 @@
 /*Специфікація*/
-*,
-*:before,
-*:after {
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -14,6 +18,12 @@ body {
   line-height: 25px;
   margin: 30px 150px 50px;
   max-width: 900px;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -179,6 +189,59 @@ blockquote {
 .fontbold {
   font-weight: bold;
 }
+
+/* *Стилі,
+що застосовуються для оформлення тексту* */
+
+/* стилі для h1, h2, h3 */
+
+.titlefont {
+  color: rgb(235, 235, 235);
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+  text-shadow: rgb(125, 125, 125) -1px -1px 0px, rgb(115, 115, 115) -2px -2px 0px, rgb(105, 105, 105) -3px -3px 0px, rgb(90, 90, 90) -4px -4px 0px, rgba(20, 20, 20, 0.498039) -6px -6px 5px;
+  text-align: center;
+
+}
+
+.titlefont2 {
+  color: rgb(235, 235, 235);
+  font-size: 100px;
+  text-shadow: rgb(20, 20, 20) -1px 1px 0px, rgb(20, 20, 20) -2px 2px 0px, rgb(20, 20, 20) -3px 3px 0px, rgb(20, 20, 20) -4px 4px 0px, rgb(30, 30, 30) -5px 5px 0px, rgb(40, 40, 40) -6px 6px 0px, rgba(40, 40, 40, 0.901961) -7px 7px 0px, rgba(40, 40, 40, 0.8) -8px 8px 1px, rgba(40, 40, 40, 0.701961) -9px 9px 3px, rgba(40, 40, 40, 0.6) -10px 10px 4px, rgba(40, 40, 40, 0.498039) -11px 11px 5px;
+  text-align: center;
+
+}
+
+.titlefont3 {
+  text-shadow: rgba(0, 0, 0, 0.498039) -15px 15px 10px, rgba(0, 0, 0, 0.498039) 15px 15px 10px;
+  text-align: center;
+  color: rgb(235, 235, 235);
+  font-size: 100px;
+}
+
+.titlefont4 {
+  color: rgb(110, 110, 110);
+  font-size: 100px;
+  text-shadow: rgba(255, 0, 0, 0.2) -3px 0px 5px, rgba(0, 0, 255, 0.2) 3px 0px 5px, rgba(0, 255, 0, 0.2) 0px 3px 5px;
+  text-align: center;
+}
+
+/* .titlefont4 {
+  color: rgb(30, 30, 30);
+  font-size: 100px;
+  text-shadow: rgb(15, 15, 15) 1px -1px 0px, rgb(120, 120, 120) -1px 1px 0px;
+  text-align: center;
+
+}
+
+.titlefont5 {
+  color: rgb(30, 30, 30);
+  font-size: 100px;
+  text-shadow: rgb(5, 5, 5) -1px 1px 3px, rgb(190, 190, 190) 1px -1px 3px;
+  text-align: center;
+
+} */
 
 /*Позиціонування елементів*/
 blockquote.posit {

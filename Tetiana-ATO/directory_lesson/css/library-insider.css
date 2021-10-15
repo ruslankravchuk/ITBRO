@@ -1,10 +1,14 @@
 /*Специфікація*/
-*,
-*:before,
-*:after {
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -14,6 +18,12 @@ body {
   line-height: 25px;
   margin: 30px 150px 50px;
   max-width: 900px;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 h1 {
