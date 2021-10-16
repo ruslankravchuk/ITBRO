@@ -11,19 +11,60 @@ html {
   box-sizing: inherit;
 }
 
+a,
+.menu__list-link {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html,
 body {
+  height: 100%;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #000;
   line-height: 25px;
-  margin: 30px 150px 50px;
-  max-width: 900px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
 }
 
 .container {
   max-width: 1220px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+@media (max-width:1220px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width:992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width:767px) {
+  .container {
+    max-width: none;
+  }
+}
+
+
+.main {
+  padding: 30px;
+  flex: 1 1 auto;
 }
 
 h1 {
@@ -74,7 +115,188 @@ blockquote {
   border-left-style: solid;
   border-left-width: 1px;
   border-left: 18px solid #f37c13;
+
 }
+
+pre code {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: inherit;
+}
+
+pre code span {
+  font-weight: 400;
+  font-style: italic;
+  color: #008cba;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  margin: 15px 15px;
+}
+
+.menu__list-link {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  line-height: 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
+  transition: all .5s;
+}
+
+.menu__list-link:hover {
+  border-bottom: 1px solid #0ff8f4;
+  color: #0ff8f4;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Респонсив/адаптивні стилі - flex,
+що застосовуються для оформлення контенту на 4 блоки */
+.four-block {
+  margin: 0 0 30px 0;
+}
+
+.four-block__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px;
+}
+
+.four-block__column {
+  flex: 0 1 25%;
+  padding: 0 10px;
+}
+
+@media (max-width:910px) {
+  .four-block__column {
+    flex: 0 1 50%;
+    flex-wrap: wrap;
+  }
+}
+
+
+.four-block__item {
+  background-color: #efe4e4;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.four-block__image {
+  padding: 0 0 58% 0;
+  background-color: #0ff8f4;
+  margin-bottom: 10px;
+}
+
+.four-block__text {
+  color: #000;
+  line-height: 25px;
+}
+
+/*Респонсив/адаптивні стилі - flex,
+що застосовуються для оформлення контенту на 3 блоки*/
+.three-block {
+  margin: 0 0 30px 0;
+}
+
+.three-block__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px;
+}
+
+.three-block__column {
+  flex: 0 1 33.333%;
+  padding: 0 15px;
+}
+
+@media (max-width:810px) {
+  .three-block__column {
+    flex: 0 1 50%;
+  }
+
+  .three-block__column.jc-center {
+    margin: 0 auto;
+  }
+}
+
+.three-block__item {
+  background-color: #efe4e4;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.three-block__image {
+  padding: 0 0 58% 0;
+  background-color: #0ff8f4;
+  margin-bottom: 10px;
+}
+
+.three-block__text {
+  color: #000;
+  line-height: 25px;
+}
+
+/*Респонсив/адаптивні стилі - flex,
+що застосовуються для оформлення контенту на 2 блоки*/
+.two-block {
+  margin: 0 0 30px 0;
+}
+
+.two-block__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px;
+}
+
+.two-block__column {
+  flex: 0 1 50%;
+  padding: 0 15px;
+}
+
+.two-block__item {
+  background-color: #efe4e4;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.two-block__image {
+  padding: 0 0 58% 0;
+  background-color: #0ff8f4;
+  margin-bottom: 10px;
+}
+
+.two-block__text {
+  color: #000;
+  line-height: 25px;
+}
+
+@media (max-width:550px) {
+
+  .four-block__column,
+  .three-block__column,
+  .two-block__column {
+    flex: 0 1 100%;
+  }
+}
+
 
 /*Стилі, що застосовуються для оформлення тексту*/
 
@@ -254,6 +476,20 @@ blockquote.posit {
   top: 50px;
   right: 50px;
   bottom: 50px;
+}
+
+@media (max-width:767px) {
+  .posit-a span {
+    display: none;
+  }
+}
+
+@media (max-width:550px) {
+
+  .posit-text,
+  .posit {
+    display: none;
+  }
 }
 
 /* Відступи */
@@ -509,4 +745,65 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* стилі для бургер-меню */
+.menu__btn {
+  display: none;
+}
+
+@media (max-width:960px) {
+  .menu {
+    order: 1;
+  }
+
+  .menu__list {
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: #4c4b4b00;
+    text-align: center;
+    padding: 20px 0;
+    transform: translateY(-500px);
+    transition: all .5s;
+  }
+
+  .menu__list.menu__list--active {
+    transform: translateY(0);
+    top: 62px;
+  }
+
+  .menu__list-link {
+    padding: 20px 0;
+    display: block;
+    border-bottom: none;
+  }
+
+  .menu__list-link:hover {
+    border-bottom: none;
+  }
+
+  .menu__btn {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    height: 24px;
+    border: none;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .menu__btn::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #000000;
+    left: 0;
+    top: 9px;
+    margin-bottom: 20px;
+
+  }
 }
