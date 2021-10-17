@@ -43,7 +43,7 @@ img {
   margin: 0 auto;
 }
 
-@media (max-width:1220px) {
+/* @media (max-width:1220px) {
   .container {
     max-width: 970px;
   }
@@ -59,7 +59,7 @@ img {
   .container {
     max-width: none;
   }
-}
+} */
 
 
 .main {
@@ -168,21 +168,43 @@ footer {
   text-align: center;
 }
 
-/* Респонсив/адаптивні стилі - flex,
-що застосовуються для оформлення контенту на 4 блоки */
-.four-block {
+/* Респонсив/адаптивні стилі flex*/
+.block {
   margin: 0 0 30px 0;
 }
 
-.four-block__row {
+.block__row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 15px;
 }
 
+.block__item {
+  background-color: #efe4e4;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.block__image {
+  padding: 0 0 58% 0;
+  background-color: #0ff8f4;
+  margin-bottom: 10px;
+}
+
+.block__text {
+  color: #000;
+  line-height: 25px;
+}
+
+.block__column {
+  padding: 0 10px;
+  flex: 0 1 calc((100% - 20px *3) / 3);
+}
+
+/*  flex,
+що застосовуються для оформлення контенту на 4 блоки */
 .four-block__column {
   flex: 0 1 25%;
-  padding: 0 10px;
 }
 
 @media (max-width:910px) {
@@ -192,39 +214,10 @@ footer {
   }
 }
 
-
-.four-block__item {
-  background-color: #efe4e4;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-
-.four-block__image {
-  padding: 0 0 58% 0;
-  background-color: #0ff8f4;
-  margin-bottom: 10px;
-}
-
-.four-block__text {
-  color: #000;
-  line-height: 25px;
-}
-
 /*Респонсив/адаптивні стилі - flex,
 що застосовуються для оформлення контенту на 3 блоки*/
-.three-block {
-  margin: 0 0 30px 0;
-}
-
-.three-block__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 15px;
-}
-
 .three-block__column {
-  flex: 0 1 33.333%;
-  padding: 0 15px;
+  flex: 0 1 33.3333%;
 }
 
 @media (max-width:810px) {
@@ -237,55 +230,12 @@ footer {
   }
 }
 
-.three-block__item {
-  background-color: #efe4e4;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-
-.three-block__image {
-  padding: 0 0 58% 0;
-  background-color: #0ff8f4;
-  margin-bottom: 10px;
-}
-
-.three-block__text {
-  color: #000;
-  line-height: 25px;
-}
-
 /*Респонсив/адаптивні стилі - flex,
 що застосовуються для оформлення контенту на 2 блоки*/
-.two-block {
-  margin: 0 0 30px 0;
-}
-
-.two-block__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 15px;
-}
 
 .two-block__column {
   flex: 0 1 50%;
   padding: 0 15px;
-}
-
-.two-block__item {
-  background-color: #efe4e4;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-
-.two-block__image {
-  padding: 0 0 58% 0;
-  background-color: #0ff8f4;
-  margin-bottom: 10px;
-}
-
-.two-block__text {
-  color: #000;
-  line-height: 25px;
 }
 
 @media (max-width:550px) {
