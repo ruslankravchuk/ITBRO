@@ -27,6 +27,11 @@
         <nav>
           <ul>
             <li>
+              <a target="_self" href="#library_instruction">
+                Як користуватися бібліотекою?
+              </a>
+            </li>
+            <li>
               <a target="_self" href="#fontdesign">
                 Шрифти
               </a>
@@ -83,7 +88,7 @@
         </p>
         <p>
           Давайте я вас з ними познайомлю.
-        </p>
+        </p>              
         <a class="btn" target="_blank" href="https://www.w3schools.com/css/default.asp">
           Більш детально про CSS
         </a>
@@ -99,8 +104,20 @@
       </div>
     </header>
     <main class="main">
-      <div class="container">    
-      
+      <div class="container">
+        <section id="library_instruction">
+          <h2>          
+          Як користуватися бібліотекою?
+          </h2>
+          <p>
+           Завантажити у папку проєкту файл зі стилями 
+           <a href="">library-insider.css</a>
+           та підключити його. А далі - користуватися підказками, наданими нижче. 
+          </p>
+          <p>
+            Або, якщо є потреба в підключенні тільки окремого блоку/стилістики, скопіювати код та вставити у свій проєкт 
+          </p>
+        </section>          
         <section id="fontdesign">
           <h2>
             Шрифти
@@ -109,33 +126,26 @@
           <p>
             Вставте у <code> <b>&lt; head &gt;</b> </code> код нижче
           </p>     
-          <blockquote>
-            
-              <pre>
-                <code class="language-html">
-  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
-  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
-  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap&quot; <br/>rel=&quot;stylesheet&quot;&gt;
-                </code>
-              </pre>
-            
-            <p> <b>А для прискорення завантаження шрифтів Google - додайте ще код нижче</b></p>
-            <p>
-              <pre>
-              <code class="language-html"> 
-  <span> [1] Ініціює асинхронну вибірку пріоритету для файлу CSS. </span><br/>
-  &lt;link rel=&quot;preload&quot; as=&quot;style&quot; href=&quot;$CSS&amp;display=swap&quot; /&gt;
+          <blockquote>      
+            <code class="language-html">
+              &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;<br/>
+              &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+              <br/>&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;<br/>display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+            </code>         
+            <p> <b>А для прискорення завантаження шрифтів Google - додайте ще код нижче</b></p>            
+            <code class="language-html"> 
+              <span> /[1] Ініціює асинхронну вибірку пріоритету для файлу CSS./ </span><br/>
+              &lt;link rel=&quot;preload&quot; as=&quot;style&quot; href=&quot;$CSS&amp;display=swap&quot; /&gt;<br>
 
-  <span> [2] Ініціює асинхронну вибірку з низьким пріоритетом, яка застосовується до сторінки <br/>  тільки після його надходження.Працює у всіх браузерах з увімкненим JavaScript.</span><br/>
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;$CSS&amp;display=swap&quot; media=&quot;print&quot; onload=&quot;this.media='all'&quot; /&gt;
+              <span>/ [2] Ініціює асинхронну вибірку з низьким пріоритетом, яка застосовується до сторінки <br/>  тільки після його надходження.Працює у всіх браузерах з увімкненим JavaScript./</span><br/>
+              &lt;link rel=&quot;stylesheet&quot; href=&quot;$CSS&amp;display=swap&quot; media=&quot;print&quot; onload=&quot;this.media='all'&quot; /&gt;<br/>
 
-  <span> [3] У  ситуації, коли  вийшов з ладу  JavaScript, повернеться до початкового методу.<br/>  Хоча є запит на блокування рендерингу, він все ще може використовувати  попереднє <br/> підключення, що робить його трохи швидшим, ніж за замовчуванням.</span><br/>
-  &lt;noscript&gt;
-  &lt;link rel=&quot;stylesheet&quot;href=&quot;$CSS&amp;display=swap&quot; /&gt;
-  &lt;/noscript&gt;
-                </code>
-              </pre>
-            </p> 
+              <span>/ [3] У  ситуації, коли  вийшов з ладу  JavaScript, повернеться до початкового методу.<br/>  Хоча є запит на блокування рендерингу, він все ще може використовувати  попереднє <br/> підключення, що робить його трохи швидшим, ніж за замовчуванням./</span><br/>
+              &lt;noscript&gt;
+              &lt;link rel=&quot;stylesheet&quot;href=&quot;$CSS&amp;display=swap&quot; /&gt;
+              &lt;/noscript&gt;
+            </code>              
+            
           </blockquote> 
           
           <h3>2. Підключення шрифтів за допомогою правила @ font-face.</h3>
@@ -151,30 +161,29 @@
           <p>
             Після того, як шрифти додані в проект, їх потрібно підключити в CSS-файлі. Для цього використовується правило <code>@font-face</code>
           </p>
-          <blockquote>
-            <pre>
-              <code class="language-html">
-  @font-face {
-    font-family: &quot;Roboto&quot;;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    <span>/*Браузер спочатку спробує знайти шрифт локально */</span>
-    src: local(&quot;Roboto&quot;),
-        <span>/ * Якщо не вийшло, завантажить woff2 * /</span>
-        url(&quot;/fonts/roboto.woff2&quot;) format(&quot;woff2&quot;),
-        <span>/ * Якщо браузер не підтримує woff2, завантажить woff * /</span>
-        url(&quot;/fonts/roboto.woff&quot;) format(&quot;woff&quot;);
-  }
+          <blockquote>            
+            <code class="language-html">
+              @font-face {<br>
+                font-family: &quot;Roboto&quot;;<br/>
+                font-style: normal;<br/>
+                font-weight: 400;<br/>
+                font-display: swap;<br/>
+                <span>/*Браузер спочатку спробує знайти шрифт локально */</span><br/>
+                src: local(&quot;Roboto&quot;),<br/>
+                <span>/ * Якщо не вийшло, завантажить woff2 * /</span><br/>
+                url(&quot;/fonts/roboto.woff2&quot;) format(&quot;woff2&quot;),<br/>
+                <span>/ * Якщо браузер не підтримує woff2, завантажить woff * /</span><br/>
+                url(&quot;/fonts/roboto.woff&quot;) format(&quot;woff&quot;);<br/>
+              }<br/>
 
-  <span>/ * Тепер можна використовувати шрифт * /</span>
-  body {
-    font-family: &quot;Roboto&quot;, &quot;Arial&quot;, sans-serif;
-  }
-  <br/>
-  <span>Для поліпшення продуктивності правило @ font-face найкраще прописувати <br/> на самому початку CSS-файлу. Так браузер зможе раніше почати обробку шрифту</span>
+              <span>/ * Тепер можна використовувати шрифт * /</span><br/>
+              body {<br/>
+                font-family: &quot;Roboto&quot;, &quot;Arial&quot;, sans-serif;<br/>
+              }
+              <br/>
+              <span>Для поліпшення продуктивності правило @ font-face найкраще прописувати <br/> на самому початку CSS-файлу. Так браузер зможе раніше почати обробку шрифту</span>
               </code>
-            </pre>          
+                      
           </blockquote>
           <h3>3. Пропонуємо підключення нашого фірмового шрифту</h3>
 
@@ -1046,6 +1055,7 @@
             Наведи на мене!
           </div>
         </section>
+        <a href="#" class="scrollup">Догори</a>
       </div>
     </main>  
     <footer>
@@ -1054,6 +1064,27 @@
       </p>
     </footer>
   </div>  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+      
+      $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+      $('.scrollup').fadeIn();
+      } else {
+      $('.scrollup').fadeOut();
+      }
+      });
+      
+      $('.scrollup').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+      });
+      
+      });
+  </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

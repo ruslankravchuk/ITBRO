@@ -12,7 +12,7 @@ html {
 }
 
 a,
-.menu__list-link {
+ul .menu__list-link {
   list-style-type: none;
   text-decoration: none;
 }
@@ -105,6 +105,18 @@ strong {
   background: url("http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s25/search.png") no-repeat scroll 0 50%;
 }
 
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url('../jpeg_logo/icon_top.png') no-repeat;
+}
+
 blockquote {
   padding: 7px 17px 10px 21px;
   margin: 25px 0;
@@ -118,12 +130,12 @@ blockquote {
 
 }
 
-pre code {
+code {
   font-family: "Roboto", Arial, sans-serif;
   font-size: inherit;
 }
 
-pre code span {
+code span {
   font-weight: 400;
   font-style: italic;
   color: #008cba;
