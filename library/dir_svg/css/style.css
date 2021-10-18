@@ -1,0 +1,218 @@
+@import "normalize.css";
+@import 'https://fonts.googleapis.com/css?family=Mouse+Memoirs';
+
+*,
+*.after,
+*.before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+html,
+body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #552de6;
+}
+
+ul,
+li {
+  margin: 10px;
+  padding: 5px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: rgb(62, 211, 82);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+header{
+background: #eee8e8;
+margin: 20px 0;
+padding: 15px;
+}
+
+main {
+  display: block;
+  max-width: 1140px;
+  margin: 40px;
+}
+
+h1{
+font-size: 40px;
+}
+
+h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+p{
+line-height: 2.0;
+margin-bottom:20px ;
+}
+
+.raz svg {
+  max-width: 100%;
+  border: 1px solid #E7D5C0;
+}
+ section{
+   margin-bottom: 40px;
+ }
+  /* BODY {
+  background-color: #222;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, .2) 50%,
+      rgba(0, 0, 0, 0) 50%);
+  background-size: 2em 2em;
+  background-position: center center;
+}
+
+svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  padding: 2rem;
+} */
+
+
+
+  /* HTML,
+BODY {
+  height: 100%;
+}
+
+BODY {
+  background-color: lightyellow;
+  background: radial-gradient(lightyellow, gold, teal, indigo);
+}
+
+@media (min-width: 800px) {
+  HTML {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  HTML {
+    font-size: 18px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.marked {
+  outline: 2px solid red;
+  stroke: red;
+  stroke-width: 2;
+}
+
+.svg {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  overflow: visible;
+  mix-blend-mode: multiply;
+}
+
+.svg--defs {
+  width: 0;
+  height: 0;
+}
+
+.demo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.demo__title {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  bottom: 1rem;
+  text-shadow: 0 0 15px rgba(0, 0, 0, .5);
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 4.9rem;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.demo-title__splash {
+  position: absolute;
+  top: -75px;
+  left: -40px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.demo__tip {
+  display: block;
+  font-size: 1rem;
+  font-family: Trebuchet MS;
+}
+
+.bubble {
+  cursor: pointer;
+}
+
+.bubble__splash {
+  opacity: 0;
+  pointer-events: none;
+}
+ */
