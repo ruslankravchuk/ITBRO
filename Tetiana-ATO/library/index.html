@@ -159,7 +159,7 @@
           <ul class="dir__sec-item">
             <li class="dir__sec-items">
               <a target="_blank"  class="dir__sec-links maxWidth" data-hover='max Width' href="property/attribute.html">
-                Властивості CSS
+                Бібліотека insIDEr-CSS
               </a>
             </li>
             <li class="dir__sec-items">
@@ -443,6 +443,7 @@
         </div>
       </div>
     </section>
+    <a href="#" class="scrollup">Догори</a>
 		
 	</main>
 	<!--//main-->
@@ -457,6 +458,24 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+      
+      $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+      $('.scrollup').fadeIn();
+      } else {
+      $('.scrollup').fadeOut();
+      }
+      });
+      
+      $('.scrollup').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+      });
+      
+      });
+  </script>
   <script src="js/main.js"></script>
 </body>
 
