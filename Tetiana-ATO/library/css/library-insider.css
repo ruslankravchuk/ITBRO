@@ -79,9 +79,16 @@ img {
 */
 
 /* 
----------------------------Змінні для Шрифтів
+-------------Змінні для Шрифтів
+             Вид шрифту */
 
-------Розмір */
+:root {
+  --font-primary: "Alegreya Sans", "Trebuchet MS", Arial, sans-serif;
+  --font-secondary: "Roboto", Arial, sans-serif;
+
+}
+
+/* --Розмір */
 
 :root {
   --global-font-size: 16px;
@@ -154,64 +161,6 @@ img {
 
 
 
-
-/* ==================Typography | Global==================== */
-
-/* :root {
-  /* body font size 
-  --text-base-size: 1em;
-  /* type scale 
-  --text-scale-ratio: 1.2;
-  --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
-  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
-  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
-  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
-  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
-  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
-}
-
-@media (min-width: 64rem) {
-
-  /* responsive decision applied to all text elements 
-  :root {
-    --text-base-size: 1.25em;
-    --text-scale-ratio: 1.25;
-  }
-}
-
-h1,
-.text-xxl {
-  font-size: var(--text-xxl, 2.074em);
-}
-
-h2,
-.text-xl {
-  font-size: var(--text-xl, 1.728em);
-}
-
-h3,
-.text-lg {
-  font-size: var(--text-lg, 1.44em);
-}
-
-h4,
-.text-md {
-  font-size: var(--text-md, 1.2em);
-}
-
-.text-base {
-  font-size: 1em;
-}
-
-small,
-.text-sm {
-  font-size: var(--text-sm, 0.833em);
-}
-
-.text-xs {
-  font-size: var(--text-xs, 0.694em);
-} 
-
 /* -----------------------------------------
           Розміри 
           Для зовнішніх відступів margin */
@@ -236,7 +185,7 @@ small,
   /*зправа*/
 }
 
-/* ------------------Змінні  для кольору var(--name)*/
+/* -----------Змінні  для кольору var(--name)*/
 :root {
   --white: #fff;
   --black: #000;
@@ -249,40 +198,6 @@ small,
   --blue: blue;
   --brown: #412525;
 }
-
-
-
-/* Прибити футер донизу */
-/* Grid */
-/*html{
-  height: 100%;
-}
-body{
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
-}
-
-footer{
-  grid-row-start: 2;
-  grid-row-end: 3;
-}  */
-
-/* Flex */
-
-/* html,body{
-  height: 100%;
-}   
-body{
-  display: flex;
-  flex-direction: column;
-}   
-.content{
-  float: 1px 0 auto;  
-}   
-.footer{
-  flex-shrink: 0;
-}      */
 
 /* ----------------------------------------------
 -------Значення розмірів для: flex-basis: var(--grid-N); */
@@ -367,7 +282,7 @@ body{
 }
 
 /* ================Адаптивна сітка в 3 колонки (3-2-1) grid===== */
-.grid3__content {
+.grid3__contents {
   padding-bottom: 115px;
   display: -ms-grid;
   display: grid;
@@ -378,7 +293,7 @@ body{
 }
 
 @media screen and (max-width: 1000px) {
-  .grid3__content {
+  .grid3__contents {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 25px;
@@ -387,7 +302,7 @@ body{
 }
 
 @media screen and (max-width: 480px) {
-  .grid3__content {
+  .grid3__contents {
     display: block;
   }
 }
@@ -420,13 +335,14 @@ body{
   margin-right: 50px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: repeat (3, 1fr);
+  grid-template-columns: repeat (3, 1fr);
+  grid-auto-rows: 200px;
   grid-gap: var(--grid-gap);
   justify-items: center;
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
   .grid-gall {
     --margin-r: 20px;
     margin-right: var(--margin-r);
@@ -434,7 +350,7 @@ body{
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
-}
+} */
 
 @media screen and (max-width: 560px) {
   .grid-gall {
@@ -733,7 +649,7 @@ strong {
 }
 
 blockquote {
-  padding: 7px 17px 10px 21px;
+  padding: 0 17px;
   margin: 25px 0;
   position: relative;
   background: #efefef;
@@ -743,6 +659,62 @@ blockquote {
   border-left-width: 1px;
   border-left: 18px solid #f37c13;
 
+}
+
+pre {
+  margin-left: -.8em;
+  margin-right: -.8em;
+  /* padding: .6em .8em; */
+  position: relative;
+  background: #efefef;
+}
+
+pre[class*=language-] {
+  background: #f5f2f0;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media only screen and (min-width: 60em) {
+
+  blockquote,
+  caption,
+  dd,
+  details,
+  dl,
+  fieldset,
+  figure,
+  hr,
+  ol,
+  pre,
+  table {
+    margin: 0 0 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  blockquote,
+  caption,
+  dd,
+  details,
+  dl,
+  fieldset,
+  figure,
+  hr,
+  ol,
+  pre,
+  table {
+    margin: 0 0 .6rem;
+  }
 }
 
 code {
@@ -755,6 +727,29 @@ code span {
   font-style: italic;
   color: #008cba;
 }
+
+code[class*=language-],
+pre[class*=language-] {
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+code[class*=language-],
+pre>code {
+  display: block;
+  overflow-x: auto;
+  padding: 0 24px 0 0;
+  width: 100%;
+}
+
 
 section {
   margin-top: 50px;
@@ -1444,7 +1439,65 @@ footer p {
 }
 
 /* -------------------------------
-=======================з використанням Bootstrap ==============================
+===========з використанням Bootstrap 
+/* =========Typography | Global========= */
+
+/* :root {
+  /* body font size 
+  --text-base-size: 1em;
+  /* type scale 
+  --text-scale-ratio: 1.2;
+  --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+}
+
+@media (min-width: 64rem) {
+
+  /* responsive decision applied to all text elements 
+  :root {
+    --text-base-size: 1.25em;
+    --text-scale-ratio: 1.25;
+  }
+}
+
+h1,
+.text-xxl {
+  font-size: var(--text-xxl, 2.074em);
+}
+
+h2,
+.text-xl {
+  font-size: var(--text-xl, 1.728em);
+}
+
+h3,
+.text-lg {
+  font-size: var(--text-lg, 1.44em);
+}
+
+h4,
+.text-md {
+  font-size: var(--text-md, 1.2em);
+}
+
+.text-base {
+  font-size: 1em;
+}
+
+small,
+.text-sm {
+  font-size: var(--text-sm, 0.833em);
+}
+
+.text-xs {
+  font-size: var(--text-xs, 0.694em);
+} 
+
+===========================================
 Адаптивні модифікатори для різних розмірів столбців,
 зміщення,вирівнювання і розподілення по ширині області перегляду 
 xs (max-width:1140px),

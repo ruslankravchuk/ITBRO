@@ -32,6 +32,28 @@
               </a>
             </li>
             <li>
+              <a href="#mygrid" target="_self">
+                CSS сітка
+              </a>
+              <ul>
+                <li>
+                  <a href="#mygrid_flex">
+                    FLEX
+                  </a>
+                  <ol>
+                    <li><a href="#resp_flex">Responsive flex</a></li>
+                    <li><a href="#adapt_flex">Адаптивна flex-сітка </a></li>
+                    <li><a href=""></a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a href="#mygrid_grid">
+                    GRID
+                  </a>
+                </li>
+              </ul>              
+            </li>
+            <li>
               <a target="_self" href="#fontdesign">
                 Шрифти
               </a>
@@ -87,7 +109,7 @@
           Знаючи їх, можна зверстати досить складний макет сайту.
         </p>
         <p>
-          Давайте я вас з ними познайомлю.
+          Давайте ми вас з ними познайомимо.
         </p>              
         <a class="btn" target="_blank" href="https://www.w3schools.com/css/default.asp">
           Більш детально про CSS
@@ -117,7 +139,147 @@
           <p>
             Або, якщо є потреба в підключенні тільки окремого блоку/стилістики, скопіювати код та вставити у свій проєкт 
           </p>
-        </section>          
+          <p>
+            ЗВЕРНІТЬ УВАГУ! Обов'язково перед продовженням роботи зі стилізації проєкту очистити стилі, які по замовченню встановлюються браузером! Наприклад,
+            <a href="https://github.com/ruslankravchuk/ITBRO/blob/project/library/css/reset.css" target="_blank">reset.css</a>
+          </p>       
+         
+        </section>  
+        <section id="mygrid">
+          <h2>
+            CSS сітка
+          </h2>
+          <aside>
+          <h3 id="mygrid_flex">
+            За допомогою Flex
+          </h3>
+          <h4 id="resp_flex">
+           I. Респонсив (резинові) стилі flex
+          </h4>
+          <blockquote>
+            <pre><code class="language-css"> Код HTML 
+&lt;section class=&quot;block&quot;&gt;
+  &lt;div class=&quot;block__row&quot;&gt;
+    &lt;div class=&quot;block__column &quot;&gt;
+      &lt;div class=&quot;block__item&quot;&gt; &lt;/div&gt;
+      &lt;/div&gt;                     
+    &lt;/div&gt;
+  &lt;/div&gt; 
+&lt;/section&gt;</code></pre>
+          </blockquote>
+          <p>
+            Пропонуємо для визначення ширини колонки використовувати функцію <span><b>calc</b></span>, як у прикладі нижче, де поданий розрахунок на 3 колонки 
+            <a href="https://codepen.io/ATO-IT/pen/LYjRYWb" target="_blank">ДЕМО</a> <br>
+            <pre><code class="language-css">.block__column {
+  padding: 0 10px;
+  flex: 0 1 calc((100% - 20px *3) / 3);
+}</code></pre>
+          </p>
+          <h4 id="adapt_flex">
+            II. Адаптивна сітка за допомогою flexbox
+          </h4> 
+          <a href="https://codepen.io/ATO-IT/pen/jOLMqdK" target="_blank">ДЕМО</a> <br>         
+          <p>
+            - для оформлення контенту на 2 блоки додайте class <b>two-block__column</b>
+          </p>
+          <p>
+            - для оформлення контенту на 3 блоки додайте class <b>three-block__column</b>.А для розташування 3 блоку у мобільній версії по центру ще клас <b>jc-center</b> 
+          </p>          
+          <p>
+            - для оформлення контенту на 4 блоки додайте class <b>four-block__column</b>
+          </p>
+          <h4>
+            Бонус. Як притиснути footer  донизу за допомогою Flex?
+          </h4>
+          <p>
+            Додайте до стилів код нижче
+          </p>
+          <blockquote>                         
+            <pre>
+              <code class="language-html">
+                <span> Код html</span><br/>
+&lt;body&gt;
+	&lt;div class=&quot;wrapper&quot;&gt;
+		&lt;header class=&quot;header&quot;&gt;      
+    &lt;/header&gt;  
+    &lt;main class='main'&gt;        
+    &lt;/main&gt;
+    &lt;footer class=&quot;footer&quot;&gt;
+    &lt;/footer&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+              </code>
+            </pre>
+          </blockquote>            
+          <blockquote>
+            <pre>
+              <code class="language-css">
+                <span> До CSS </span> <br/>
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html, body{
+  height: 100%;
+}
+wrapper{
+  min-height: 100%;
+  display:flex;
+  flex-direction: column;
+}
+main{
+  flex: 1 1 auto; 
+}
+              </code>
+            </pre> 
+          </blockquote>
+          <button>
+            <a href="https://codepen.io/ATO-IT/pen/KKvMOdd" target="_blank">Переглянути код</a>
+          </button>            
+          
+          </aside>
+          <aside>
+          <h3 id="mygrid_grid">
+            За допомогою Grid
+          </h3>
+          <p>
+            Щоб створити адаптивну сітку: <br> 
+             - у 6 колонок в лінію: додайте до div обгортки (наприклад, container) клас grid6-line; <br> 
+             - на 4 колонки - клас <code>grid4__contents</code>; <br>
+             - на 3 колонки - клас <code>grid3__contents</code>;
+          </p>
+          <h4>
+            Бонус. Як притиснути footer донизу за допомогою Grid?
+          </h4>
+          <p>
+            Додайте до стилів код нижче
+          </p>
+          <blockquote>
+            <pre>
+              <code class="language-css">
+              html{
+                height: 100%;
+              }
+              body{
+                min-height: 100%;
+                display: grid;
+                grid-template-rows: 1fr auto;
+              }
+
+              footer{
+                grid-row-start: 2;
+                grid-row-end: 3;
+              }  
+              </code>
+            </pre>
+          </blockquote>
+
+          </aside>
+        </section>        
         <section id="fontdesign">
           <h2>
             Шрифти
@@ -126,17 +288,17 @@
           <p>
             Вставте у <code> <b>&lt; head &gt;</b> </code> код нижче
           </p>     
-          <blockquote>      
-            <code class="language-html">
-              &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;<br/>
+          <blockquote>
+            <pre class="language-html">
+              <code class="language-html">
+              &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
               &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
-              <br/>&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;<br/>display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-            </code>         
-            <p> <b>А для прискорення завантаження шрифтів Google - додайте ще код нижче</b></p>            
+              &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+              <p> <b>А для прискорення завантаження шрифтів Google -  додайте ще код нижче</b></p>
+            </code>                         
             <code class="language-html"> 
               <span> /[1] Ініціює асинхронну вибірку пріоритету для файлу CSS./ </span><br/>
               &lt;link rel=&quot;preload&quot; as=&quot;style&quot; href=&quot;$CSS&amp;display=swap&quot; /&gt;<br>
-
               <span>/ [2] Ініціює асинхронну вибірку з низьким пріоритетом, яка застосовується до сторінки <br/>  тільки після його надходження.Працює у всіх браузерах з увімкненим JavaScript./</span><br/>
               &lt;link rel=&quot;stylesheet&quot; href=&quot;$CSS&amp;display=swap&quot; media=&quot;print&quot; onload=&quot;this.media='all'&quot; /&gt;<br/>
 
@@ -144,7 +306,8 @@
               &lt;noscript&gt;
               &lt;link rel=&quot;stylesheet&quot;href=&quot;$CSS&amp;display=swap&quot; /&gt;
               &lt;/noscript&gt;
-            </code>              
+            </code> 
+            </pre>             
             
           </blockquote> 
           
@@ -161,29 +324,31 @@
           <p>
             Після того, як шрифти додані в проект, їх потрібно підключити в CSS-файлі. Для цього використовується правило <code>@font-face</code>
           </p>
-          <blockquote>            
+          <blockquote> 
+            <pre class="language-html">
             <code class="language-html">
-              @font-face {<br>
-                font-family: &quot;Roboto&quot;;<br/>
-                font-style: normal;<br/>
-                font-weight: 400;<br/>
-                font-display: swap;<br/>
-                <span>/*Браузер спочатку спробує знайти шрифт локально */</span><br/>
-                src: local(&quot;Roboto&quot;),<br/>
-                <span>/ * Якщо не вийшло, завантажить woff2 * /</span><br/>
-                url(&quot;/fonts/roboto.woff2&quot;) format(&quot;woff2&quot;),<br/>
-                <span>/ * Якщо браузер не підтримує woff2, завантажить woff * /</span><br/>
-                url(&quot;/fonts/roboto.woff&quot;) format(&quot;woff&quot;);<br/>
-              }<br/>
+            @font-face {
+                font-family: &quot;Roboto&quot;;
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                <span>/*Браузер спочатку спробує знайти шрифт локально */</span>
+                src: local(&quot;Roboto&quot;),
+                <span>/ * Якщо не вийшло, завантажить woff2 * /</span>
+                url(&quot;/fonts/roboto.woff2&quot;) format(&quot;woff2&quot;),
+                <span>/ * Якщо браузер не підтримує woff2, завантажить woff * /</span>
+                url(&quot;/fonts/roboto.woff&quot;) format(&quot;woff&quot;);
+              }
 
-              <span>/ * Тепер можна використовувати шрифт * /</span><br/>
-              body {<br/>
-                font-family: &quot;Roboto&quot;, &quot;Arial&quot;, sans-serif;<br/>
+              <span>/ * Тепер можна використовувати шрифт * /</span>
+              body {
+                font-family: &quot;Roboto&quot;, &quot;Arial&quot;, sans-serif;
               }
               <br/>
-              <span>Для поліпшення продуктивності правило @ font-face найкраще прописувати <br/> на самому початку CSS-файлу. Так браузер зможе раніше почати обробку шрифту</span>
+              <span>Для поліпшення продуктивності правило @ font-face найкраще прописувати на самому початку CSS-файлу. 
+              Так браузер зможе раніше почати обробку шрифту</span>
               </code>
-                      
+              </pre>                                 
           </blockquote>
           <h3>3. Пропонуємо підключення нашого фірмового шрифту</h3>
 
