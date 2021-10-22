@@ -14,7 +14,10 @@
 <body>
   <div class="wrapper">
     <header>   
-      <div class="container">      
+      <div class="container">
+        <a href="/">
+          <img class="img-logo" src="../jpeg_logo/logo_3.png" alt="logo InsIDEr">
+        </a>      
         <h1>
         Бібліотека з основ CSS. Топ стилів, які пропонуємо використовувати в верстці.
         </h1>
@@ -43,7 +46,7 @@
                   <ol>
                     <li><a href="#resp_flex">Responsive flex</a></li>
                     <li><a href="#adapt_flex">Адаптивна flex-сітка </a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="#flex_footer">Як притиснути footer донизу за допомогою flex? </a></li>
                   </ol>
                 </li>
                 <li>
@@ -55,6 +58,8 @@
                     <li><a href="#mygrid_areas">Шаблон сайту з використанням &lt;grid-template-areas&gt; </a></li>
                     <li><a href="#mygrid_support">CSS Grid на 14 елементів з підтримкою flexbox та функцією @supports</a></li>
                     <li><a href="#gallery_grid">Галерея на grid</a></li>
+                    <li><a href="#grid_footer">Як притиснути footer донизу за допомогою Grid? </a></li>
+                    
                     
                   </ol>
                 </li>
@@ -62,7 +67,7 @@
             </li>
             <li>
               <a target="_self" href="#fontdesign">
-                Шрифти
+                Шрифти. Підключення нашого фірмового шрифту JetBrains Mono.
               </a>
             </li>
             <li>
@@ -164,15 +169,19 @@
            I. Респонсив (резинові) стилі flex
           </h4>
           <blockquote>
-            <pre><code class="language-css"> Код HTML 
-&lt;section class=&quot;block&quot;&gt;
-  &lt;div class=&quot;block__row&quot;&gt;
-    &lt;div class=&quot;block__column &quot;&gt;
-      &lt;div class=&quot;block__item&quot;&gt; &lt;/div&gt;
-      &lt;/div&gt;                     
-    &lt;/div&gt;
-  &lt;/div&gt; 
-&lt;/section&gt;</code></pre>
+            <pre>
+              <code class="language-css">
+   Код HTML <br>
+  &lt;section class=&quot;block&quot;&gt;
+    &lt;div class=&quot;block__row&quot;&gt;
+      &lt;div class=&quot;block__column &quot;&gt;
+        &lt;div class=&quot;block__item&quot;&gt; &lt;/div&gt;
+        &lt;/div&gt;                     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+  &lt;/section&gt;
+                </code>
+              </pre>
           </blockquote>
           <p>
             Пропонуємо для визначення ширини колонки використовувати функцію <span><b>calc</b></span>, як у прикладі нижче, де поданий розрахунок на 3 колонки 
@@ -195,7 +204,7 @@
           <p>
             - для оформлення контенту на 4 блоки додайте class <b>four-block__column</b>
           </p>
-          <h4>
+          <h4 id="flex_footer">
             Бонус. Як притиснути footer  донизу за допомогою Flex?
           </h4>
           <p>
@@ -271,17 +280,18 @@ main{
                 </p>
                 <p>
                   <blockquote>
-                    <pre><code class="language-html">Код HTML
-                    &lt;body&gt;
-                      &lt;header id=&quot;pageHeader&quot;&gt;Header&lt;/header&gt;               
-                      &lt;nav id=&quot;mainNav&quot;&gt;Nav&lt;/nav&gt;
-                      &lt;article id=&quot;mainArticle&quot;&gt;Article&lt;/article&gt;
-                      &lt;div id=&quot;siteAds&quot;&gt;Ads&lt;/div&gt;
-                      &lt;footer id=&quot;pageFooter&quot;&gt;Footer&lt;/footer&gt;
-                    &lt;/body&gt;
-                  </code></pre>
-                  Код CSS. 
-                    <a href="https://codepen.io/ATO-IT/pen/bGrwmqB" target="_blank">Дивитись</a>
+                    <pre><code class="language-html">
+Код HTML <br>
+  &lt;body&gt;
+    &lt;header id=&quot;pageHeader&quot;&gt;Header&lt;/header&gt;               
+    &lt;nav id=&quot;mainNav&quot;&gt;Nav&lt;/nav&gt;
+    &lt;article id=&quot;mainArticle&quot;&gt;Article&lt;/article&gt;
+    &lt;div id=&quot;siteAds&quot;&gt;Ads&lt;/div&gt;
+    &lt;footer id=&quot;pageFooter&quot;&gt;Footer&lt;/footer&gt;
+  &lt;/body&gt;
+  </code></pre>
+  Код CSS. 
+    <a href="https://codepen.io/ATO-IT/pen/bGrwmqB" target="_blank">Дивитись</a>
                   </blockquote>
                 </p> 
                 <!-- <p>
@@ -315,67 +325,68 @@ main{
               </h4>
               <p>
                 <blockquote>
-                  <pre><code class="language-html"><b>Код HTML</b>                  
-&lt;div class=&quot;grid&quot;&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;1&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;1   
+                  <pre><code class="language-html">
+  Код HTML <br>                  
+  &lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;item&quot; tabindex=&quot;1&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;1   
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;2&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;2      
+    &lt;div class=&quot;item&quot; tabindex=&quot;2&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;2      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;3&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;3      
+    &lt;div class=&quot;item&quot; tabindex=&quot;3&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;3      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;4&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;4      
+    &lt;div class=&quot;item&quot; tabindex=&quot;4&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;4      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;5&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;5      
+    &lt;div class=&quot;item&quot; tabindex=&quot;5&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;5      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;6&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;6      
+    &lt;div class=&quot;item&quot; tabindex=&quot;6&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;6      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;7&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;7      
+    &lt;div class=&quot;item&quot; tabindex=&quot;7&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;7      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;8&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;8      
+    &lt;div class=&quot;item&quot; tabindex=&quot;8&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;8      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;9&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;9      
+    &lt;div class=&quot;item&quot; tabindex=&quot;9&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;9      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;10&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;10      
+    &lt;div class=&quot;item&quot; tabindex=&quot;10&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;10      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;11&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;11      
+    &lt;div class=&quot;item&quot; tabindex=&quot;11&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;11      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;12&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;12      
+    &lt;div class=&quot;item&quot; tabindex=&quot;12&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;12      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;13&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;13      
+    &lt;div class=&quot;item&quot; tabindex=&quot;13&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;13      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;item&quot; tabindex=&quot;14&quot;&gt;
-    &lt;div class=&quot;box&quot;&gt;14      
+    &lt;div class=&quot;item&quot; tabindex=&quot;14&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;14      
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-<b>Код CSS.</b> 
-<a href="https://codepen.io/ATO-IT/pen/MWvjZNo" target="_blank">Дивитись</a>
+  &lt;/div&gt;</code></pre>
+  <b>Код CSS.</b> 
+  <a href="https://codepen.io/ATO-IT/pen/MWvjZNo" target="_blank">Дивитись</a>
                 </blockquote>
               </p>
             </div>
@@ -386,8 +397,8 @@ main{
               </h4>
             </div>
             <div>             
-              <h4>
-                Y.<i> Бонус.</i> Як притиснути footer донизу за допомогою Grid?
+              <h4 id="grid_footer">
+                Y.<i> Бонус.</i> Як притиснути footer донизу за допомогою Grid? 
               </h4>
               <p>
                 Додайте до стилів код нижче
@@ -396,19 +407,19 @@ main{
                 <blockquote>
                   <pre>
                     <code class="language-css">
-                    html{
-                      height: 100%;
-                    }
-                    body{
-                      min-height: 100%;
-                      display: grid;
-                      grid-template-rows: 1fr auto;
-                    }
+  html{
+    height: 100%;
+  }
+  body{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
 
-                    footer{
-                      grid-row-start: 2;
-                      grid-row-end: 3;
-                    }  
+  footer{
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }  
                     </code>
                   </pre>
                 </blockquote>
@@ -428,21 +439,21 @@ main{
           <blockquote>
             <pre class="language-html">
               <code class="language-html">
-              &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
-              &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
-              &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt; <br>
+  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt; <br>
 
-              <b>А для прискорення завантаження шрифтів Google -  додайте ще код нижче</b>
-            
-              <span> /[1] Ініціює асинхронну вибірку пріоритету для файлу CSS./ </span><br/>
-              &lt;link rel=&quot;preload&quot; as=&quot;style&quot; href=&quot;$CSS&amp;display=swap&quot; /&gt;<br>
-              <span>/ [2] Ініціює асинхронну вибірку з низьким пріоритетом, яка застосовується до сторінки <br/>  тільки після його надходження.Працює у всіх браузерах з увімкненим JavaScript./</span><br/>
-              &lt;link rel=&quot;stylesheet&quot; href=&quot;$CSS&amp;display=swap&quot; media=&quot;print&quot; onload=&quot;this.media='all'&quot; /&gt;<br/>
+  <b>А для прискорення завантаження шрифтів Google -  додайте ще код нижче</b>
 
-              <span>/ [3] У  ситуації, коли  вийшов з ладу  JavaScript, повернеться до початкового методу.<br/>  Хоча є запит на блокування рендерингу, він все ще може використовувати  попереднє <br/> підключення, що робить його трохи швидшим, ніж за замовчуванням./</span><br/>
-              &lt;noscript&gt;
-              &lt;link rel=&quot;stylesheet&quot;href=&quot;$CSS&amp;display=swap&quot; /&gt;
-              &lt;/noscript&gt;
+  <span> /[1] Ініціює асинхронну вибірку пріоритету для файлу CSS./ </span><br/>
+  &lt;link rel=&quot;preload&quot; as=&quot;style&quot; href=&quot;$CSS&amp;display=swap&quot; /&gt;<br>
+  <span>/ [2] Ініціює асинхронну вибірку з низьким пріоритетом, яка застосовується до сторінки <br/>  тільки після його надходження.Працює у всіх браузерах з увімкненим JavaScript./</span><br/>
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;$CSS&amp;display=swap&quot; media=&quot;print&quot; onload=&quot;this.media='all'&quot; /&gt;<br/>
+
+  <span>/ [3] У  ситуації, коли  вийшов з ладу  JavaScript, повернеться до початкового методу.<br/>  Хоча є запит на блокування рендерингу, він все ще може використовувати  попереднє <br/> підключення, що робить його трохи швидшим, ніж за замовчуванням./</span><br/>
+  &lt;noscript&gt;
+  &lt;link rel=&quot;stylesheet&quot;href=&quot;$CSS&amp;display=swap&quot; /&gt;
+  &lt;/noscript&gt;
             </code> 
             </pre>             
             
@@ -464,26 +475,26 @@ main{
           <blockquote> 
             <pre class="language-html">
             <code class="language-html">
-            @font-face {
-                font-family: &quot;Roboto&quot;;
-                font-style: normal;
-                font-weight: 400;
-                font-display: swap;
-                <span>/*Браузер спочатку спробує знайти шрифт локально */</span>
-                src: local(&quot;Roboto&quot;),
-                <span>/ * Якщо не вийшло, завантажить woff2 * /</span>
-                url(&quot;/fonts/roboto.woff2&quot;) format(&quot;woff2&quot;),
-                <span>/ * Якщо браузер не підтримує woff2, завантажить woff * /</span>
-                url(&quot;/fonts/roboto.woff&quot;) format(&quot;woff&quot;);
-              }
+@font-face {
+    font-family: &quot;Roboto&quot;;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    <span>/*Браузер спочатку спробує знайти шрифт локально */</span>
+    src: local(&quot;Roboto&quot;),
+    <span>/ * Якщо не вийшло, завантажить woff2 * /</span>
+    url(&quot;/fonts/roboto.woff2&quot;) format(&quot;woff2&quot;),
+    <span>/ * Якщо браузер не підтримує woff2, завантажить woff * /</span>
+    url(&quot;/fonts/roboto.woff&quot;) format(&quot;woff&quot;);
+  }
 
-              <span>/ * Тепер можна використовувати шрифт * /</span>
-              body {
-                font-family: &quot;Roboto&quot;, &quot;Arial&quot;, sans-serif;
-              }
-              <br/>
-              <span>Для поліпшення продуктивності правило @ font-face найкраще прописувати на самому початку CSS-файлу. 
-              Так браузер зможе раніше почати обробку шрифту</span>
+  <span>/ * Тепер можна використовувати шрифт * /</span>
+  body {
+    font-family: &quot;Roboto&quot;, &quot;Arial&quot;, sans-serif;
+  }
+  <br/>
+  <span>Для поліпшення продуктивності правило @ font-face найкраще прописувати на самому початку CSS-файлу. 
+  Так браузер зможе раніше почати обробку шрифту</span>
               </code>
               </pre>                                 
           </blockquote>

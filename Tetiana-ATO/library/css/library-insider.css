@@ -34,7 +34,7 @@ html,
 body {
   height: 100%;
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: var(--global-font-size);
   color: #000;
   line-height: 25px;
 }
@@ -48,6 +48,11 @@ body {
 
 img {
   width: 100%;
+}
+
+.img-logo {
+  width: 100px;
+  height: 100px;
 }
 
 /* ---------------------------------------------
@@ -608,17 +613,22 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: var(--font-sz10);
   color: rgb(230, 39, 96);
 }
 
 h3 {
-  font-size: 20px;
+  font-size: var(--font-sz2);
+  color: rgb(196, 53, 10);
+}
+
+h4 {
+  font-size: var(--font-sz3);
   color: rgb(196, 53, 10);
 }
 
 strong {
-  font-size: 18px;
+  font-size: var(--font-sz3);
 }
 
 .btn {
@@ -630,7 +640,7 @@ strong {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: var(--font-sz4);
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -723,13 +733,14 @@ pre[class*=language-] {
 
 code {
   font-family: var(--font-primary);
-  font-size: inherit;
+  font-size: var(--font-sz4);
 }
 
 code span {
   font-weight: 400;
   font-style: italic;
   color: #008cba;
+  font-size: var(--font-sz4);
 }
 
 code[class*=language-],
@@ -889,11 +900,11 @@ footer {
 }
 
 .font12 {
-  font-size: 12px;
+  font-size: var(--font-sz7);
 }
 
 .font14 {
-  font-size: 14px;
+  font-size: var(--font-sz8);
 }
 
 .fontyn {
@@ -962,7 +973,7 @@ footer {
 
 .t-shad {
   text-shadow: 3px 5px 6px #6c9;
-  font-size: 20px;
+  font-size: var(--font-sz2);
   text-transform: uppercase;
   color: #366b50;
 }
@@ -973,7 +984,7 @@ footer {
     0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1),
     0 3px 5px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.2),
     0 10px 10px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.1);
-  font-size: 25px;
+  font-size: var(--font-sz10);
 }
 
 .let-spa {
@@ -995,7 +1006,7 @@ footer {
 
 .titlefont {
   color: rgb(235, 235, 235);
-  font-size: 38px;
+  font-size: var(--font-sz13);
   line-height: 48px;
   font-weight: 700;
   text-shadow: rgb(125, 125, 125) -1px -1px 0px, rgb(115, 115, 115) -2px -2px 0px, rgb(105, 105, 105) -3px -3px 0px, rgb(90, 90, 90) -4px -4px 0px, rgba(20, 20, 20, 0.498039) -6px -6px 5px;
@@ -1243,7 +1254,7 @@ input:checked {
 
 .chil>p:last-child {
   font-style: italic;
-  font-size: 0.8em;
+  font-size: var(--font-sz8);
 }
 
 tr:nth-child(odd) {
