@@ -11,8 +11,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Заголовок страницы в браузере -->
 	<title>Курс ITBRO - react </title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap" rel="stylesheet">	
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap" rel="stylesheet">	 -->
   <link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/library-insider.css">
   <link rel="stylesheet" href="css/style.css">
@@ -158,14 +161,18 @@
           </div>
           <ul class="dir__sec-item">
             <li class="dir__sec-items">
-              <a target="_blank"  class="dir__sec-links maxWidth" data-hover='max Width' href="property/attribute.html">
-                Бібліотека insIDEr-CSS
-              </a>
+              <h3 class="dir__sec-title2" >
+                <a target="_blank"  class="dir__sec-links maxWidth" href="property/attribute.html">
+                  Бібліотека <br>insIDEr-CSS
+                </a>
+              </h3>
             </li>
             <li class="dir__sec-items">
-              <a target="_blank"  class="dir__sec-links" href="https://docs.google.com/document/edit?id=1PNal13RIr6P85ddwjobB0gTaTDAtUkY9cXh4ycsJ8OM&hl=ru">
-                Приклади використання властивостей CSS
-              </a>
+              <h3 class="dir__sec-title2" >
+                <a target="_blank"  class="dir__sec-links" href="https://docs.google.com/document/edit?id=1PNal13RIr6P85ddwjobB0gTaTDAtUkY9cXh4ycsJ8OM&hl=ru">
+                  Приклади використання властивостей CSS
+                </a>
+              </h3>
             </li>
             <li class="dir__sec-items">
               <h3 class="dir__sec-title2" >
@@ -194,9 +201,11 @@
               </a>
             </li>
             <li class="dir__sec-items">
-              <a target="_blank" class="dir__sec-links" href="http://css.yoksel.ru/tags/#svg">
-                Доступно про SVG
-              </a>
+              <h3 class="dir__sec-title2" >
+                <a target="_blank" class="dir__sec-links" href="http://css.yoksel.ru/tags/#svg">
+                  Доступно про SVG
+                </a>
+              </h3>
               <ul>
                 <!-- <li>
                   <a target='_blank' class=""
@@ -240,9 +249,11 @@
               </ul>
             </li>
             <li class="dir__sec-items">
-              <a target="_blank" class="dir__sec-links" href="https://css-tricks.com/how-well-do-you-know-css-layout/">
-                Тест на знання CSS
-              </a>
+              <h3 class="dir__sec-title2" >
+                <a target="_blank" class="dir__sec-links" href="https://css-tricks.com/how-well-do-you-know-css-layout/">
+                  Тести на знання CSS
+                </a>
+              </h3>
             </li>
           </ul>   
        </div>
@@ -443,6 +454,7 @@
         </div>
       </div>
     </section>
+    <a href="#" class="scrollup">Догори</a>
 		
 	</main>
 	<!--//main-->
@@ -457,6 +469,24 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+      
+      $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+      $('.scrollup').fadeIn();
+      } else {
+      $('.scrollup').fadeOut();
+      }
+      });
+      
+      $('.scrollup').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+      });
+      
+      });
+  </script>
   <script src="js/main.js"></script>
 </body>
 

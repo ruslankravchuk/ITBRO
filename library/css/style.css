@@ -177,6 +177,13 @@ img.logo__link:hover {
   padding-right: 0;
 }
 
+.dir__sec-items:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 .dir__copy-text {
   text-align: center;
 }

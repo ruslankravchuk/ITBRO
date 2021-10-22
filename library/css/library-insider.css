@@ -1,3 +1,16 @@
+/*================Подключение шрифтов================*/
+@import url("stylesheet.css");
+
+/* 
+-------------Змінні для Шрифтів
+             Вид шрифту */
+
+:root {
+  --font-primary: "JetBrains Mono", monospace;
+  --font-secondary: "Roboto Mono", monospace;
+
+}
+
 /*Специфікація*/
 html {
   -webkit-box-sizing: border-box;
@@ -20,8 +33,8 @@ ul .menu__list-link {
 html,
 body {
   height: 100%;
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
+  font-family: var(--font-primary);
+  font-size: var(--global-font-size);
   color: #000;
   line-height: 25px;
 }
@@ -37,11 +50,26 @@ img {
   width: 100%;
 }
 
+.img-logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* ---------------------------------------------
+----------Ширина Для контейнеру, обгортки  */
+
 .container {
   max-width: 1220px;
   padding: 0 10px;
   margin: 0 auto;
 }
+
+/* .container {
+  --width: calc(100% - 30px);
+  --width1: 1000px;
+  --width2: 1220px;
+  --width3: 1400px; 
+} */
 
 /* @media (max-width:1220px) {
   .container {
@@ -59,8 +87,520 @@ img {
   .container {
     max-width: none;
   }
+} 
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0px 15px;
+  }
+}
+
+*/
+
+
+/* --Розмір */
+
+:root {
+  --global-font-size: 16px;
+  --font-sz1: 3.750em;
+  /*60px*/
+  --font-sz2: 1.250em;
+  /*20px*/
+  --font-sz3: 1.125em;
+  /*18px*/
+  --font-sz4: 1.000em;
+  /*16px*/
+  --font-sz5: 1.875em;
+  /*30px*/
+  --font-sz6: 3.000em;
+  /*48px*/
+  --font-sz7: 0.750em;
+  /*12px*/
+  --font-sz8: 0.875em;
+  /*14px*/
+  --font-sz9: 1.375em;
+  /*22px*/
+  --font-sz10: 1.500em;
+  /*24px*/
+  --font-sz11: 1.625em;
+  /*26px*/
+  --font-sz12: 1.750em;
+  /*28px*/
+  --font-sz13: 2.250em;
+  /*36px*/
+}
+
+/* @media screen and (max-width: 767px) {
+  :root {
+    --font-sz1: 2.75rem;
+    --font-sz2: 1.777rem;
+    --font-sz3: 1.333rem;
+    --font-sz4: 1rem;
+  }
 } */
 
+
+/* =========Адаптивний (Резиновий) шрифт================= */
+
+
+/* h1{
+   font-size: calc((var(--min-font-size)) + (var(--font-size) - var(--min-font-size)) * (100vw / var(--max-width)));
+ }*/
+
+/*Де --min-font-size мінімальний розмір шрифта на мобіл,
+   --font-size розмір шрифта за макетом,
+   --max-width максимальний розмір макету. Наприклад,
+   h1- 40px,min - 24px,
+   тоді font-size: calc(24px + 16 * (100vw / 1280));*/
+
+/* @media (max-width:767px){
+  h1{
+    font-size: calc((var(--min-font-size)) + ((var(--font-size) - var(--min-font-size) + ((var(--font-size) - var(--min-font-size) * 70%)) * ((100vw - var(--min-width)) / var(--max-width)))));
+  }
+}     */
+/* Де --min-font-size мінімальний розмір екрану, на який встановлюється розмір шрифта (наприклад, мобіл 320px ) 
+   h1- 40px,
+   min - 24px,
+   тоді font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+   */
+/* @media (min-width:767px) {
+   h1 {
+     font-size: calc((var(--min-font-size)) + ((var(--font-size) - var(--min-font-size)) * (100vw  / var(--max-width))));
+    }
+  } */
+
+
+
+/* -----------------------------------------
+          Розміри 
+          Для зовнішніх відступів margin */
+
+:root {
+  --margin-c: 0 auto;
+  /* вирівнювання по центру */
+  --margin-r: 10px;
+  /* відступ з правого боку */
+  --margin-l: 10px;
+  /* відступ з лівого боку */
+  --margin-t: 100px;
+  /* відступ зверху  */
+  --margin-b: 30px;
+  /* відступ знизу  */
+
+  /* -------Для внутрішніх відступів padding */
+
+  --padding: 10px;
+  /*з усіх боків*/
+  --padding-r: 10px;
+  /*зправа*/
+}
+
+/* -----------Змінні  для кольору var(--name)*/
+:root {
+  --white: #fff;
+  --black: #000;
+  --black2: #383838;
+  --gray: #f8f2e4;
+  --red: red;
+  --orange: #db883c;
+  --yellow: yellow;
+  --green: green;
+  --blue: blue;
+  --brown: #412525;
+}
+
+/* ----------------------------------------------
+-------Значення розмірів для: flex-basis: var(--grid-N); */
+
+/* :root {
+  --grid-1: 100%;
+  --grid-2: 50%;
+  --grid-3: 33.333333%;
+  --grid-4: 25%;
+  --grid-5: 20%;
+  --grid-6: 16.6666666%;
+  --grid-7: 14.2857142%;
+  --grid-8: 12.5%;
+  --grid-9: 11.1111111%;
+  --grid-10: 10%;
+  --grid-11: 9.090909%;
+  --grid-12: 8.3333333%;
+} */
+
+/* -----------Для display -------------------------- */
+
+/* ========================== */
+/* .row {
+  --row-disp: block;
+}
+
+@media screen and (min-width: 600px) {
+  .row {
+    --row-disp: flex;
+  }
+} */
+
+/* =========================================== */
+/* .flex-col{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+} */
+
+/* ================Адаптивна сітка в 4 колонки (4-3-2-1) grid===== */
+
+.grid4__contents {
+  --grid-gap: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: var(--grid-gap);
+  grid-auto-rows: minmax(180px, auto);
+  justify-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid4__contents {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .grid4__contents {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .grid4__contents {
+    --grid-gap: 10px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: var(--grid-gap);
+  }
+}
+
+/* ================Адаптивна сітка в 3 колонки (3-2-1) grid===== */
+.grid3__contents {
+  padding-bottom: 115px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 80px;
+  grid-row-gap: 55px;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid3__contents {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 25px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid3__contents {
+    display: block;
+  }
+}
+
+/* =================================================================== */
+/* Сітка flex на 2 колонки  + grid на 12 елементів у 3 колонки
+  HTML 
+  <div class="block2">
+    <div class="grid-gall">
+    </div>
+    <div class="text">
+    </div>
+  </div> */
+
+.block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.grid-gall {
+  --grid-gap: 20px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 50%;
+  flex: 1 0 50%;
+  margin-right: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat (3, 1fr);
+  grid-template-columns: repeat (3, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: var(--grid-gap);
+  justify-items: center;
+}
+
+/* @media screen and (max-width: 1000px) {
+  .grid-gall {
+    --margin-r: 20px;
+    margin-right: var(--margin-r);
+    grid-gap: 10px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+} */
+
+@media screen and (max-width: 560px) {
+  .grid-gall {
+    --margin-r: 0px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: var(--margin-r);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-gall {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ============================Грід у 6 колонок в лінію================== */
+
+.grid6-line {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 980px) {
+  .grid6-line {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid6-line {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+}
+
+/* =================================================== */
+/* --------------------------------
+ Приклад для сітки flexbox,
+ де у рядку кількість колонок залежить від розміру
+ екрану (при адаптації 4-3-2-1)
+    
+ Html
+ <html>
+  <body>
+  < div class="grid">
+    <div><i></i></div>
+    <div><i></i></div>
+    <div><i></i></div>
+    <div><i></i></div>
+    <div><i></i></div>
+    <div><i></i></div>
+    <div><i></i></div>
+    <div><i></i></div>
+    <div><i></i></div>
+ < !-- Повторить max число колонок вмещающихся по ширине экрана -->
+    <div class="grid-boxes"></div>
+    <div class="grid-boxes"></div>
+    <div class="grid-boxes"></div>
+  </div>
+  </body>
+</html>
+*/
+/* CSS */
+/* 
+.grid > div {
+  --flex-basis: 270px;
+  flex-grow: 1;
+  flex-basis: var(--flex-basis);
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.grid .grid-boxes {
+  --padding: 5px;
+  opacity: 0;
+  height: 0px;
+  padding: 0;
+  overflow: hidden;
+  padding: var(--padding);
+} */
+
+/* --------------------------------
+ Приклад для сітки у 6 колонок flexbox */
+
+/* ::root{
+   --row-display: block;
+ }
+.row {
+  
+  display: var(--row-display);
+}
+
+@media screen and (min-width: 600px) {
+  .row {
+    --row-display: flex;
+    display: var(--row-display);
+  }
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
+  --col-grow: 0;
+  --col-shrink: 0;
+  flex-grow: var(--col-grow);
+  flex-shrink: var(--col-shrink);
+
+}
+
+.col {
+  --col-grow: 1;
+  --col-shrink: 1;
+  --col-basis: 100%;
+  flex-grow: var(--col-grow);
+  flex-shrink: var(--col-shrink);
+  flex-basis:(--col-basis);
+}
+
+.col-1 {
+  --col-basis: 16.66%;
+  flex-basis:(--col-basis);
+}
+
+.col-2 {
+  --col-basis: 33.33%;
+  flex-basis:(--col-basis);
+}
+
+.col-3 {
+  --col-basis: 50%;
+  flex-basis:(--col-basis);
+}
+
+.col-4 {
+  --col-basis: 66.66%;
+  flex-basis:(--col-basis);
+}
+
+.col-5 {
+  --col-basis: 83.33%;
+  flex-basis:(--col-basis);
+}
+
+.col-6 {
+  --col-basis: 100%;
+  flex-basis:(--col-basis);
+}
+
+
+.row {
+  display: var(--row-display);
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
+  flex-grow: var(--col-grow);
+  flex-shrink: var(--col-shrink);
+  flex-basis: var(--col-basis);
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #999;
+  padding: 15px;
+  margin: 3px 0;
+  background: rgba(122, 180, 245, 0.3);
+} */
+
+/* -------------------------------
+// */
+
+/* Кількість колонок grid(N) */
+/* .grid1 {
+  width: calc(100% - 5px);
+}
+
+.grid2 {
+  width: calc((100% - 5px) / 2);
+}
+
+.grid3 {
+  width: calc((100% - 5px) / 3);
+}
+
+.grid4 {
+  width: calc((100% - 5px) / 4);
+}
+
+.grid5 {
+  width: calc((100% - 5px) / 5);
+}
+
+.grid6 {
+  width: calc((100% - 5px) / 6);
+}
+
+.grid7 {
+  width: calc((100% - 5px) / 7);
+}
+
+.grid8 {
+  width: calc((100% - 5px) / 8);
+}
+
+.grid9 {
+  width: calc((100% - 5px) / 9);
+}
+
+.grid10 {
+  width: calc((100% - 5px) / 10);
+}
+
+.grid11 {
+  width: calc((100% - 5px) / 11);
+}
+
+.grid12 {
+  width: calc((100% - 5px) / 12);
+} */
+
+
+.bl {
+  background: rgb(2, 2, 58);
+}
 
 .main {
   padding: 30px;
@@ -73,17 +613,22 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: var(--font-sz10);
   color: rgb(230, 39, 96);
 }
 
 h3 {
-  font-size: 20px;
+  font-size: var(--font-sz2);
+  color: rgb(196, 53, 10);
+}
+
+h4 {
+  font-size: var(--font-sz3);
   color: rgb(196, 53, 10);
 }
 
 strong {
-  font-size: 18px;
+  font-size: var(--font-sz3);
 }
 
 .btn {
@@ -95,7 +640,7 @@ strong {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: var(--font-sz4);
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -118,7 +663,7 @@ strong {
 }
 
 blockquote {
-  padding: 7px 17px 10px 21px;
+  padding: 0 17px;
   margin: 25px 0;
   position: relative;
   background: #efefef;
@@ -130,16 +675,96 @@ blockquote {
 
 }
 
+pre {
+  margin-left: -.8em;
+  margin-right: -.8em;
+  /* padding: .6em .8em; */
+  position: relative;
+  background: #efefef;
+}
+
+pre[class*=language-] {
+  background: #f5f2f0;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media only screen and (min-width: 60em) {
+
+  blockquote,
+  caption,
+  dd,
+  details,
+  dl,
+  fieldset,
+  figure,
+  hr,
+  ol,
+  pre,
+  table {
+    margin: 0 0 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  blockquote,
+  caption,
+  dd,
+  details,
+  dl,
+  fieldset,
+  figure,
+  hr,
+  ol,
+  pre,
+  table {
+    margin: 0 0 .6rem;
+  }
+}
+
 code {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: inherit;
+  font-family: var(--font-primary);
+  font-size: var(--font-sz4);
 }
 
 code span {
   font-weight: 400;
   font-style: italic;
   color: #008cba;
+  font-size: var(--font-sz4);
 }
+
+code[class*=language-],
+pre[class*=language-] {
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+code[class*=language-],
+pre>code {
+  display: block;
+  overflow-x: auto;
+  padding: 0 24px 0 0;
+  width: 100%;
+}
+
 
 section {
   margin-top: 50px;
@@ -271,15 +896,15 @@ footer {
 }
 
 .ff-monospafont {
-  font-family: "Courier New", Courier, monospaced;
+  font-family: var(--font-secondary);
 }
 
 .font12 {
-  font-size: 12px;
+  font-size: var(--font-sz7);
 }
 
 .font14 {
-  font-size: 14px;
+  font-size: var(--font-sz8);
 }
 
 .fontyn {
@@ -348,7 +973,7 @@ footer {
 
 .t-shad {
   text-shadow: 3px 5px 6px #6c9;
-  font-size: 20px;
+  font-size: var(--font-sz2);
   text-transform: uppercase;
   color: #366b50;
 }
@@ -359,7 +984,7 @@ footer {
     0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1),
     0 3px 5px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.2),
     0 10px 10px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.1);
-  font-size: 25px;
+  font-size: var(--font-sz10);
 }
 
 .let-spa {
@@ -381,7 +1006,7 @@ footer {
 
 .titlefont {
   color: rgb(235, 235, 235);
-  font-size: 38px;
+  font-size: var(--font-sz13);
   line-height: 48px;
   font-weight: 700;
   text-shadow: rgb(125, 125, 125) -1px -1px 0px, rgb(115, 115, 115) -2px -2px 0px, rgb(105, 105, 105) -3px -3px 0px, rgb(90, 90, 90) -4px -4px 0px, rgba(20, 20, 20, 0.498039) -6px -6px 5px;
@@ -629,7 +1254,7 @@ input:checked {
 
 .chil>p:last-child {
   font-style: italic;
-  font-size: 0.8em;
+  font-size: var(--font-sz8);
 }
 
 tr:nth-child(odd) {
@@ -769,3 +1394,242 @@ footer p {
 
   }
 }
+
+/* Media */
+@media only screen and (max-width: 840px) {
+  .grid3 {
+    -webkit-box-flex: 0;
+    flex-basis: var(--grid-2);
+  }
+
+  .grid3:nth-child(3) {
+    -webkit-box-flex: 0;
+    flex-basis: var(--grid-1);
+    margin-top: 45px;
+  }
+}
+
+/* tablet */
+@media only screen and (max-width: 767px) {
+  .tabl.grid4 {
+    width: calc((100% - 5px) / 2);
+  }
+
+  .tabl.grid2,
+  .tabl.grid3 {
+    width: calc(100% - 5px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tabl.grid5:nth-last-of-type(1),
+  .tabl.grid3:nth-last-of-type(1),
+  .tabl.grid7:nth-last-of-type(1),
+  .tabl.grid9:nth-last-of-type(1),
+  .tabl.grid11:nth-last-of-type(1) {
+    width: calc(100% - 5px);
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 640px) {
+  .mob.grid {
+    width: calc(100% - 5px);
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .tabl.grid3 {
+    width: calc(100% - 5px);
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+}
+
+/* -------------------------------
+===========з використанням Bootstrap 
+/* =========Typography | Global========= */
+
+/* :root {
+  /* body font size 
+  --text-base-size: 1em;
+  /* type scale 
+  --text-scale-ratio: 1.2;
+  --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+}
+
+@media (min-width: 64rem) {
+
+  /* responsive decision applied to all text elements 
+  :root {
+    --text-base-size: 1.25em;
+    --text-scale-ratio: 1.25;
+  }
+}
+
+h1,
+.text-xxl {
+  font-size: var(--text-xxl, 2.074em);
+}
+
+h2,
+.text-xl {
+  font-size: var(--text-xl, 1.728em);
+}
+
+h3,
+.text-lg {
+  font-size: var(--text-lg, 1.44em);
+}
+
+h4,
+.text-md {
+  font-size: var(--text-md, 1.2em);
+}
+
+.text-base {
+  font-size: 1em;
+}
+
+small,
+.text-sm {
+  font-size: var(--text-sm, 0.833em);
+}
+
+.text-xs {
+  font-size: var(--text-xs, 0.694em);
+} 
+
+===========================================
+Адаптивні модифікатори для різних розмірів столбців,
+зміщення,вирівнювання і розподілення по ширині області перегляду 
+xs (max-width:1140px),
+sm (max-width:540px),
+md (max-width:720px) ,
+lg (max-width:960px).
+
+//Сместить столбец //
+<div class="row"> 
+  <div class="col-xs-offset-3 col-xs-9"> 
+    <div class="box">offset</div> 
+  </div> 
+</div>
+
+//Добавьте любое количество столбцов автоматического определения размера в строку//
+<div class="row">
+  <div class="col-xs"> 
+    <div class="box">auto</div>
+  </div> 
+</div>
+
+//Вкладеність блоків //
+<div class="row"> 
+  <div class="col-xs">
+    <div class="box">
+      <div class="row">
+        <div class="col-xs"> 
+          <div class="box">auto</div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>
+
+//Додайте класи для вирівнювання елементів на початку або в кінці рядка, а також у верхній, нижній частині чи в центрі стовпця //
+ <div class="row start-xs">
+  <div class="col-xs-6"> 
+  <div class="box"> start </div> 
+  </div> 
+</div>
+
+<div class="row center-xs">
+  <div class="col-xs-6">
+    <div class="box">start </div>
+  </div>
+</div>
+
+<div class="row end-xs">
+<div class="col-xs-6">
+<div class="box">end </div>
+</div>
+</div>
+
+//Ось приклад використання модифікаторів спільно для досягнення різного вирівнювання при різних розмірах вікна перегляду.
+ <div class="row center-xs end-sm start-lg">
+ <div class="col-xs-6">
+ <div class="box">All together now </div>
+ </div>
+ </div>
+
+ <div class="row top-xs">
+ <div class="col-xs-6">
+ <div class="box">top </div>
+ </div>
+ </div>
+
+ <div class="row middle-xs">
+ <div class="col-xs-6">
+ <div class="box">center </div>
+ </div>
+ </div>
+
+ <div class="row bottom-xs">
+ <div class="col-xs-6">
+ <div class="box">bottom </div>
+ </div>
+ </div>
+
+ Додайте класи для розподілу вмісту рядка чи стовпця. //
+ <div class="row around-xs">
+  <div class="col-xs-2">
+    <div class="box">around </div>
+  </div>
+  <div class="col-xs-2">
+    <div class="box">around </div>
+  </div>
+    <div class="col-xs-2">
+      <div class="box">around </div>
+    </div>
+ </div>
+
+ <div class="row between-xs"><div class="col-xs-2"><div class="box">between </div></div><div class="col-xs-2"><div class="box">between </div></div><div class="col-xs-2"><div class="box">between </div></div></div>
+
+ //Додайте класи для упорядкування стовпців.//
+ <div class="row">
+    <div class="col-xs-2">
+      <div class="box">1 </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="box">2 </div>
+    </div>
+    <div class="col-xs-2 first-xs">
+      <div class="box">3 </div>
+    </div>
+ </div>
+
+ <div class="row"><div class="col-xs-2 last-xs"><div class="box">1 </div></div><div class="col-xs-2"><div class="box">2 </div></div><div class="col-xs-2"><div class="box">3 </div></div></div>
+
+ //Reversing//
+ <div class="row reverse">
+ <div class="col-xs-2">
+ <div class="box">1 </div>
+ </div>
+ <div class="col-xs-2">
+ <div class="box">2 </div>
+ </div>
+ <div class="col-xs-2">
+ <div class="box">3 </div>
+ </div>
+ </div>

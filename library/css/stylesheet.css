@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('JetBrainsMono-Bold.eot');
+    src: local('JetBrains Mono Bold'), local('JetBrainsMono-Bold'),
+        url('JetBrainsMono-Bold.eot?#iefix') format('embedded-opentype'),
+        url('JetBrainsMono-Bold.woff2') format('woff2'),
+        url('JetBrainsMono-Bold.woff') format('woff'),
+        url('JetBrainsMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('JetBrainsMono-ExtraBold.eot');
+    src: local('JetBrains Mono Extra Bold'), local('JetBrainsMono-ExtraBold'),
+        url('JetBrainsMono-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('JetBrainsMono-ExtraBold.woff2') format('woff2'),
+        url('JetBrainsMono-ExtraBold.woff') format('woff'),
+        url('JetBrainsMono-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('JetBrainsMono-Medium.eot');
+    src: local('JetBrains Mono Medium'), local('JetBrainsMono-Medium'),
+        url('JetBrainsMono-Medium.eot?#iefix') format('embedded-opentype'),
+        url('JetBrainsMono-Medium.woff2') format('woff2'),
+        url('JetBrainsMono-Medium.woff') format('woff'),
+        url('JetBrainsMono-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('JetBrainsMono-Regular.eot');
+    src: local('JetBrains Mono Regular'), local('JetBrainsMono-Regular'),
+        url('JetBrainsMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('JetBrainsMono-Regular.woff2') format('woff2'),
+        url('JetBrainsMono-Regular.woff') format('woff'),
+        url('JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('JetBrainsMono-ExtraBoldItalic.eot');
+    src: local('JetBrains Mono ExtBd Ita'), local('JetBrainsMono-ExtraBoldItalic'),
+        url('JetBrainsMono-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('JetBrainsMono-ExtraBoldItalic.woff2') format('woff2'),
+        url('JetBrainsMono-ExtraBoldItalic.woff') format('woff'),
+        url('JetBrainsMono-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('JetBrainsMono-MediumItalic.eot');
+    src: local('JetBrains Mono Medium Italic'), local('JetBrainsMono-MediumItalic'),
+        url('JetBrainsMono-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('JetBrainsMono-MediumItalic.woff2') format('woff2'),
+        url('JetBrainsMono-MediumItalic.woff') format('woff'),
+        url('JetBrainsMono-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('JetBrainsMono-BoldItalic.eot');
+    src: local('JetBrains Mono Bold Italic'), local('JetBrainsMono-BoldItalic'),
+        url('JetBrainsMono-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('JetBrainsMono-BoldItalic.woff2') format('woff2'),
+        url('JetBrainsMono-BoldItalic.woff') format('woff'),
+        url('JetBrainsMono-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('JetBrainsMono-Italic.eot');
+    src: local('JetBrains Mono Italic'), local('JetBrainsMono-Italic'),
+        url('JetBrainsMono-Italic.eot?#iefix') format('embedded-opentype'),
+        url('JetBrainsMono-Italic.woff2') format('woff2'),
+        url('JetBrainsMono-Italic.woff') format('woff'),
+        url('JetBrainsMono-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
