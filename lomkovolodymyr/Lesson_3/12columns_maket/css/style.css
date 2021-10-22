@@ -1,10 +1,23 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    /*Браузер спочатку спробує знайти шрифт локально */
+    src: local("Roboto"),
+        /* Якщо не вийшло, завантажить woff2 */
+        url("/fonts/roboto.woff2") format("woff2"),
+        /* Якщо браузер не підтримує woff2, завантажить woff */
+        url("/fonts/roboto.woff") format("woff");
+}
+
 body {
     margin: 0;
     padding: 0;
     color: rgb(139, 139, 139);
-    font-family: 'Nunito Semibold';
+    font-family: "Roboto", "Arial", sans-serif;
     text-align: center;
     background-image: url(https://images.wallpaperscraft.ru/image/single/kod_kodirovanie_dvoichnyj_kod_abstraktsiya_uzory_112140_1920x1080.jpg);
     background-position: center;
