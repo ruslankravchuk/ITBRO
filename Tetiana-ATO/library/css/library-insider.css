@@ -1,3 +1,16 @@
+/*================Подключение шрифтов================*/
+@import url("stylesheet.css");
+
+/* 
+-------------Змінні для Шрифтів
+             Вид шрифту */
+
+:root {
+  --font-primary: "JetBrains Mono", monospace;
+  --font-secondary: "Roboto Mono", monospace;
+
+}
+
 /*Специфікація*/
 html {
   -webkit-box-sizing: border-box;
@@ -20,7 +33,7 @@ ul .menu__list-link {
 html,
 body {
   height: 100%;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: var(--font-primary);
   font-size: 16px;
   color: #000;
   line-height: 25px;
@@ -78,15 +91,6 @@ img {
 
 */
 
-/* 
--------------Змінні для Шрифтів
-             Вид шрифту */
-
-:root {
-  --font-primary: "Alegreya Sans", "Trebuchet MS", Arial, sans-serif;
-  --font-secondary: "Roboto", Arial, sans-serif;
-
-}
 
 /* --Розмір */
 
@@ -718,7 +722,7 @@ pre[class*=language-] {
 }
 
 code {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: var(--font-primary);
   font-size: inherit;
 }
 
@@ -881,7 +885,7 @@ footer {
 }
 
 .ff-monospafont {
-  font-family: "Courier New", Courier, monospaced;
+  font-family: var(--font-secondary);
 }
 
 .font12 {
